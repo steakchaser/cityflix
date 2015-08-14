@@ -6,6 +6,8 @@ gem "bootstrap-sass", "3.3.5.1 ", :require => false
 
 gem "middleman", "~>3.4.0"
 
+gem "middleman-deploy", "1.0.0"
+
 # Live-reloading plugin
 gem "middleman-livereload", "~> 3.1.0"
 
