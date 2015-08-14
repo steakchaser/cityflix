@@ -22,4 +22,11 @@ Responsive website to discover movies shot in the city of San Francisco.
 4. Publish full commit history
 
 ## Stack Details
-*TODO: list frameworks in use here*
+1. [Bootstrap](http://getbootstrap.com/) - Responsive CSS framework + pre-built UI components
+2. [Bower](http://bower.io/) - Package manager for front-end assets.
+3. [CoffeeScript](http://coffeescript.org/) - CoffeeScript is a little language that compiles into JavaScript
+4. [jQuery](https://jquery.com/) - JavaScript library for DOM manipulation, event handling, animation, and more
+5. [Middleman](https://middlemanapp.com/) - Static website generator that lets you use modern-day development tools
+6. [Sass](http://sass-lang.com/) - CSS with superpowers
+7. [Slim](http://slim-lang.com/) - Lightweight templating language used instead of typing raw HTML
+8. *More coming soon...*
