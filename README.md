@@ -57,7 +57,8 @@ build the site. Using the command-line, from the project folder, run middleman b
 $ cd cityflix
 $ bundle exec middleman build
 ```
-Push the build folder to the gh-pages branch and check out the static site: http://steakchaser.github.io/cityflix/ 
+Push the build folder to the gh-pages branch
 ```
 $ bundle exec middleman deploy
 ```
+View the static site (hosted for free) on GitHub Pages: http://steakchaser.github.io/cityflix/
