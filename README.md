@@ -30,3 +30,34 @@ Responsive website to discover movies shot in the city of San Francisco.
 6. [Sass](http://sass-lang.com/) - CSS with superpowers
 7. [Slim](http://slim-lang.com/) - Lightweight templating language used instead of typing raw HTML
 8. *More coming soon...*
+
+## Developer Setup
+### Install
+Clone the repo and install gems required for Middleman
+```
+$ git@github.com:steakchaser/cityflix.git && cd cityflix
+$ bundle install
+```
+
+### Development Cycle
+The Middleman separates your development and production code from the start. This allows you to utilize a bevy of tools 
+(such as Haml, Sass, CoffeeScript, etc.) during development that are unnecessary or undesirable in production.
+
+From the command-line, start the preview web-server from inside your project folder
+```
+$ cd cityflix
+$ bundle exec middleman server
+```
+This will start a local web server running at: http://localhost:4567/
+
+### Build & Deploy
+Finally, when you are ready to deliver static code or, in the case of "blog mode", host a static blog, you will need to 
+build the site. Using the command-line, from the project folder, run middleman build:
+```
+$ cd cityflix
+$ bundle exec middleman build
+```
+Push the build folder to the gh-pages branch and check out the static site: http://steakchaser.github.io/cityflix/ 
+```
+$ bundle exec middleman deploy
+```
