@@ -1,0 +1,19 @@
+{
+  "name": "cityflix",
+  "version": "0.0.0",
+  "homepage": "https://github.com/steakchaser/cityflix",
+  "authors": [
+    "TJ Moretto <tjmoretto@gmail.com>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "2.1.4"
+  }
+}
