@@ -7245,11 +7245,11 @@ button.close {
   /* line 18, /usr/local/opt/rbenv/versions/2.2.0/lib/ruby/gems/2.2.0/gems/bootstrap-sass-3.3.5.1/assets/stylesheets/bootstrap/mixins/_responsive-visibility.scss */
   .hidden-print {
     display: none !important; } }
-/* line 6, /Users/tjmoretto/RubyMineProjects/cityflix/source/stylesheets/all.css.scss */
+/* line 7, /Users/tjmoretto/RubyMineProjects/cityflix/source/stylesheets/all.css.scss */
 body {
   background: url("../images/background.png") top left repeat; }
 
-/* line 10, /Users/tjmoretto/RubyMineProjects/cityflix/source/stylesheets/all.css.scss */
+/* line 11, /Users/tjmoretto/RubyMineProjects/cityflix/source/stylesheets/all.css.scss */
 .card {
   display: block;
   position: relative;
@@ -7264,6 +7264,6 @@ body {
   -moz-border-radius: 2px;
   border-radius: 2px; }
 
-/* line 25, /Users/tjmoretto/RubyMineProjects/cityflix/source/stylesheets/all.css.scss */
+/* line 26, /Users/tjmoretto/RubyMineProjects/cityflix/source/stylesheets/all.css.scss */
 header nav.navbar {
   border-radius: 0; }

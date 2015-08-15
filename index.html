@@ -36,8 +36,12 @@
             <div class="col-sm-4" ng-repeat="column in columns">
               <div class="card" ng-repeat="movie in column">
                 <h2>
-                  {{movie.name}}
+                  {{movie.title}}
                 </h2>
+                <p>
+                  {{movie.release_year}}
+                </p>
+                <img class="center-block" ng-src="{{ movie.poster ? movie.poster : 'http://placehold.it/300x391&text=N/A' }}" />
               </div>
             </div>
           </div>
