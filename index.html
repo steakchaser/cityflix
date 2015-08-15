@@ -1,28 +1,47 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" ng-app="cityflixApp">
   <head>
     <meta charset="utf-8" />
     <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible" />
     <meta content="width=device-width, initial-scale=1" name="viewport" />
     <title>Cityflix</title><link href="stylesheets/normalize.css" rel="stylesheet" /><link href="stylesheets/all.css" rel="stylesheet" /><script src="javascripts/all.js"></script>
   </head>
-  <body class="index">
-    <div class="container">
-      <header></header><main><div class="row">
-          <div class="col-md-12">
-            <div class="jumbotron">
-              <h1>
-                Hello, world!
-              </h1>
-              <p>
-                Cityflix is the definitive resource for locating past and present movies shot in the city of San Francisco
-              </p>
-              <p>
-                <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
-              </p>
+  <body ng-controller="MovieListCtrl">
+    <header>
+      <nav class="navbar navbar-inverse">
+        <div class="container">
+          <div class="navbar-header">
+            <a class="navbar-brand" href="#">Cityflix</a>
+          </div>
+        </div>
+      </nav>
+    </header><main><div class="container">
+        <div class="row">
+          <div class="col-sm-8 col-sm-offset-2">
+            <h1 class="text-center">
+              Movies filmed in The City
+            </h1>
+            <p class="text-center">
+              Total number of movies: {{movies.length}}
+            </p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-12">
+            Search: <input ng-model="query" ng-change="filter(query)">
+          </div>
+        </div>
+        <div class="row">
+          <div>
+            <div class="col-sm-4" ng-repeat="column in columns">
+              <div class="card" ng-repeat="movie in column">
+                <h2>
+                  {{movie.name}}
+                </h2>
+              </div>
             </div>
           </div>
-        </div></main><footer></footer>
-    </div>
+        </div>
+      </div></main><footer></footer>
   </body>
 </html>
