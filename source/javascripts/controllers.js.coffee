@@ -1,5 +1,8 @@
-cityflixApp.controller 'MovieListCtrl', ($scope, $filter) ->
+cityflixApp.controller 'MovieListCtrl', ($filter, $http, $scope) ->
 
+  # Split data equally into x arrays so that we can display in columns
+  # See: http://stackoverflow.com/questions/21644493/how-to-split-the-ng-repeat-data-with-three-columns-using-bootstrap
+  # See also (for filtering): http://stackoverflow.com/questions/28392651/angular-js-filtering-nested-array-in-controller
   columnize = (input, cols) ->
     arr = []
     i = 0
@@ -8,52 +11,25 @@ cityflixApp.controller 'MovieListCtrl', ($scope, $filter) ->
       arr[colIdx] = arr[colIdx] or []
       arr[colIdx].push input[i]
       i++
-    arr
+    return arr
 
-  $scope.movies = [
-    {
-      'name': '180'
-    }
-    {
-      'name': '24 Hours on Craigslist'
-    }
-    {
-      'name': '48 Hours'
-    }
-    {
-      'name': '50 First Dates'
-    }
-    {
-      'name': 'About a Boy'
-    }
-    {
-      'name': 'After the Thin Man'
-    }
-    {
-      'name': 'A Jitney Elopement'
-    }
-    {
-      'name': 'Alcatraz'
-    }
-    {
-      'name': 'Alexander\'s Ragtime Band'
-    }
-    {
-      'name': 'All About Eve'
-    }
-    {
-      'name': 'American Graffiti'
-    }
-    {
-      'name': 'American Yearbook'
-    }
-    {
-      'name': 'A Night Full of Rain'
-    }
-  ]
-
-  $scope.columns = columnize($scope.movies, 3)
+  $http.get('data/movies.json').success (data) ->
+    # Fixture generated using:
+    # https://data.sfgov.org/resource/yitu-d5am.json?$select=title,release_year&$group=title,release_year
+    movies = data.map((movie, i) ->
+      # API returns invalid JSON when you call with plot=short
+      # API is really slow and occasionally you get a 403 on the image itself
+      # May need to side-load or use a different API
+      #   http://stackoverflow.com/questions/29334108/image-not-loading-javascript-html-angular-imdb-api
+      # $http.get("http://www.omdbapi.com/?t=#{movie.title}&y=#{movie.release_year}&plot=full&r=json").success (data) ->
+      #   movie.poster = data.Poster
+      return movie
+    )
+    $scope.movies = movies
+    $scope.columns = columnize($scope.movies or [], 3)
+    return
 
   $scope.filter = (query) ->
-    filteredMovies = $filter('filter')($scope.movies, name: query)
+    filteredMovies = $filter('filter')($scope.movies, title: query)
     $scope.columns = columnize(filteredMovies, 3)
+    return
