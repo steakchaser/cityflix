@@ -41,6 +41,7 @@ Responsive website to discover movies shot in the city of San Francisco.
 - [ ] Style thumbs
 - [ ] Style page header
 - [ ] Properly organize Angular files
+- [ ] No results message on empty search / filter
 
 ## Developer Setup
 ### Install
