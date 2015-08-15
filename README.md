@@ -22,14 +22,25 @@ Responsive website to discover movies shot in the city of San Francisco.
 4. Publish full commit history
 
 ## Stack Details
-1. [Bootstrap](http://getbootstrap.com/) - Responsive CSS framework + pre-built UI components
-2. [Bower](http://bower.io/) - Package manager for front-end assets.
-3. [CoffeeScript](http://coffeescript.org/) - CoffeeScript is a little language that compiles into JavaScript
-4. [jQuery](https://jquery.com/) - JavaScript library for DOM manipulation, event handling, animation, and more
-5. [Middleman](https://middlemanapp.com/) - Static website generator that lets you use modern-day development tools
-6. [Sass](http://sass-lang.com/) - CSS with superpowers
-7. [Slim](http://slim-lang.com/) - Lightweight templating language used instead of typing raw HTML
-8. *More coming soon...*
+1. [AngularJS](https://angularjs.org/) - HTML enhanced for web apps!
+2. [Bootstrap](http://getbootstrap.com/) - Responsive CSS framework + pre-built UI components
+3. [Bower](http://bower.io/) - Package manager for front-end assets.
+4. [CoffeeScript](http://coffeescript.org/) - CoffeeScript is a little language that compiles into JavaScript
+5. [Console.log wrapper](https://github.com/patik/console.log-wrapper) - Safe, clear console logging for every browser
+6. [jQuery](https://jquery.com/) - JavaScript library for DOM manipulation, event handling, animation, and more
+7. [Middleman](https://middlemanapp.com/) - Static website generator that lets you use modern-day development tools
+8. [Sass](http://sass-lang.com/) - CSS with superpowers
+9. [Slim](http://slim-lang.com/) - Lightweight templating language used instead of typing raw HTML
+10. *More coming soon...*
+
+## TODO
+- [ ] Pull in real data from SF OpenData API
+- [ ] Pull in box art from OMDB
+- [ ] Other filter controls
+- [ ] Style filter controls
+- [ ] Style thumbs
+- [ ] Style page header
+- [ ] Properly organize Angular files
 
 ## Developer Setup
 ### Install

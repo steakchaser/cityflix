@@ -4,5 +4,19 @@ title: Cityflix
 
 .container
   .row
-    .col-sm-4
-      .card
+    .col-sm-8.col-sm-offset-2
+      h1.text-center
+        | Movies filmed in The City
+      p.text-center
+        | Total number of movies: {{movies.length}}
+
+  .row
+    .col-sm-12
+      | Search: <input ng-model="query" ng-change="filter(query)">
+
+  .row
+    div
+      .col-sm-4 ng-repeat="column in columns"
+        .card ng-repeat="movie in column"
+          h2
+            | {{movie.name}}

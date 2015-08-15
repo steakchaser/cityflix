@@ -1,5 +1,5 @@
 doctype html
-html lang="en"
+html lang="en" ng-app="cityflixApp"
   head
     meta charset="utf-8"
 
@@ -14,7 +14,7 @@ html lang="en"
     = stylesheet_link_tag "normalize", "all"
     = javascript_include_tag  "all"
 
-  body
+  body ng-controller="MovieListCtrl"
       = partial "header"
       main
         = yield

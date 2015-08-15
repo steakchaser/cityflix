@@ -1,0 +1,45 @@
+{
+  "name": "console-log",
+  "version": "2.1.3",
+  "homepage": "http://patik.github.io/console.log-wrapper/",
+  "authors": [
+    "Craig Patik <craig@patik.com>"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/patik/console.log-wrapper.git"
+  },
+  "description": "Cross-browser console logging",
+  "main": "consolelog.js",
+  "keywords": [
+    "Console logger",
+    "console.log",
+    "log",
+    "Console logging",
+    "JavaScript Debugging",
+    "Developer Tools",
+    "Browser Tools",
+    "Legacy Browsers",
+    "oldIE",
+    "IE 6",
+    "IE 7",
+    "IE 8"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower.json",
+    "bower_components",
+    "test"
+  ],
+  "_release": "2.1.3",
+  "_resolution": {
+    "type": "version",
+    "tag": "2.1.3",
+    "commit": "e7a34c1306f06b1c5a8cab91b85f94171e99ccca"
+  },
+  "_source": "git://github.com/patik/console.log-wrapper.git",
+  "_target": "2.1.3",
+  "_originalSource": "consolelog"
+}
