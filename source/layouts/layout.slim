@@ -14,8 +14,7 @@ html lang="en"
     = stylesheet_link_tag "normalize", "all"
     = javascript_include_tag  "all"
 
-  body class="#{page_classes}"
-    .container
+  body
       = partial "header"
       main
         = yield

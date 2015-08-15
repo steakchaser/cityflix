@@ -3,6 +3,29 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
 
+body {
+  background: url("../images/background.png") top left repeat;
+}
+
+.card {
+  display: block;
+  position: relative;
+  margin: 12px 0 18px;
+  background: #fff;
+  padding: 16px;
+  border: 1px solid #d5d5d5;
+  -webkit-box-shadow: 0 2px 3px -1px rgba(0,0,0,0.25);
+  -moz-box-shadow: 0 2px 3px -1px rgba(0,0,0,0.25);
+  box-shadow: 0 2px 3px -1px rgba(0,0,0,0.25);
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  border-radius: 2px;
+}
+
+header nav.navbar {
+  border-radius: 0;
+}
+
 //body {
 //  background: #d4d4d4 url("../images/background.png");
 //  text-align: center;
