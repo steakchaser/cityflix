@@ -1,4 +1,3 @@
-cityflixApp = angular.module('cityflixApp', [])
 cityflixApp.controller 'MovieListCtrl', ($scope, $filter) ->
 
   columnize = (input, cols) ->
