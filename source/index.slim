@@ -29,6 +29,6 @@ title: Cityflix
       .card
         .release-year
           | {{ movie.release_year }}, {{ movie.director }}
-        img.center-block.mb1 ng-if="movie.poster" ng-src="{{ movie.poster }}"
+        img.center-block.img-responsive.mb1 ng-if="movie.poster" ng-src="{{ movie.poster }}"
         p
           | {{movie.plot }}
