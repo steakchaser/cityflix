@@ -23,15 +23,16 @@ Responsive website to discover movies shot in the city of San Francisco.
 
 ## Stack Details
 1. [AngularJS](https://angularjs.org/) - HTML enhanced for web apps!
-2. [Bootstrap](http://getbootstrap.com/) - Responsive CSS framework + pre-built UI components
-3. [Bower](http://bower.io/) - Package manager for front-end assets.
-4. [CoffeeScript](http://coffeescript.org/) - CoffeeScript is a little language that compiles into JavaScript
-5. [Console.log wrapper](https://github.com/patik/console.log-wrapper) - Safe, clear console logging for every browser
-6. [jQuery](https://jquery.com/) - JavaScript library for DOM manipulation, event handling, animation, and more
-7. [Middleman](https://middlemanapp.com/) - Static website generator that lets you use modern-day development tools
-8. [Sass](http://sass-lang.com/) - CSS with superpowers
-9. [Slim](http://slim-lang.com/) - Lightweight templating language used instead of typing raw HTML
-10. *More coming soon...*
+2. [AngularJS Slider](https://github.com/rzajac/angularjs-slider) - AngularJS slider directive with no external dependencies
+3. [Bootstrap](http://getbootstrap.com/) - Responsive CSS framework + pre-built UI components
+4. [Bower](http://bower.io/) - Package manager for front-end assets.
+5. [CoffeeScript](http://coffeescript.org/) - CoffeeScript is a little language that compiles into JavaScript
+6. [Console.log wrapper](https://github.com/patik/console.log-wrapper) - Safe, clear console logging for every browser
+7. [jQuery](https://jquery.com/) - JavaScript library for DOM manipulation, event handling, animation, and more
+8. [Middleman](https://middlemanapp.com/) - Static website generator that lets you use modern-day development tools
+9. [Sass](http://sass-lang.com/) - CSS with superpowers
+10. [Slim](http://slim-lang.com/) - Lightweight templating language used instead of typing raw HTML
+11. *More coming soon...*
 
 ## TODO
 - [ ] Pull in real data from SF OpenData API
