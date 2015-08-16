@@ -41,12 +41,17 @@ View the static site on GitHub Pages: http://steakchaser.github.io/cityflix/
 ## TODO
 - [x] Pull in real data from SF OpenData API
 - [x] Pull in box art from OMDB
-- [ ] Other filter controls
+- [x] Other filter controls
+- [x] Properly organize Angular files
 - [ ] Style filter controls
 - [ ] Style thumbs
 - [ ] Style page header
-- [x] Properly organize Angular files
 - [ ] No results message on empty search / filter
+- [ ] Reset button
+
+## Known Issues
+1. The SF Open Data API is returning some duplicate titles (see A Smile Like Yours)
+2. OMDB API poster images are from IMDB.  IMDB does not allow linked images from other websites; they will return a 404
 
 ## Developer Setup
 ### Install
