@@ -32,6 +32,46 @@
     "poster": "images/posters/tt0343660.jpg"
   },
   {
+    "title": "A Jitney Elopement",
+    "release_year": "1915",
+    "director": "Charles Chaplin",
+    "imdb_id": "tt0005571",
+    "plot": "Edna's father wants her to marry wealthy Count He-Ha. Charlie, Edna's true love, impersonates the Count at dinner, but the real Count shows up and Charlie is thrown out. Later on Charlie ...",
+    "poster": "images/posters/tt0005571.jpg"
+  },
+  {
+    "title": "A Night Full of Rain",
+    "release_year": "1978",
+    "director": "Lina Wertmuller",
+    "imdb_id": "tt0077548",
+    "plot": "Candice Bergen and Giancarlo Giannini star as two people from very different worlds who fall in love in A Night Full of Rain. When romantic Italian journalist Paolo (Giannini) rescues ...",
+    "poster": "images/posters/tt0077548.jpg"
+  },
+  {
+    "title": "A Smile Like Yours",
+    "release_year": "1997",
+    "director": "Keith Samples",
+    "imdb_id": "tt0120151",
+    "plot": "Greg Kinnear plays a carriage-shy husband in a romantic comedy about a couple trying to conceive a child.",
+    "poster": "images/posters/tt0120151.jpg"
+  },
+  {
+    "title": "A Smile Like Yours ",
+    "release_year": "1997",
+    "director": "Keith Samples",
+    "imdb_id": "tt0120151",
+    "plot": "Greg Kinnear plays a carriage-shy husband in a romantic comedy about a couple trying to conceive a child.",
+    "poster": "images/posters/tt0120151.jpg"
+  },
+  {
+    "title": "A View to a Kill",
+    "release_year": "1985",
+    "director": "John Glen",
+    "imdb_id": "tt0090264",
+    "plot": "An investigation of a horse-racing scam leads 007 to a mad industrialist who plans to create a worldwide microchip monopoly by destroying California's Silicon Valley.",
+    "poster": "images/posters/tt0090264.jpg"
+  },
+  {
     "title": "About a Boy",
     "release_year": "2014",
     "director": "Mark J. Kunerth",
@@ -46,14 +86,6 @@
     "imdb_id": "tt0027260",
     "plot": "Nick investigates the case of a missing man and later a murder that is connected to Nora's family.",
     "poster": "images/posters/tt0027260.jpg"
-  },
-  {
-    "title": "A Jitney Elopement",
-    "release_year": "1915",
-    "director": "Charles Chaplin",
-    "imdb_id": "tt0005571",
-    "plot": "Edna's father wants her to marry wealthy Count He-Ha. Charlie, Edna's true love, impersonates the Count at dinner, but the real Count shows up and Charlie is thrown out. Later on Charlie ...",
-    "poster": "images/posters/tt0005571.jpg"
   },
   {
     "title": "Alcatraz",
@@ -96,19 +128,19 @@
     "poster": "images/posters/tt0386284.jpg"
   },
   {
-    "title": "A Night Full of Rain",
-    "release_year": "1978",
-    "director": "Lina Wertmuller",
-    "imdb_id": "tt0077548",
-    "plot": "Candice Bergen and Giancarlo Giannini star as two people from very different worlds who fall in love in A Night Full of Rain. When romantic Italian journalist Paolo (Giannini) rescues ...",
-    "poster": "images/posters/tt0077548.jpg"
-  },
-  {
     "title": "Another 48 Hours",
     "release_year": "1990",
     "director": "Walter Hill",
     "imdb_id": null,
     "plot": null
+  },
+  {
+    "title": "Ant-Man",
+    "release_year": "2014",
+    "director": "Peyton Reed",
+    "imdb_id": "tt0478970",
+    "plot": "Armed with a super-suit with the astonishing ability to shrink in scale but increase in strength, cat burglar Scott Lang must embrace his inner hero and help his mentor, Dr. Hank Pym, plan and pull off a heist that will save the world.",
+    "poster": "images/posters/tt0478970.jpg"
   },
   {
     "title": "Around the Fire",
@@ -119,35 +151,11 @@
     "poster": "images/posters/tt0139030.jpg"
   },
   {
-    "title": "A Smile Like Yours",
-    "release_year": "1997",
-    "director": "Keith Samples",
-    "imdb_id": "tt0120151",
-    "plot": "Greg Kinnear plays a carriage-shy husband in a romantic comedy about a couple trying to conceive a child.",
-    "poster": "images/posters/tt0120151.jpg"
-  },
-  {
-    "title": "A Smile Like Yours ",
-    "release_year": "1997",
-    "director": "Keith Samples",
-    "imdb_id": "tt0120151",
-    "plot": "Greg Kinnear plays a carriage-shy husband in a romantic comedy about a couple trying to conceive a child.",
-    "poster": "images/posters/tt0120151.jpg"
-  },
-  {
     "title": "Attack of the Killer Tomatoes",
     "release_year": "1978",
     "director": "John DeBello",
     "imdb_id": "tt0124229",
     "plot": "A group of people thwart a mad scientist trying to take over the world with evil mutated tomatoes that he can change into people."
-  },
-  {
-    "title": "A View to a Kill",
-    "release_year": "1985",
-    "director": "John Glen",
-    "imdb_id": "tt0090264",
-    "plot": "An investigation of a horse-racing scam leads 007 to a mad industrialist who plans to create a worldwide microchip monopoly by destroying California's Silicon Valley.",
-    "poster": "images/posters/tt0090264.jpg"
   },
   {
     "title": "Babies",
@@ -284,6 +292,13 @@
     "poster": "images/posters/tt0290498.jpg"
   },
   {
+    "title": "CSI: NY- episode 903",
+    "release_year": "2012",
+    "director": "Vikki Williams",
+    "imdb_id": null,
+    "plot": null
+  },
+  {
     "title": "Can't Stop the Music",
     "release_year": "1980",
     "director": "Nancy Walker",
@@ -372,11 +387,11 @@
     "poster": "images/posters/tt0087096.jpg"
   },
   {
-    "title": "CSI: NY- episode 903",
-    "release_year": "2012",
-    "director": "Vikki Williams",
-    "imdb_id": null,
-    "plot": null
+    "title": "D.O.A",
+    "release_year": "1950",
+    "director": "Rudolph Mate",
+    "imdb_id": "tt1758081",
+    "plot": "Tom,a junior doctor under suspension for fatally removing the wrong lung from a patient and nick-named Dr. Death,is working in Leeds as a paramedic with the knowing Julie,who sells sex aids..."
   },
   {
     "title": "Dark Passage",
@@ -425,13 +440,6 @@
     "imdb_id": "tt0066999",
     "plot": "When a mad man calling himself 'the Scorpio Killer' menaces the city, tough as nails San Francisco Police Inspector Harry Callahan is assigned to track down and ferret out the crazed psychopath.",
     "poster": "images/posters/tt0066999.jpg"
-  },
-  {
-    "title": "D.O.A",
-    "release_year": "1950",
-    "director": "Rudolph Mate",
-    "imdb_id": "tt1758081",
-    "plot": "Tom,a junior doctor under suspension for fatally removing the wrong lung from a patient and nick-named Dr. Death,is working in Leeds as a paramedic with the knowing Julie,who sells sex aids..."
   },
   {
     "title": "Doctor Doolittle",
@@ -536,20 +544,20 @@
     "poster": "images/posters/tt0417667.jpg"
   },
   {
-    "title": "Fathers' Day",
-    "release_year": "1997",
-    "director": "Ivan Reitman",
-    "imdb_id": "tt0119109",
-    "plot": "A woman cons two old boyfriends into searching for her runaway son by convincing both that they are the boy's father.",
-    "poster": "images/posters/tt0119109.jpg"
-  },
-  {
     "title": "Fat Man and Little Boy",
     "release_year": "1989",
     "director": "Roland Joffe",
     "imdb_id": "tt0097336",
     "plot": "This film reenacts the Manhattan Project, the secret wartime project in New Mexico where the first atomic bombs were designed and built.",
     "poster": "images/posters/tt0097336.jpg"
+  },
+  {
+    "title": "Fathers' Day",
+    "release_year": "1997",
+    "director": "Ivan Reitman",
+    "imdb_id": "tt0119109",
+    "plot": "A woman cons two old boyfriends into searching for her runaway son by convincing both that they are the boy's father.",
+    "poster": "images/posters/tt0119109.jpg"
   },
   {
     "title": "Fearless",
@@ -656,7 +664,7 @@
   {
     "title": "Golden Gate",
     "release_year": "1994",
-    "director": "Howard Deutch",
+    "director": "John Madden",
     "imdb_id": "tt0109917",
     "plot": "A brash 22-year-old FBI agent trumps up charges of Communist spying against a Chinese laundryman. Ten years later, he wants to make amends to the man and his teenage daughter.",
     "poster": "images/posters/tt0109917.jpg"
@@ -726,20 +734,20 @@
     "poster": "images/posters/tt0067185.jpg"
   },
   {
-    "title": "Heart and Souls",
-    "release_year": "1994",
-    "director": "Tomas Gislason",
-    "imdb_id": "tt0107091",
-    "plot": "A businessman is reunited with the four lost souls who were his guardian angels during childhood, all with a particular purpose to joining the afterlife.",
-    "poster": "images/posters/tt0107091.jpg"
-  },
-  {
     "title": "Heart Beat",
     "release_year": "1980",
     "director": "John Byrum",
     "imdb_id": "tt0080854",
     "plot": "The life and friendship between the icons of the Beat Generation - Neal Cassady, Carloyn Cassady and Jack Kerouac.",
     "poster": "images/posters/tt0080854.jpg"
+  },
+  {
+    "title": "Heart and Souls",
+    "release_year": "1994",
+    "director": "Tomas Gislason",
+    "imdb_id": "tt0107091",
+    "plot": "A businessman is reunited with the four lost souls who were his guardian angels during childhood, all with a particular purpose to joining the afterlife.",
+    "poster": "images/posters/tt0107091.jpg"
   },
   {
     "title": "Hello Frisco, Hello",
@@ -830,6 +838,22 @@
     "poster": "images/posters/tt0286716.jpg"
   },
   {
+    "title": "I Remember Mama",
+    "release_year": "1948",
+    "director": "George Stevens",
+    "imdb_id": "tt0040458",
+    "plot": "The ups and downs of a Norwegian immigrant family, circa 1910.",
+    "poster": "images/posters/tt0040458.jpg"
+  },
+  {
+    "title": "I's",
+    "release_year": "2011",
+    "director": "Chris Edgette",
+    "imdb_id": "tt0480249",
+    "plot": "Years after a plague kills most of humanity and transforms the rest into monsters, the sole survivor in New York City struggles valiantly to find a cure.",
+    "poster": "images/posters/tt0480249.jpg"
+  },
+  {
     "title": "Indiana Jones and the Last Crusade",
     "release_year": "1989",
     "director": "Steven Spielberg",
@@ -860,22 +884,6 @@
     "imdb_id": "tt0077745",
     "plot": "In San Francisco, a group of people discover the human race is being replaced one by one, with clones devoid of emotion.",
     "poster": "images/posters/tt0077745.jpg"
-  },
-  {
-    "title": "I Remember Mama",
-    "release_year": "1948",
-    "director": "George Stevens",
-    "imdb_id": "tt0040458",
-    "plot": "The ups and downs of a Norwegian immigrant family, circa 1910.",
-    "poster": "images/posters/tt0040458.jpg"
-  },
-  {
-    "title": "I's",
-    "release_year": "2011",
-    "director": "Chris Edgette",
-    "imdb_id": "tt0480249",
-    "plot": "Years after a plague kills most of humanity and transforms the rest into monsters, the sole survivor in New York City struggles valiantly to find a cure.",
-    "poster": "images/posters/tt0480249.jpg"
   },
   {
     "title": "It Came From Beneath the Sea",
@@ -1085,16 +1093,16 @@
   },
   {
     "title": "Murder in the First",
-    "release_year": "1995",
-    "director": "Marc Rocco",
+    "release_year": "2014",
+    "director": "Steven Bochco",
     "imdb_id": "tt0113870",
     "plot": "An eager and idealistic young attorney defends an Alcatraz prisoner accused of murdering a fellow inmate. The extenuating circumstances: his client had just spent over three years in solitary confinement.",
     "poster": "images/posters/tt0113870.jpg"
   },
   {
     "title": "Murder in the First",
-    "release_year": "2014",
-    "director": "Steven Bochco",
+    "release_year": "1995",
+    "director": "Marc Rocco",
     "imdb_id": "tt0113870",
     "plot": "An eager and idealistic young attorney defends an Alcatraz prisoner accused of murdering a fellow inmate. The extenuating circumstances: his client had just spent over three years in solitary confinement.",
     "poster": "images/posters/tt0113870.jpg"
@@ -1242,20 +1250,20 @@
     "poster": "images/posters/tt0117333.jpg"
   },
   {
-    "title": "Playing Mona Lisa",
-    "release_year": "2000",
-    "director": "Matthew Huffman",
-    "imdb_id": "tt0187559",
-    "plot": "A young pianist is looking for love in all the wrong places once her fiancee drops her. Maybe her flame will be rekindled both for the piano and a new love?",
-    "poster": "images/posters/tt0187559.jpg"
-  },
-  {
     "title": "Play it Again, Sam",
     "release_year": "1972",
     "director": "Herbert Ross",
     "imdb_id": "tt0069097",
     "plot": "A neurotic film critic tries to get over his wife leaving him by dating again, much by the help of a married couple and his alter ego, Humphrey Bogart.",
     "poster": "images/posters/tt0069097.jpg"
+  },
+  {
+    "title": "Playing Mona Lisa",
+    "release_year": "2000",
+    "director": "Matthew Huffman",
+    "imdb_id": "tt0187559",
+    "plot": "A young pianist is looking for love in all the wrong places once her fiancee drops her. Maybe her flame will be rekindled both for the piano and a new love?",
+    "poster": "images/posters/tt0187559.jpg"
   },
   {
     "title": "Pleasure of His Company",
@@ -1354,6 +1362,14 @@
     "poster": "images/posters/tt0165929.jpg"
   },
   {
+    "title": "San Andreas",
+    "release_year": "2014",
+    "director": "Brad Peyton",
+    "imdb_id": "tt2126355",
+    "plot": "In the aftermath of a massive earthquake in California, a rescue-chopper pilot makes a dangerous journey with is ex-wife across the state in order to rescue his daughter.",
+    "poster": "images/posters/tt2126355.jpg"
+  },
+  {
     "title": "San Francisco",
     "release_year": "1936",
     "director": "W.S. Van Dyke",
@@ -1368,6 +1384,14 @@
     "imdb_id": "tt0240880",
     "plot": "Ella is a divorced Chinese American taxi driver who spends her days ferrying people around the roads of Sausalito, San Francisco. After work, she spends time with her 8-year old son, Scott....",
     "poster": "images/posters/tt0240880.jpg"
+  },
+  {
+    "title": "Sense8",
+    "release_year": "2014",
+    "director": "The Wachowskis",
+    "imdb_id": "tt2431438",
+    "plot": "A group of people around the world are suddenly linked mentally, and must find a way to survive being hunted by those who see them as a threat to the world's order.",
+    "poster": "images/posters/tt2431438.jpg"
   },
   {
     "title": "Serendipity",
@@ -1559,6 +1583,14 @@
     "imdb_id": "tt0065063",
     "plot": "The life and times of Virgil Starkwell, inept bank robber.",
     "poster": "images/posters/tt0065063.jpg"
+  },
+  {
+    "title": "Terminator - Genisys",
+    "release_year": "2014",
+    "director": "Alan Taylor",
+    "imdb_id": "tt1340138",
+    "plot": "John Connor sends Kyle Reese back in time to protect Sarah Connor, but when he arrives in 1984, nothing is as he expected it to be.",
+    "poster": "images/posters/tt1340138.jpg"
   },
   {
     "title": "The Assassination of Richard Nixon",
@@ -1927,20 +1959,20 @@
     "poster": "images/posters/tt0088414.jpg"
   },
   {
-    "title": "They Call Me MISTER Tibbs",
-    "release_year": "1970",
-    "director": "Gordon Douglas",
-    "imdb_id": "tt0066450",
-    "plot": "San Francisco Police Lieutenant Virgil Tibbs is called in to investigate when a liberal street preacher and political candidate is accused of murdering a prostitute. Tibbs is also battling ...",
-    "poster": "images/posters/tt0066450.jpg"
-  },
-  {
     "title": "The Zodiac",
     "release_year": "2005",
     "director": "Alexander Bulkley",
     "imdb_id": "tt0371739",
     "plot": "An elusive serial killer known as the Zodiac terrorizes the San Francisco Bay in the late 1960s, while detectives aim to stop him before he claims more victims. Based on a true story.",
     "poster": "images/posters/tt0371739.jpg"
+  },
+  {
+    "title": "They Call Me MISTER Tibbs",
+    "release_year": "1970",
+    "director": "Gordon Douglas",
+    "imdb_id": "tt0066450",
+    "plot": "San Francisco Police Lieutenant Virgil Tibbs is called in to investigate when a liberal street preacher and political candidate is accused of murdering a prostitute. Tibbs is also battling ...",
+    "poster": "images/posters/tt0066450.jpg"
   },
   {
     "title": "Thief of Hearts",
@@ -2046,19 +2078,19 @@
     "poster": "images/posters/tt0120889.jpg"
   },
   {
+    "title": "What the Bleep Do We Know",
+    "release_year": "2004",
+    "director": "William Arntz",
+    "imdb_id": null,
+    "plot": null
+  },
+  {
     "title": "What's Up Doc?",
     "release_year": "1972",
     "director": "Peter Bogdanovich",
     "imdb_id": "tt0043128",
     "plot": "Bugs' showbiz career is recounted from babyhood to stardom. Bugs and Elmer Fudd perform the title song.",
     "poster": "images/posters/tt0043128.jpg"
-  },
-  {
-    "title": "What the Bleep Do We Know",
-    "release_year": "2004",
-    "director": "William Arntz",
-    "imdb_id": null,
-    "plot": null
   },
   {
     "title": "When a Man Loves a Woman",
@@ -2069,20 +2101,20 @@
     "poster": "images/posters/tt0111693.jpg"
   },
   {
-    "title": "Woman on the Run",
-    "release_year": "1950",
-    "director": "Norman Foster",
-    "imdb_id": "tt0043142",
-    "plot": "Frank Johnson flees police after becoming an eyewitness to murder. He is pursued around scenic San Francisco by his wife, a reporter, the police, and... the real murderer.",
-    "poster": "images/posters/tt0043142.jpg"
-  },
-  {
     "title": "Woman on Top",
     "release_year": "2000",
     "director": "Fina Torres",
     "imdb_id": "tt0206420",
     "plot": "Brazilian chef Isabella Oliveira moves to San Francisco when her husband, frustrated by her motion sickness, cheats on her.",
     "poster": "images/posters/tt0206420.jpg"
+  },
+  {
+    "title": "Woman on the Run",
+    "release_year": "1950",
+    "director": "Norman Foster",
+    "imdb_id": "tt0043142",
+    "plot": "Frank Johnson flees police after becoming an eyewitness to murder. He is pursued around scenic San Francisco by his wife, a reporter, the police, and... the real murderer.",
+    "poster": "images/posters/tt0043142.jpg"
   },
   {
     "title": "Yours, Mine and Ours",
@@ -2099,37 +2131,5 @@
     "imdb_id": "tt0443706",
     "plot": "A San Francisco cartoonist becomes an amateur detective obsessed with tracking down the Zodiac killer.",
     "poster": "images/posters/tt0443706.jpg"
-  },
-  {
-    "title": "Sense8",
-    "release_year": "2014",
-    "director": "The Wachowskis",
-    "imdb_id": "tt2431438",
-    "plot": "A group of people around the world are suddenly linked mentally, and must find a way to survive being hunted by those who see them as a threat to the world's order.",
-    "poster": "images/posters/tt2431438.jpg"
-  },
-  {
-    "title": "Ant-Man",
-    "release_year": "2014",
-    "director": "Peyton Reed",
-    "imdb_id": "tt0478970",
-    "plot": "Armed with a super-suit with the astonishing ability to shrink in scale but increase in strength, cat burglar Scott Lang must embrace his inner hero and help his mentor, Dr. Hank Pym, plan and pull off a heist that will save the world.",
-    "poster": "images/posters/tt0478970.jpg"
-  },
-  {
-    "title": "San Andreas",
-    "release_year": "2014",
-    "director": "Brad Peyton",
-    "imdb_id": "tt2126355",
-    "plot": "In the aftermath of a massive earthquake in California, a rescue-chopper pilot makes a dangerous journey with is ex-wife across the state in order to rescue his daughter.",
-    "poster": "images/posters/tt2126355.jpg"
-  },
-  {
-    "title": "Terminator - Genisys",
-    "release_year": "2014",
-    "director": "Alan Taylor",
-    "imdb_id": "tt1340138",
-    "plot": "John Connor sends Kyle Reese back in time to protect Sarah Connor, but when he arrives in 1984, nothing is as he expected it to be.",
-    "poster": "images/posters/tt1340138.jpg"
   }
 ]
