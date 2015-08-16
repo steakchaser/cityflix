@@ -37814,6 +37814,1380 @@ $provide.value("$locale", {
 })(window, document);
 
 !window.angular.$$csp().noInlineStyle && window.angular.element(document.head).prepend('<style type="text/css">@charset "UTF-8";[ng\\:cloak],[ng-cloak],[data-ng-cloak],[x-ng-cloak],.ng-cloak,.x-ng-cloak,.ng-hide:not(.ng-hide-animate){display:none !important;}ng\\:form{display:block;}.ng-animate-shim{visibility:hidden;}.ng-anchor{position:absolute;}</style>');
+/**
+ * angular-bootstrap-switch
+ * @version v0.4.1 - 2015-06-15
+ * @author Francesco Pontillo (francescopontillo@gmail.com)
+ * @link https://github.com/frapontillo/angular-bootstrap-switch
+ * @license Apache License 2.0(http://www.apache.org/licenses/LICENSE-2.0.html)
+**/
+
+
+(function() {
+'use strict';
+
+// Source: common/module.js
+angular.module('frapontillo.bootstrap-switch', []);
+
+// Source: dist/.temp/directives/bsSwitch.js
+angular.module('frapontillo.bootstrap-switch').directive('bsSwitch', [
+  '$parse',
+  '$timeout',
+  function ($parse, $timeout) {
+    return {
+      restrict: 'A',
+      require: 'ngModel',
+      link: function link(scope, element, attrs, controller) {
+        var isInit = false;
+        /**
+         * Return the true value for this specific checkbox.
+         * @returns {Object} representing the true view value; if undefined, returns true.
+         */
+        var getTrueValue = function () {
+          if (attrs.type === 'radio') {
+            return attrs.value || $parse(attrs.ngValue)(scope) || true;
+          }
+          var trueValue = $parse(attrs.ngTrueValue)(scope);
+          if (angular.isUndefined(trueValue)) {
+            trueValue = true;
+          }
+          return trueValue;
+        };
+        /**
+         * Get a boolean value from a boolean-like string, evaluating it on the current scope.
+         * @param value The input object
+         * @returns {boolean} A boolean value
+         */
+        var getBooleanFromString = function (value) {
+          return scope.$eval(value) === true;
+        };
+        /**
+         * Get a boolean value from a boolean-like string, defaulting to true if undefined.
+         * @param value The input object
+         * @returns {boolean} A boolean value
+         */
+        var getBooleanFromStringDefTrue = function (value) {
+          return value === true || value === 'true' || !value;
+        };
+        /**
+         * Returns the value if it is truthy, or undefined.
+         *
+         * @param value The value to check.
+         * @returns the original value if it is truthy, {@link undefined} otherwise.
+         */
+        var getValueOrUndefined = function (value) {
+          return value ? value : undefined;
+        };
+        /**
+         * Get the value of the angular-bound attribute, given its name.
+         * The returned value may or may not equal the attribute value, as it may be transformed by a function.
+         *
+         * @param attrName  The angular-bound attribute name to get the value for
+         * @returns {*}     The attribute value
+         */
+        var getSwitchAttrValue = function (attrName) {
+          var map = {
+              'switchRadioOff': getBooleanFromStringDefTrue,
+              'switchActive': function (value) {
+                return !getBooleanFromStringDefTrue(value);
+              },
+              'switchAnimate': getBooleanFromStringDefTrue,
+              'switchLabel': function (value) {
+                return value ? value : '&nbsp;';
+              },
+              'switchIcon': function (value) {
+                if (value) {
+                  return '<span class=\'' + value + '\'></span>';
+                }
+              },
+              'switchWrapper': function (value) {
+                return value || 'wrapper';
+              },
+              'switchInverse': getBooleanFromString,
+              'switchReadonly': getBooleanFromString
+            };
+          var transFn = map[attrName] || getValueOrUndefined;
+          return transFn(attrs[attrName]);
+        };
+        /**
+         * Set a bootstrapSwitch parameter according to the angular-bound attribute.
+         * The parameter will be changed only if the switch has already been initialized
+         * (to avoid creating it before the model is ready).
+         *
+         * @param element   The switch to apply the parameter modification to
+         * @param attr      The name of the switch parameter
+         * @param modelAttr The name of the angular-bound parameter
+         */
+        var setSwitchParamMaybe = function (element, attr, modelAttr) {
+          if (!isInit) {
+            return;
+          }
+          var newValue = getSwitchAttrValue(modelAttr);
+          element.bootstrapSwitch(attr, newValue);
+        };
+        var setActive = function () {
+          setSwitchParamMaybe(element, 'disabled', 'switchActive');
+        };
+        /**
+         * If the directive has not been initialized yet, do so.
+         */
+        var initMaybe = function () {
+          // if it's the first initialization
+          if (!isInit) {
+            var viewValue = controller.$modelValue === getTrueValue();
+            isInit = !isInit;
+            // Bootstrap the switch plugin
+            element.bootstrapSwitch({
+              radioAllOff: getSwitchAttrValue('switchRadioOff'),
+              disabled: getSwitchAttrValue('switchActive'),
+              state: viewValue,
+              onText: getSwitchAttrValue('switchOnText'),
+              offText: getSwitchAttrValue('switchOffText'),
+              onColor: getSwitchAttrValue('switchOnColor'),
+              offColor: getSwitchAttrValue('switchOffColor'),
+              animate: getSwitchAttrValue('switchAnimate'),
+              size: getSwitchAttrValue('switchSize'),
+              labelText: attrs.switchLabel ? getSwitchAttrValue('switchLabel') : getSwitchAttrValue('switchIcon'),
+              wrapperClass: getSwitchAttrValue('switchWrapper'),
+              handleWidth: getSwitchAttrValue('switchHandleWidth'),
+              labelWidth: getSwitchAttrValue('switchLabelWidth'),
+              inverse: getSwitchAttrValue('switchInverse'),
+              readonly: getSwitchAttrValue('switchReadonly')
+            });
+            if (attrs.type === 'radio') {
+              controller.$setViewValue(controller.$modelValue);
+            } else {
+              controller.$setViewValue(viewValue);
+            }
+          }
+        };
+        /**
+         * Listen to model changes.
+         */
+        var listenToModel = function () {
+          attrs.$observe('switchActive', function (newValue) {
+            var active = getBooleanFromStringDefTrue(newValue);
+            // if we are disabling the switch, delay the deactivation so that the toggle can be switched
+            if (!active) {
+              $timeout(function () {
+                setActive(active);
+              });
+            } else {
+              // if we are enabling the switch, set active right away
+              setActive(active);
+            }
+          });
+          function modelValue() {
+            return controller.$modelValue;
+          }
+          // When the model changes
+          scope.$watch(modelValue, function (newValue) {
+            initMaybe();
+            if (newValue !== undefined) {
+              element.bootstrapSwitch('state', newValue === getTrueValue(), false);
+            } else {
+              element.bootstrapSwitch('toggleIndeterminate', true, false);
+            }
+          }, true);
+          // angular attribute to switch property bindings
+          var bindings = {
+              'switchRadioOff': 'radioAllOff',
+              'switchOnText': 'onText',
+              'switchOffText': 'offText',
+              'switchOnColor': 'onColor',
+              'switchOffColor': 'offColor',
+              'switchAnimate': 'animate',
+              'switchSize': 'size',
+              'switchLabel': 'labelText',
+              'switchIcon': 'labelText',
+              'switchWrapper': 'wrapperClass',
+              'switchHandleWidth': 'handleWidth',
+              'switchLabelWidth': 'labelWidth',
+              'switchInverse': 'inverse',
+              'switchReadonly': 'readonly'
+            };
+          var observeProp = function (prop, bindings) {
+            return function () {
+              attrs.$observe(prop, function () {
+                setSwitchParamMaybe(element, bindings[prop], prop);
+              });
+            };
+          };
+          // for every angular-bound attribute, observe it and trigger the appropriate switch function
+          for (var prop in bindings) {
+            attrs.$observe(prop, observeProp(prop, bindings));
+          }
+        };
+        /**
+         * Listen to view changes.
+         */
+        var listenToView = function () {
+          if (attrs.type === 'radio') {
+            // when the switch is clicked
+            element.on('change.bootstrapSwitch', function (e) {
+              // discard not real change events
+              if (controller.$modelValue === controller.$viewValue && e.target.checked !== $(e.target).bootstrapSwitch('state')) {
+                // $setViewValue --> $viewValue --> $parsers --> $modelValue
+                // if the switch is indeed selected
+                if (e.target.checked) {
+                  // set its value into the view
+                  controller.$setViewValue(getTrueValue());
+                } else if (getTrueValue() === controller.$viewValue) {
+                  // otherwise if it's been deselected, delete the view value
+                  controller.$setViewValue(undefined);
+                }
+              }
+            });
+          } else {
+            // When the checkbox switch is clicked, set its value into the ngModel
+            element.on('switchChange.bootstrapSwitch', function (e) {
+              // $setViewValue --> $viewValue --> $parsers --> $modelValue
+              controller.$setViewValue(e.target.checked);
+            });
+          }
+        };
+        // Listen and respond to view changes
+        listenToView();
+        // Listen and respond to model changes
+        listenToModel();
+        // On destroy, collect ya garbage
+        scope.$on('$destroy', function () {
+          element.bootstrapSwitch('destroy');
+        });
+      }
+    };
+  }
+]).directive('bsSwitch', function () {
+  return {
+    restrict: 'E',
+    require: 'ngModel',
+    template: '<input bs-switch>',
+    replace: true
+  };
+});
+// Source: bsSwitch.suffix
+})();
+/**
+ * Angular JS slider directive
+ *
+ * (c) Rafal Zajac <rzajac@gmail.com>
+ * http://github.com/rzajac/angularjs-slider
+ *
+ * Version: v0.1.21
+ *
+ * Licensed under the MIT license
+ */
+
+/*jslint unparam: true */
+/*global angular: false, console: false */
+
+
+angular.module('rzModule', [])
+
+.run(['$templateCache', function($templateCache) {
+  'use strict';
+  var template = '<span class="rz-bar-wrapper"><span class="rz-bar"></span></span>' + // 0 The slider bar
+              '<span class="rz-bar rz-selection"></span>' + // 1 Highlight between two handles
+              '<span class="rz-pointer"></span>' + // 2 Left slider handle
+              '<span class="rz-pointer"></span>' + // 3 Right slider handle
+              '<span class="rz-bubble rz-limit"></span>' + // 4 Floor label
+              '<span class="rz-bubble rz-limit"></span>' + // 5 Ceiling label
+              '<span class="rz-bubble"></span>' + // 6 Label above left slider handle
+              '<span class="rz-bubble"></span>' + // 7 Label above right slider handle
+              '<span class="rz-bubble"></span>'; // 8 Range label when the slider handles are close ex. 15 - 17
+  $templateCache.put('rzSliderTpl.html', template);
+}])
+
+.value('throttle',
+  /**
+   * throttle
+   *
+   * Taken from underscore project
+   *
+   * @param {Function} func
+   * @param {number} wait
+   * @param {ThrottleOptions} options
+   * @returns {Function}
+   */
+function throttle(func, wait, options) {
+  'use strict';
+  var getTime = (Date.now || function() {
+    return new Date().getTime();
+  });
+  var context, args, result;
+  var timeout = null;
+  var previous = 0;
+  options = options || {};
+  var later = function() {
+    previous = options.leading === false ? 0 : getTime();
+    timeout = null;
+    result = func.apply(context, args);
+    context = args = null;
+  };
+  return function() {
+    var now = getTime();
+    if (!previous && options.leading === false) { previous = now; }
+    var remaining = wait - (now - previous);
+    context = this;
+    args = arguments;
+    if (remaining <= 0) {
+      clearTimeout(timeout);
+      timeout = null;
+      previous = now;
+      result = func.apply(context, args);
+      context = args = null;
+    } else if (!timeout && options.trailing !== false) {
+      timeout = setTimeout(later, remaining);
+    }
+    return result;
+  };
+})
+
+.factory('RzSlider', ['$timeout', '$document', '$window', 'throttle', function($timeout, $document, $window, throttle)
+{
+  'use strict';
+
+  /**
+   * Slider
+   *
+   * @param {ngScope} scope            The AngularJS scope
+   * @param {Element} sliderElem The slider directive element wrapped in jqLite
+   * @param {*} attributes       The slider directive attributes
+   * @constructor
+   */
+  var Slider = function(scope, sliderElem, attributes)
+  {
+    /**
+     * The slider's scope
+     *
+     * @type {ngScope}
+     */
+    this.scope = scope;
+
+    /**
+     * The slider attributes
+     *
+     * @type {*}
+     */
+    this.attributes = attributes;
+
+    /**
+     * Slider element wrapped in jqLite
+     *
+     * @type {jqLite}
+     */
+    this.sliderElem = sliderElem;
+
+    /**
+     * Slider type
+     *
+     * @type {boolean} Set to true for range slider
+     */
+    this.range = attributes.rzSliderHigh !== undefined && attributes.rzSliderModel !== undefined;
+
+    /**
+     * Half of the width of the slider handles
+     *
+     * @type {number}
+     */
+    this.handleHalfWidth = 0;
+
+    /**
+     * Always show selection bar
+     *
+     * @type {boolean}
+     */
+    this.alwaysShowBar = !!attributes.rzSliderAlwaysShowBar;
+
+    /**
+     * Maximum left the slider handle can have
+     *
+     * @type {number}
+     */
+    this.maxLeft = 0;
+
+    /**
+     * Precision
+     *
+     * @type {number}
+     */
+    this.precision = 0;
+
+    /**
+     * Step
+     *
+     * @type {number}
+     */
+    this.step = 0;
+
+    /**
+     * The name of the handle we are currently tracking
+     *
+     * @type {string}
+     */
+    this.tracking = '';
+
+    /**
+     * Minimum value (floor) of the model
+     *
+     * @type {number}
+     */
+    this.minValue = 0;
+
+    /**
+     * Maximum value (ceiling) of the model
+     *
+     * @type {number}
+     */
+    this.maxValue = 0;
+
+    /**
+     * Hide limit labels
+     *
+     * @type {boolean}
+     */
+    this.hideLimitLabels = !!attributes.rzSliderHideLimitLabels;
+
+    /**
+     * Only present model values
+     *
+     * Do not allow to change values
+     *
+     * @type {boolean}
+     */
+    this.presentOnly = attributes.rzSliderPresentOnly === 'true';
+
+    /**
+     * The delta between min and max value
+     *
+     * @type {number}
+     */
+    this.valueRange = 0;
+
+    /**
+     * Set to true if init method already executed
+     *
+     * @type {boolean}
+     */
+    this.initHasRun = false;
+
+    /**
+     * Custom translate function
+     *
+     * @type {function}
+     */
+    this.customTrFn = this.scope.rzSliderTranslate() || function(value) { return String(value); };
+
+    /**
+     * Array of de-registration functions to call on $destroy
+     *
+     * @type {Array.<Function>}
+     */
+    this.deRegFuncs = [];
+
+    // Slider DOM elements wrapped in jqLite
+    this.fullBar = null; // The whole slider bar
+    this.selBar = null;  // Highlight between two handles
+    this.minH = null;  // Left slider handle
+    this.maxH = null;  // Right slider handle
+    this.flrLab = null;  // Floor label
+    this.ceilLab = null; // Ceiling label
+    this.minLab =  null; // Label above the low value
+    this.maxLab = null; // Label above the high value
+    this.cmbLab = null;  // Combined label
+
+    // Initialize slider
+    this.init();
+  };
+
+  // Add instance methods
+  Slider.prototype = {
+
+    /**
+     * Initialize slider
+     *
+     * @returns {undefined}
+     */
+    init: function()
+    {
+      var thrLow, thrHigh, unRegFn,
+        calcDimFn = angular.bind(this, this.calcViewDimensions),
+        self = this;
+
+      this.initElemHandles();
+      this.calcViewDimensions();
+      this.setMinAndMax();
+
+      this.precision = this.scope.rzSliderPrecision === undefined ? 0 : +this.scope.rzSliderPrecision;
+      this.step = this.scope.rzSliderStep === undefined ? 1 : +this.scope.rzSliderStep;
+
+      $timeout(function()
+      {
+        self.updateCeilLab();
+        self.updateFloorLab();
+        self.initHandles();
+        if (!self.presentOnly) { self.bindEvents(); }
+      });
+
+      // Recalculate slider view dimensions
+      unRegFn = this.scope.$on('reCalcViewDimensions', calcDimFn);
+      this.deRegFuncs.push(unRegFn);
+
+      // Recalculate stuff if view port dimensions have changed
+      angular.element($window).on('resize', calcDimFn);
+
+      this.initHasRun = true;
+
+      // Watch for changes to the model
+
+      thrLow = throttle(function()
+      {
+        self.setMinAndMax();
+        self.updateLowHandle(self.valueToOffset(self.scope.rzSliderModel));
+        self.updateSelectionBar();
+
+        if(self.range)
+        {
+          self.updateCmbLabel();
+        }
+
+      }, 350, { leading: false });
+
+      thrHigh = throttle(function()
+      {
+        self.setMinAndMax();
+        self.updateHighHandle(self.valueToOffset(self.scope.rzSliderHigh));
+        self.updateSelectionBar();
+        self.updateCmbLabel();
+      }, 350, { leading: false });
+
+      this.scope.$on('rzSliderForceRender', function()
+      {
+        self.resetLabelsValue();
+        thrLow();
+        if(self.range) { thrHigh(); }
+        self.resetSlider();
+      });
+
+      // Watchers
+
+      unRegFn = this.scope.$watch('rzSliderModel', function(newValue, oldValue)
+      {
+        if(newValue === oldValue) { return; }
+        thrLow();
+      });
+      this.deRegFuncs.push(unRegFn);
+
+      unRegFn = this.scope.$watch('rzSliderHigh', function(newValue, oldValue)
+      {
+        if(newValue === oldValue) { return; }
+        thrHigh();
+      });
+      this.deRegFuncs.push(unRegFn);
+
+      this.scope.$watch('rzSliderFloor', function(newValue, oldValue)
+      {
+        if(newValue === oldValue) { return; }
+        self.resetSlider();
+      });
+      this.deRegFuncs.push(unRegFn);
+
+      unRegFn = this.scope.$watch('rzSliderCeil', function(newValue, oldValue)
+      {
+        if(newValue === oldValue) { return; }
+        self.resetSlider();
+      });
+      this.deRegFuncs.push(unRegFn);
+
+      this.scope.$on('$destroy', function()
+      {
+        self.minH.off();
+        self.maxH.off();
+        self.fullBar.off();
+        self.selBar.off();
+        angular.element($window).off('resize', calcDimFn);
+        self.deRegFuncs.map(function(unbind) { unbind(); });
+      });
+    },
+
+    /**
+     * Resets slider
+     *
+     * @returns {undefined}
+     */
+    resetSlider: function()
+    {
+      this.setMinAndMax();
+      this.calcViewDimensions();
+      this.updateCeilLab();
+      this.updateFloorLab();
+    },
+
+    /**
+     * Reset label values
+     *
+     * @return {undefined}
+     */
+    resetLabelsValue: function()
+    {
+      this.minLab.rzsv = undefined;
+      this.maxLab.rzsv = undefined;
+    },
+
+    /**
+     * Initialize slider handles positions and labels
+     *
+     * Run only once during initialization and every time view port changes size
+     *
+     * @returns {undefined}
+     */
+    initHandles: function()
+    {
+      this.updateLowHandle(this.valueToOffset(this.scope.rzSliderModel));
+
+      if(this.range)
+      {
+        this.updateHighHandle(this.valueToOffset(this.scope.rzSliderHigh));
+        this.updateCmbLabel();
+      }
+
+      this.updateSelectionBar();
+    },
+
+    /**
+     * Translate value to human readable format
+     *
+     * @param {number|string} value
+     * @param {jqLite} label
+     * @param {bool?} useCustomTr
+     * @returns {undefined}
+     */
+    translateFn: function(value, label, useCustomTr)
+    {
+      useCustomTr = useCustomTr === undefined ? true : useCustomTr;
+
+      var valStr = String(useCustomTr ? this.customTrFn(value) : value),
+          getWidth = false;
+
+      if(label.rzsv === undefined || label.rzsv.length !== valStr.length || (label.rzsv.length > 0 && label.rzsw === 0))
+      {
+        getWidth = true;
+        label.rzsv = valStr;
+      }
+
+      label.text(valStr);
+
+      // Update width only when length of the label have changed
+      if(getWidth) { this.getWidth(label); }
+    },
+
+    /**
+     * Set maximum and minimum values for the slider
+     *
+     * @returns {undefined}
+     */
+    setMinAndMax: function()
+    {
+      if(this.scope.rzSliderFloor)
+      {
+        this.minValue = +this.scope.rzSliderFloor;
+      }
+      else
+      {
+        this.minValue = this.scope.rzSliderFloor = 0;
+      }
+
+      if(this.scope.rzSliderCeil)
+      {
+        this.maxValue = +this.scope.rzSliderCeil;
+      }
+      else
+      {
+        this.scope.rzSliderCeil = this.maxValue = this.range ? this.scope.rzSliderHigh : this.scope.rzSliderModel;
+      }
+
+      if(this.scope.rzSliderStep)
+      {
+        this.step = +this.scope.rzSliderStep;
+      }
+
+      this.valueRange = this.maxValue - this.minValue;
+    },
+
+    /**
+     * Set the slider children to variables for easy access
+     *
+     * Run only once during initialization
+     *
+     * @returns {undefined}
+     */
+    initElemHandles: function()
+    {
+      // Assign all slider elements to object properties for easy access
+      angular.forEach(this.sliderElem.children(), function(elem, index)
+      {
+        var jElem = angular.element(elem);
+
+        switch(index)
+        {
+          case 0: this.fullBar = jElem; break;
+          case 1: this.selBar = jElem; break;
+          case 2: this.minH = jElem; break;
+          case 3: this.maxH = jElem; break;
+          case 4: this.flrLab = jElem; break;
+          case 5: this.ceilLab = jElem; break;
+          case 6: this.minLab = jElem; break;
+          case 7: this.maxLab = jElem; break;
+          case 8: this.cmbLab = jElem; break;
+        }
+
+      }, this);
+
+      // Initialize offset cache properties
+      this.selBar.rzsl = 0;
+      this.minH.rzsl = 0;
+      this.maxH.rzsl = 0;
+      this.flrLab.rzsl = 0;
+      this.ceilLab.rzsl = 0;
+      this.minLab.rzsl = 0;
+      this.maxLab.rzsl = 0;
+      this.cmbLab.rzsl = 0;
+
+      // Hide limit labels
+      if(this.hideLimitLabels)
+      {
+        this.flrLab.rzAlwaysHide = true;
+        this.ceilLab.rzAlwaysHide = true;
+        this.hideEl(this.flrLab);
+        this.hideEl(this.ceilLab);
+      }
+
+      // Remove stuff not needed in single slider
+      if(this.range === false)
+      {
+        this.cmbLab.remove();
+        this.maxLab.remove();
+
+        // Hide max handle
+        this.maxH.rzAlwaysHide = true;
+        this.maxH[0].style.zIndex = '-1000';
+        this.hideEl(this.maxH);
+      }
+
+      // Show selection bar for single slider or not
+      if(this.range === false && this.alwaysShowBar === false)
+      {
+        this.maxH.remove();
+        this.selBar.remove();
+      }
+    },
+
+    /**
+     * Calculate dimensions that are dependent on view port size
+     *
+     * Run once during initialization and every time view port changes size.
+     *
+     * @returns {undefined}
+     */
+    calcViewDimensions: function ()
+    {
+      var handleWidth = this.getWidth(this.minH);
+
+      this.handleHalfWidth = handleWidth / 2;
+      this.barWidth = this.getWidth(this.fullBar);
+
+      this.maxLeft = this.barWidth - handleWidth;
+
+      this.getWidth(this.sliderElem);
+      this.sliderElem.rzsl = this.sliderElem[0].getBoundingClientRect().left;
+
+      if(this.initHasRun)
+      {
+        this.updateCeilLab();
+        this.initHandles();
+      }
+    },
+
+    /**
+     * Update position of the ceiling label
+     *
+     * @returns {undefined}
+     */
+    updateCeilLab: function()
+    {
+      this.translateFn(this.scope.rzSliderCeil, this.ceilLab);
+      this.setLeft(this.ceilLab, this.barWidth - this.ceilLab.rzsw);
+      this.getWidth(this.ceilLab);
+    },
+
+    /**
+     * Update position of the floor label
+     *
+     * @returns {undefined}
+     */
+    updateFloorLab: function()
+    {
+      this.translateFn(this.scope.rzSliderFloor, this.flrLab);
+      this.getWidth(this.flrLab);
+    },
+
+    /**
+     * Call the onChange callback if defined
+     *
+     * @returns {undefined}
+     */
+    callOnChange: function() {
+      if(this.scope.rzSliderOnChange) {
+        this.scope.rzSliderOnChange();
+      }
+    },
+
+    /**
+     * Update slider handles and label positions
+     *
+     * @param {string} which
+     * @param {number} newOffset
+     */
+    updateHandles: function(which, newOffset)
+    {
+      this.callOnChange();
+      if(which === 'rzSliderModel')
+      {
+        this.updateLowHandle(newOffset);
+        this.updateSelectionBar();
+
+        if(this.range)
+        {
+          this.updateCmbLabel();
+        }
+        return;
+      }
+
+      if(which === 'rzSliderHigh')
+      {
+        this.updateHighHandle(newOffset);
+        this.updateSelectionBar();
+
+        if(this.range)
+        {
+          this.updateCmbLabel();
+        }
+        return;
+      }
+
+      // Update both
+      this.updateLowHandle(newOffset);
+      this.updateHighHandle(newOffset);
+      this.updateSelectionBar();
+      this.updateCmbLabel();
+    },
+
+    /**
+     * Update low slider handle position and label
+     *
+     * @param {number} newOffset
+     * @returns {undefined}
+     */
+    updateLowHandle: function(newOffset)
+    {
+      var delta = Math.abs(this.minH.rzsl - newOffset);
+
+      if(this.minLab.rzsv && delta < 1) { return; }
+
+      this.setLeft(this.minH, newOffset);
+      this.translateFn(this.scope.rzSliderModel, this.minLab);
+      this.setLeft(this.minLab, newOffset - this.minLab.rzsw / 2 + this.handleHalfWidth);
+
+      this.shFloorCeil();
+    },
+
+    /**
+     * Update high slider handle position and label
+     *
+     * @param {number} newOffset
+     * @returns {undefined}
+     */
+    updateHighHandle: function(newOffset)
+    {
+      this.setLeft(this.maxH, newOffset);
+      this.translateFn(this.scope.rzSliderHigh, this.maxLab);
+      this.setLeft(this.maxLab, newOffset - this.maxLab.rzsw / 2 + this.handleHalfWidth);
+
+      this.shFloorCeil();
+    },
+
+    /**
+     * Show / hide floor / ceiling label
+     *
+     * @returns {undefined}
+     */
+    shFloorCeil: function()
+    {
+      var flHidden = false, clHidden = false;
+
+      if(this.minLab.rzsl <= this.flrLab.rzsl + this.flrLab.rzsw + 5)
+      {
+        flHidden = true;
+        this.hideEl(this.flrLab);
+      }
+      else
+      {
+        flHidden = false;
+        this.showEl(this.flrLab);
+      }
+
+      if(this.minLab.rzsl + this.minLab.rzsw >= this.ceilLab.rzsl - this.handleHalfWidth - 10)
+      {
+        clHidden = true;
+        this.hideEl(this.ceilLab);
+      }
+      else
+      {
+        clHidden = false;
+        this.showEl(this.ceilLab);
+      }
+
+      if(this.range)
+      {
+        if(this.maxLab.rzsl + this.maxLab.rzsw >= this.ceilLab.rzsl - 10)
+        {
+          this.hideEl(this.ceilLab);
+        }
+        else if( ! clHidden)
+        {
+          this.showEl(this.ceilLab);
+        }
+
+        // Hide or show floor label
+        if(this.maxLab.rzsl <= this.flrLab.rzsl + this.flrLab.rzsw + this.handleHalfWidth)
+        {
+          this.hideEl(this.flrLab);
+        }
+        else if( ! flHidden)
+        {
+          this.showEl(this.flrLab);
+        }
+      }
+    },
+
+    /**
+     * Update slider selection bar, combined label and range label
+     *
+     * @returns {undefined}
+     */
+    updateSelectionBar: function()
+    {
+      this.setWidth(this.selBar, Math.abs(this.maxH.rzsl - this.minH.rzsl));
+      this.setLeft(this.selBar, this.range ? this.minH.rzsl + this.handleHalfWidth : 0);
+    },
+
+    /**
+     * Update combined label position and value
+     *
+     * @returns {undefined}
+     */
+    updateCmbLabel: function()
+    {
+      var lowTr, highTr;
+
+      if(this.minLab.rzsl + this.minLab.rzsw + 10 >= this.maxLab.rzsl)
+      {
+        if(this.customTrFn)
+        {
+          lowTr = this.customTrFn(this.scope.rzSliderModel);
+          highTr = this.customTrFn(this.scope.rzSliderHigh);
+        }
+        else
+        {
+          lowTr = this.scope.rzSliderModel;
+          highTr = this.scope.rzSliderHigh;
+        }
+
+        this.translateFn(lowTr + ' - ' + highTr, this.cmbLab, false);
+        this.setLeft(this.cmbLab, this.selBar.rzsl + this.selBar.rzsw / 2 - this.cmbLab.rzsw / 2);
+        this.hideEl(this.minLab);
+        this.hideEl(this.maxLab);
+        this.showEl(this.cmbLab);
+      }
+      else
+      {
+        this.showEl(this.maxLab);
+        this.showEl(this.minLab);
+        this.hideEl(this.cmbLab);
+      }
+    },
+
+    /**
+     * Round value to step and precision
+     *
+     * @param {number} value
+     * @returns {number}
+     */
+    roundStep: function(value)
+    {
+      var step = this.step,
+          remainder = +((value - this.minValue) % step).toFixed(3),
+          steppedValue = remainder > (step / 2) ? value + step - remainder : value - remainder;
+
+      steppedValue = steppedValue.toFixed(this.precision);
+      return +steppedValue;
+    },
+
+    /**
+     * Hide element
+     *
+     * @param element
+     * @returns {jqLite} The jqLite wrapped DOM element
+     */
+    hideEl: function (element)
+    {
+      return element.css({opacity: 0});
+    },
+
+    /**
+     * Show element
+     *
+     * @param element The jqLite wrapped DOM element
+     * @returns {jqLite} The jqLite
+     */
+    showEl: function (element)
+    {
+      if(!!element.rzAlwaysHide) { return element; }
+
+      return element.css({opacity: 1});
+    },
+
+    /**
+     * Set element left offset
+     *
+     * @param {jqLite} elem The jqLite wrapped DOM element
+     * @param {number} left
+     * @returns {number}
+     */
+    setLeft: function (elem, left)
+    {
+      elem.rzsl = left;
+      elem.css({left: left + 'px'});
+      return left;
+    },
+
+    /**
+     * Get element width
+     *
+     * @param {jqLite} elem The jqLite wrapped DOM element
+     * @returns {number}
+     */
+    getWidth: function(elem)
+    {
+      var val = elem[0].getBoundingClientRect();
+      elem.rzsw = val.right - val.left;
+      return elem.rzsw;
+    },
+
+    /**
+     * Set element width
+     *
+     * @param {jqLite} elem  The jqLite wrapped DOM element
+     * @param {number} width
+     * @returns {*}
+     */
+    setWidth: function(elem, width)
+    {
+      elem.rzsw = width;
+      elem.css({width: width + 'px'});
+      return width;
+    },
+
+    /**
+     * Translate value to pixel offset
+     *
+     * @param {number} val
+     * @returns {number}
+     */
+    valueToOffset: function(val)
+    {
+      return (val - this.minValue) * this.maxLeft / this.valueRange;
+    },
+
+    /**
+     * Translate offset to model value
+     *
+     * @param {number} offset
+     * @returns {number}
+     */
+    offsetToValue: function(offset)
+    {
+      return (offset / this.maxLeft) * this.valueRange + this.minValue;
+    },
+
+    // Events
+
+    /**
+     * Bind mouse and touch events to slider handles
+     *
+     * @returns {undefined}
+     */
+    bindEvents: function()
+    {
+      this.minH.on('mousedown', angular.bind(this, this.onStart, this.minH, 'rzSliderModel'));
+      if(this.range) { this.maxH.on('mousedown', angular.bind(this, this.onStart, this.maxH, 'rzSliderHigh')); }
+      this.fullBar.on('mousedown', angular.bind(this, this.onStart, this.minH, 'rzSliderModel'));
+      this.fullBar.on('mousedown', angular.bind(this, this.onMove, this.fullBar));
+      this.selBar.on('mousedown', angular.bind(this, this.onStart, this.minH, 'rzSliderModel'));
+      this.selBar.on('mousedown', angular.bind(this, this.onMove, this.selBar));
+
+      this.minH.on('touchstart', angular.bind(this, this.onStart, this.minH, 'rzSliderModel'));
+      if(this.range) { this.maxH.on('touchstart', angular.bind(this, this.onStart, this.maxH, 'rzSliderHigh')); }
+      this.fullBar.on('touchstart', angular.bind(this, this.onStart, this.minH, 'rzSliderModel'));
+      this.fullBar.on('touchstart', angular.bind(this, this.onMove, this.fullBar));
+      this.selBar.on('touchstart', angular.bind(this, this.onStart, this.minH, 'rzSliderModel'));
+      this.selBar.on('touchstart', angular.bind(this, this.onMove, this.selBar));
+    },
+
+    /**
+     * onStart event handler
+     *
+     * @param {Object} pointer The jqLite wrapped DOM element
+     * @param {string} ref     One of the refLow, refHigh values
+     * @param {Event}  event   The event
+     * @returns {undefined}
+     */
+    onStart: function (pointer, ref, event)
+    {
+      var ehMove, ehEnd,
+          eventNames = this.getEventNames(event);
+
+      event.stopPropagation();
+      event.preventDefault();
+
+      if(this.tracking !== '') { return; }
+
+      // We have to do this in case the HTML where the sliders are on
+      // have been animated into view.
+      this.calcViewDimensions();
+      this.tracking = ref;
+
+      pointer.addClass('rz-active');
+
+      ehMove = angular.bind(this, this.onMove, pointer);
+      ehEnd = angular.bind(this, this.onEnd, ehMove);
+
+      $document.on(eventNames.moveEvent, ehMove);
+      $document.one(eventNames.endEvent, ehEnd);
+    },
+
+    /**
+     * onMove event handler
+     *
+     * @param {jqLite} pointer
+     * @param {Event}  event The event
+     * @returns {undefined}
+     */
+    onMove: function (pointer, event)
+    {
+      var eventX, sliderLO, newOffset, newValue;
+
+      /* http://stackoverflow.com/a/12336075/282882 */
+      //noinspection JSLint
+      if('clientX' in event)
+      {
+        eventX = event.clientX;
+      }
+      else
+      {
+        eventX = event.originalEvent === undefined ?
+          event.touches[0].clientX
+          : event.originalEvent.touches[0].clientX;
+      }
+
+      sliderLO = this.sliderElem.rzsl;
+      newOffset = eventX - sliderLO - this.handleHalfWidth;
+
+      if(newOffset <= 0)
+      {
+        if(pointer.rzsl === 0)
+          return;
+        newValue = this.minValue;
+        newOffset = 0;
+      }
+      else if(newOffset >= this.maxLeft)
+      {
+        if(pointer.rzsl === this.maxLeft)
+          return;
+        newValue = this.maxValue;
+        newOffset = this.maxLeft;
+      }
+      else {
+        newValue = this.offsetToValue(newOffset);
+        newValue = this.roundStep(newValue);
+        newOffset = this.valueToOffset(newValue);
+      }
+      this.positionTrackingHandle(newValue, newOffset);
+    },
+
+
+    /**
+     * Set the new value and offset to the current tracking handle
+     *
+     * @param {number} newValue new model value
+     * @param {number} newOffset new offset value
+     */
+    positionTrackingHandle: function(newValue, newOffset)
+    {
+      if (this.range)
+      {
+        /* This is to check if we need to switch the min and max handles*/
+        if (this.tracking === 'rzSliderModel' && newValue >= this.scope.rzSliderHigh)
+        {
+          this.scope[this.tracking] = this.scope.rzSliderHigh;
+          this.updateHandles(this.tracking, this.maxH.rzsl);
+          this.tracking = 'rzSliderHigh';
+          this.minH.removeClass('rz-active');
+          this.maxH.addClass('rz-active');
+           /* We need to apply here because we are not sure that we will enter the next block */
+          this.scope.$apply();
+        }
+        else if(this.tracking === 'rzSliderHigh' && newValue <= this.scope.rzSliderModel)
+        {
+          this.scope[this.tracking] = this.scope.rzSliderModel;
+          this.updateHandles(this.tracking, this.minH.rzsl);
+          this.tracking = 'rzSliderModel';
+          this.maxH.removeClass('rz-active');
+          this.minH.addClass('rz-active');
+           /* We need to apply here because we are not sure that we will enter the next block */
+          this.scope.$apply();
+        }
+      }
+
+      if(this.scope[this.tracking] !== newValue)
+      {
+        this.scope[this.tracking] = newValue;
+        this.updateHandles(this.tracking, newOffset);
+        this.scope.$apply();
+      }
+    },
+
+    /**
+     * onEnd event handler
+     *
+     * @param {Event}    event    The event
+     * @param {Function} ehMove   The the bound move event handler
+     * @returns {undefined}
+     */
+    onEnd: function(ehMove, event)
+    {
+      var moveEventName = this.getEventNames(event).moveEvent;
+
+      this.minH.removeClass('rz-active');
+      this.maxH.removeClass('rz-active');
+
+      $document.off(moveEventName, ehMove);
+
+      this.scope.$emit('slideEnded');
+      this.tracking = '';
+    },
+
+    /**
+     * Get event names for move and event end
+     *
+     * @param {Event}    event    The event
+     *
+     * @return {{moveEvent: string, endEvent: string}}
+     */
+    getEventNames: function(event)
+    {
+      var eventNames = {moveEvent: '', endEvent: ''};
+
+      if(event.touches || (event.originalEvent !== undefined && event.originalEvent.touches))
+      {
+        eventNames.moveEvent = 'touchmove';
+        eventNames.endEvent = 'touchend';
+      }
+      else
+      {
+        eventNames.moveEvent = 'mousemove';
+        eventNames.endEvent = 'mouseup';
+      }
+
+      return eventNames;
+    }
+  };
+
+  return Slider;
+}])
+
+.directive('rzslider', ['RzSlider', function(Slider)
+{
+  'use strict';
+
+  return {
+    restrict: 'E',
+    scope: {
+      rzSliderFloor: '=?',
+      rzSliderCeil: '=?',
+      rzSliderStep: '@',
+      rzSliderPrecision: '@',
+      rzSliderModel: '=?',
+      rzSliderHigh: '=?',
+      rzSliderTranslate: '&',
+      rzSliderHideLimitLabels: '=?',
+      rzSliderAlwaysShowBar: '=?',
+      rzSliderPresentOnly: '@',
+      rzSliderOnChange: '&'
+    },
+
+    /**
+     * Return template URL
+     *
+     * @param {*} elem
+     * @param {*} attrs
+     * @return {string}
+     */
+    templateUrl: function(elem, attrs) {
+      //noinspection JSUnresolvedVariable
+      return attrs.rzSliderTplUrl || 'rzSliderTpl.html';
+    },
+
+    link: function(scope, elem, attr)
+    {
+      return new Slider(scope, elem, attr);
+    }
+  };
+}]);
+
+// IDE assist
+
+/**
+ * @name ngScope
+ *
+ * @property {number} rzSliderModel
+ * @property {number} rzSliderHigh
+ * @property {number} rzSliderCeil
+ */
+
+/**
+ * @name jqLite
+ *
+ * @property {number|undefined} rzsl
+ * @property {number|undefined} rzsw
+ * @property {string|undefined} rzsv
+ * @property {Function} css
+ * @property {Function} text
+ */
+
+/**
+ * @name Event
+ * @property {Array} touches
+ * @property {Event} originalEvent
+ */
+
+/**
+ * @name ThrottleOptions
+ *
+ * @property {bool} leading
+ * @property {bool} trailing
+ */
+;
 /*!
  * Bootstrap v3.3.5 (http://getbootstrap.com)
  * Copyright 2011-2015 Twitter, Inc.
@@ -40178,6 +41552,717 @@ if (typeof jQuery === 'undefined') {
   })
 
 }(jQuery);
+/* ========================================================================
+ * bootstrap-switch - v3.3.2
+ * http://www.bootstrap-switch.org
+ * ========================================================================
+ * Copyright 2012-2013 Mattia Larentis
+ *
+ * ========================================================================
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *     http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ * ========================================================================
+ */
+
+
+(function() {
+  var __slice = [].slice;
+
+  (function($, window) {
+    "use strict";
+    var BootstrapSwitch;
+    BootstrapSwitch = (function() {
+      function BootstrapSwitch(element, options) {
+        if (options == null) {
+          options = {};
+        }
+        this.$element = $(element);
+        this.options = $.extend({}, $.fn.bootstrapSwitch.defaults, {
+          state: this.$element.is(":checked"),
+          size: this.$element.data("size"),
+          animate: this.$element.data("animate"),
+          disabled: this.$element.is(":disabled"),
+          readonly: this.$element.is("[readonly]"),
+          indeterminate: this.$element.data("indeterminate"),
+          inverse: this.$element.data("inverse"),
+          radioAllOff: this.$element.data("radio-all-off"),
+          onColor: this.$element.data("on-color"),
+          offColor: this.$element.data("off-color"),
+          onText: this.$element.data("on-text"),
+          offText: this.$element.data("off-text"),
+          labelText: this.$element.data("label-text"),
+          handleWidth: this.$element.data("handle-width"),
+          labelWidth: this.$element.data("label-width"),
+          baseClass: this.$element.data("base-class"),
+          wrapperClass: this.$element.data("wrapper-class")
+        }, options);
+        this.$wrapper = $("<div>", {
+          "class": (function(_this) {
+            return function() {
+              var classes;
+              classes = ["" + _this.options.baseClass].concat(_this._getClasses(_this.options.wrapperClass));
+              classes.push(_this.options.state ? "" + _this.options.baseClass + "-on" : "" + _this.options.baseClass + "-off");
+              if (_this.options.size != null) {
+                classes.push("" + _this.options.baseClass + "-" + _this.options.size);
+              }
+              if (_this.options.disabled) {
+                classes.push("" + _this.options.baseClass + "-disabled");
+              }
+              if (_this.options.readonly) {
+                classes.push("" + _this.options.baseClass + "-readonly");
+              }
+              if (_this.options.indeterminate) {
+                classes.push("" + _this.options.baseClass + "-indeterminate");
+              }
+              if (_this.options.inverse) {
+                classes.push("" + _this.options.baseClass + "-inverse");
+              }
+              if (_this.$element.attr("id")) {
+                classes.push("" + _this.options.baseClass + "-id-" + (_this.$element.attr("id")));
+              }
+              return classes.join(" ");
+            };
+          })(this)()
+        });
+        this.$container = $("<div>", {
+          "class": "" + this.options.baseClass + "-container"
+        });
+        this.$on = $("<span>", {
+          html: this.options.onText,
+          "class": "" + this.options.baseClass + "-handle-on " + this.options.baseClass + "-" + this.options.onColor
+        });
+        this.$off = $("<span>", {
+          html: this.options.offText,
+          "class": "" + this.options.baseClass + "-handle-off " + this.options.baseClass + "-" + this.options.offColor
+        });
+        this.$label = $("<span>", {
+          html: this.options.labelText,
+          "class": "" + this.options.baseClass + "-label"
+        });
+        this.$element.on("init.bootstrapSwitch", (function(_this) {
+          return function() {
+            return _this.options.onInit.apply(element, arguments);
+          };
+        })(this));
+        this.$element.on("switchChange.bootstrapSwitch", (function(_this) {
+          return function() {
+            return _this.options.onSwitchChange.apply(element, arguments);
+          };
+        })(this));
+        this.$container = this.$element.wrap(this.$container).parent();
+        this.$wrapper = this.$container.wrap(this.$wrapper).parent();
+        this.$element.before(this.options.inverse ? this.$off : this.$on).before(this.$label).before(this.options.inverse ? this.$on : this.$off);
+        if (this.options.indeterminate) {
+          this.$element.prop("indeterminate", true);
+        }
+        this._init();
+        this._elementHandlers();
+        this._handleHandlers();
+        this._labelHandlers();
+        this._formHandler();
+        this._externalLabelHandler();
+        this.$element.trigger("init.bootstrapSwitch");
+      }
+
+      BootstrapSwitch.prototype._constructor = BootstrapSwitch;
+
+      BootstrapSwitch.prototype.state = function(value, skip) {
+        if (typeof value === "undefined") {
+          return this.options.state;
+        }
+        if (this.options.disabled || this.options.readonly) {
+          return this.$element;
+        }
+        if (this.options.state && !this.options.radioAllOff && this.$element.is(":radio")) {
+          return this.$element;
+        }
+        if (this.options.indeterminate) {
+          this.indeterminate(false);
+        }
+        value = !!value;
+        this.$element.prop("checked", value).trigger("change.bootstrapSwitch", skip);
+        return this.$element;
+      };
+
+      BootstrapSwitch.prototype.toggleState = function(skip) {
+        if (this.options.disabled || this.options.readonly) {
+          return this.$element;
+        }
+        if (this.options.indeterminate) {
+          this.indeterminate(false);
+          return this.state(true);
+        } else {
+          return this.$element.prop("checked", !this.options.state).trigger("change.bootstrapSwitch", skip);
+        }
+      };
+
+      BootstrapSwitch.prototype.size = function(value) {
+        if (typeof value === "undefined") {
+          return this.options.size;
+        }
+        if (this.options.size != null) {
+          this.$wrapper.removeClass("" + this.options.baseClass + "-" + this.options.size);
+        }
+        if (value) {
+          this.$wrapper.addClass("" + this.options.baseClass + "-" + value);
+        }
+        this._width();
+        this._containerPosition();
+        this.options.size = value;
+        return this.$element;
+      };
+
+      BootstrapSwitch.prototype.animate = function(value) {
+        if (typeof value === "undefined") {
+          return this.options.animate;
+        }
+        value = !!value;
+        if (value === this.options.animate) {
+          return this.$element;
+        }
+        return this.toggleAnimate();
+      };
+
+      BootstrapSwitch.prototype.toggleAnimate = function() {
+        this.options.animate = !this.options.animate;
+        this.$wrapper.toggleClass("" + this.options.baseClass + "-animate");
+        return this.$element;
+      };
+
+      BootstrapSwitch.prototype.disabled = function(value) {
+        if (typeof value === "undefined") {
+          return this.options.disabled;
+        }
+        value = !!value;
+        if (value === this.options.disabled) {
+          return this.$element;
+        }
+        return this.toggleDisabled();
+      };
+
+      BootstrapSwitch.prototype.toggleDisabled = function() {
+        this.options.disabled = !this.options.disabled;
+        this.$element.prop("disabled", this.options.disabled);
+        this.$wrapper.toggleClass("" + this.options.baseClass + "-disabled");
+        return this.$element;
+      };
+
+      BootstrapSwitch.prototype.readonly = function(value) {
+        if (typeof value === "undefined") {
+          return this.options.readonly;
+        }
+        value = !!value;
+        if (value === this.options.readonly) {
+          return this.$element;
+        }
+        return this.toggleReadonly();
+      };
+
+      BootstrapSwitch.prototype.toggleReadonly = function() {
+        this.options.readonly = !this.options.readonly;
+        this.$element.prop("readonly", this.options.readonly);
+        this.$wrapper.toggleClass("" + this.options.baseClass + "-readonly");
+        return this.$element;
+      };
+
+      BootstrapSwitch.prototype.indeterminate = function(value) {
+        if (typeof value === "undefined") {
+          return this.options.indeterminate;
+        }
+        value = !!value;
+        if (value === this.options.indeterminate) {
+          return this.$element;
+        }
+        return this.toggleIndeterminate();
+      };
+
+      BootstrapSwitch.prototype.toggleIndeterminate = function() {
+        this.options.indeterminate = !this.options.indeterminate;
+        this.$element.prop("indeterminate", this.options.indeterminate);
+        this.$wrapper.toggleClass("" + this.options.baseClass + "-indeterminate");
+        this._containerPosition();
+        return this.$element;
+      };
+
+      BootstrapSwitch.prototype.inverse = function(value) {
+        if (typeof value === "undefined") {
+          return this.options.inverse;
+        }
+        value = !!value;
+        if (value === this.options.inverse) {
+          return this.$element;
+        }
+        return this.toggleInverse();
+      };
+
+      BootstrapSwitch.prototype.toggleInverse = function() {
+        var $off, $on;
+        this.$wrapper.toggleClass("" + this.options.baseClass + "-inverse");
+        $on = this.$on.clone(true);
+        $off = this.$off.clone(true);
+        this.$on.replaceWith($off);
+        this.$off.replaceWith($on);
+        this.$on = $off;
+        this.$off = $on;
+        this.options.inverse = !this.options.inverse;
+        return this.$element;
+      };
+
+      BootstrapSwitch.prototype.onColor = function(value) {
+        var color;
+        color = this.options.onColor;
+        if (typeof value === "undefined") {
+          return color;
+        }
+        if (color != null) {
+          this.$on.removeClass("" + this.options.baseClass + "-" + color);
+        }
+        this.$on.addClass("" + this.options.baseClass + "-" + value);
+        this.options.onColor = value;
+        return this.$element;
+      };
+
+      BootstrapSwitch.prototype.offColor = function(value) {
+        var color;
+        color = this.options.offColor;
+        if (typeof value === "undefined") {
+          return color;
+        }
+        if (color != null) {
+          this.$off.removeClass("" + this.options.baseClass + "-" + color);
+        }
+        this.$off.addClass("" + this.options.baseClass + "-" + value);
+        this.options.offColor = value;
+        return this.$element;
+      };
+
+      BootstrapSwitch.prototype.onText = function(value) {
+        if (typeof value === "undefined") {
+          return this.options.onText;
+        }
+        this.$on.html(value);
+        this._width();
+        this._containerPosition();
+        this.options.onText = value;
+        return this.$element;
+      };
+
+      BootstrapSwitch.prototype.offText = function(value) {
+        if (typeof value === "undefined") {
+          return this.options.offText;
+        }
+        this.$off.html(value);
+        this._width();
+        this._containerPosition();
+        this.options.offText = value;
+        return this.$element;
+      };
+
+      BootstrapSwitch.prototype.labelText = function(value) {
+        if (typeof value === "undefined") {
+          return this.options.labelText;
+        }
+        this.$label.html(value);
+        this._width();
+        this.options.labelText = value;
+        return this.$element;
+      };
+
+      BootstrapSwitch.prototype.handleWidth = function(value) {
+        if (typeof value === "undefined") {
+          return this.options.handleWidth;
+        }
+        this.options.handleWidth = value;
+        this._width();
+        this._containerPosition();
+        return this.$element;
+      };
+
+      BootstrapSwitch.prototype.labelWidth = function(value) {
+        if (typeof value === "undefined") {
+          return this.options.labelWidth;
+        }
+        this.options.labelWidth = value;
+        this._width();
+        this._containerPosition();
+        return this.$element;
+      };
+
+      BootstrapSwitch.prototype.baseClass = function(value) {
+        return this.options.baseClass;
+      };
+
+      BootstrapSwitch.prototype.wrapperClass = function(value) {
+        if (typeof value === "undefined") {
+          return this.options.wrapperClass;
+        }
+        if (!value) {
+          value = $.fn.bootstrapSwitch.defaults.wrapperClass;
+        }
+        this.$wrapper.removeClass(this._getClasses(this.options.wrapperClass).join(" "));
+        this.$wrapper.addClass(this._getClasses(value).join(" "));
+        this.options.wrapperClass = value;
+        return this.$element;
+      };
+
+      BootstrapSwitch.prototype.radioAllOff = function(value) {
+        if (typeof value === "undefined") {
+          return this.options.radioAllOff;
+        }
+        value = !!value;
+        if (value === this.options.radioAllOff) {
+          return this.$element;
+        }
+        this.options.radioAllOff = value;
+        return this.$element;
+      };
+
+      BootstrapSwitch.prototype.onInit = function(value) {
+        if (typeof value === "undefined") {
+          return this.options.onInit;
+        }
+        if (!value) {
+          value = $.fn.bootstrapSwitch.defaults.onInit;
+        }
+        this.options.onInit = value;
+        return this.$element;
+      };
+
+      BootstrapSwitch.prototype.onSwitchChange = function(value) {
+        if (typeof value === "undefined") {
+          return this.options.onSwitchChange;
+        }
+        if (!value) {
+          value = $.fn.bootstrapSwitch.defaults.onSwitchChange;
+        }
+        this.options.onSwitchChange = value;
+        return this.$element;
+      };
+
+      BootstrapSwitch.prototype.destroy = function() {
+        var $form;
+        $form = this.$element.closest("form");
+        if ($form.length) {
+          $form.off("reset.bootstrapSwitch").removeData("bootstrap-switch");
+        }
+        this.$container.children().not(this.$element).remove();
+        this.$element.unwrap().unwrap().off(".bootstrapSwitch").removeData("bootstrap-switch");
+        return this.$element;
+      };
+
+      BootstrapSwitch.prototype._width = function() {
+        var $handles, handleWidth;
+        $handles = this.$on.add(this.$off);
+        $handles.add(this.$label).css("width", "");
+        handleWidth = this.options.handleWidth === "auto" ? Math.max(this.$on.width(), this.$off.width()) : this.options.handleWidth;
+        $handles.width(handleWidth);
+        this.$label.width((function(_this) {
+          return function(index, width) {
+            if (_this.options.labelWidth !== "auto") {
+              return _this.options.labelWidth;
+            }
+            if (width < handleWidth) {
+              return handleWidth;
+            } else {
+              return width;
+            }
+          };
+        })(this));
+        this._handleWidth = this.$on.outerWidth();
+        this._labelWidth = this.$label.outerWidth();
+        this.$container.width((this._handleWidth * 2) + this._labelWidth);
+        return this.$wrapper.width(this._handleWidth + this._labelWidth);
+      };
+
+      BootstrapSwitch.prototype._containerPosition = function(state, callback) {
+        if (state == null) {
+          state = this.options.state;
+        }
+        this.$container.css("margin-left", (function(_this) {
+          return function() {
+            var values;
+            values = [0, "-" + _this._handleWidth + "px"];
+            if (_this.options.indeterminate) {
+              return "-" + (_this._handleWidth / 2) + "px";
+            }
+            if (state) {
+              if (_this.options.inverse) {
+                return values[1];
+              } else {
+                return values[0];
+              }
+            } else {
+              if (_this.options.inverse) {
+                return values[0];
+              } else {
+                return values[1];
+              }
+            }
+          };
+        })(this));
+        if (!callback) {
+          return;
+        }
+        return setTimeout(function() {
+          return callback();
+        }, 50);
+      };
+
+      BootstrapSwitch.prototype._init = function() {
+        var init, initInterval;
+        init = (function(_this) {
+          return function() {
+            _this._width();
+            return _this._containerPosition(null, function() {
+              if (_this.options.animate) {
+                return _this.$wrapper.addClass("" + _this.options.baseClass + "-animate");
+              }
+            });
+          };
+        })(this);
+        if (this.$wrapper.is(":visible")) {
+          return init();
+        }
+        return initInterval = window.setInterval((function(_this) {
+          return function() {
+            if (_this.$wrapper.is(":visible")) {
+              init();
+              return window.clearInterval(initInterval);
+            }
+          };
+        })(this), 50);
+      };
+
+      BootstrapSwitch.prototype._elementHandlers = function() {
+        return this.$element.on({
+          "change.bootstrapSwitch": (function(_this) {
+            return function(e, skip) {
+              var state;
+              e.preventDefault();
+              e.stopImmediatePropagation();
+              state = _this.$element.is(":checked");
+              _this._containerPosition(state);
+              if (state === _this.options.state) {
+                return;
+              }
+              _this.options.state = state;
+              _this.$wrapper.toggleClass("" + _this.options.baseClass + "-off").toggleClass("" + _this.options.baseClass + "-on");
+              if (!skip) {
+                if (_this.$element.is(":radio")) {
+                  $("[name='" + (_this.$element.attr('name')) + "']").not(_this.$element).prop("checked", false).trigger("change.bootstrapSwitch", true);
+                }
+                return _this.$element.trigger("switchChange.bootstrapSwitch", [state]);
+              }
+            };
+          })(this),
+          "focus.bootstrapSwitch": (function(_this) {
+            return function(e) {
+              e.preventDefault();
+              return _this.$wrapper.addClass("" + _this.options.baseClass + "-focused");
+            };
+          })(this),
+          "blur.bootstrapSwitch": (function(_this) {
+            return function(e) {
+              e.preventDefault();
+              return _this.$wrapper.removeClass("" + _this.options.baseClass + "-focused");
+            };
+          })(this),
+          "keydown.bootstrapSwitch": (function(_this) {
+            return function(e) {
+              if (!e.which || _this.options.disabled || _this.options.readonly) {
+                return;
+              }
+              switch (e.which) {
+                case 37:
+                  e.preventDefault();
+                  e.stopImmediatePropagation();
+                  return _this.state(false);
+                case 39:
+                  e.preventDefault();
+                  e.stopImmediatePropagation();
+                  return _this.state(true);
+              }
+            };
+          })(this)
+        });
+      };
+
+      BootstrapSwitch.prototype._handleHandlers = function() {
+        this.$on.on("click.bootstrapSwitch", (function(_this) {
+          return function(event) {
+            event.preventDefault();
+            event.stopPropagation();
+            _this.state(false);
+            return _this.$element.trigger("focus.bootstrapSwitch");
+          };
+        })(this));
+        return this.$off.on("click.bootstrapSwitch", (function(_this) {
+          return function(event) {
+            event.preventDefault();
+            event.stopPropagation();
+            _this.state(true);
+            return _this.$element.trigger("focus.bootstrapSwitch");
+          };
+        })(this));
+      };
+
+      BootstrapSwitch.prototype._labelHandlers = function() {
+        return this.$label.on({
+          "mousedown.bootstrapSwitch touchstart.bootstrapSwitch": (function(_this) {
+            return function(e) {
+              if (_this._dragStart || _this.options.disabled || _this.options.readonly) {
+                return;
+              }
+              e.preventDefault();
+              e.stopPropagation();
+              _this._dragStart = (e.pageX || e.originalEvent.touches[0].pageX) - parseInt(_this.$container.css("margin-left"), 10);
+              if (_this.options.animate) {
+                _this.$wrapper.removeClass("" + _this.options.baseClass + "-animate");
+              }
+              return _this.$element.trigger("focus.bootstrapSwitch");
+            };
+          })(this),
+          "mousemove.bootstrapSwitch touchmove.bootstrapSwitch": (function(_this) {
+            return function(e) {
+              var difference;
+              if (_this._dragStart == null) {
+                return;
+              }
+              e.preventDefault();
+              difference = (e.pageX || e.originalEvent.touches[0].pageX) - _this._dragStart;
+              if (difference < -_this._handleWidth || difference > 0) {
+                return;
+              }
+              _this._dragEnd = difference;
+              return _this.$container.css("margin-left", "" + _this._dragEnd + "px");
+            };
+          })(this),
+          "mouseup.bootstrapSwitch touchend.bootstrapSwitch": (function(_this) {
+            return function(e) {
+              var state;
+              if (!_this._dragStart) {
+                return;
+              }
+              e.preventDefault();
+              if (_this.options.animate) {
+                _this.$wrapper.addClass("" + _this.options.baseClass + "-animate");
+              }
+              if (_this._dragEnd) {
+                state = _this._dragEnd > -(_this._handleWidth / 2);
+                _this._dragEnd = false;
+                _this.state(_this.options.inverse ? !state : state);
+              } else {
+                _this.state(!_this.options.state);
+              }
+              return _this._dragStart = false;
+            };
+          })(this),
+          "mouseleave.bootstrapSwitch": (function(_this) {
+            return function(e) {
+              return _this.$label.trigger("mouseup.bootstrapSwitch");
+            };
+          })(this)
+        });
+      };
+
+      BootstrapSwitch.prototype._externalLabelHandler = function() {
+        var $externalLabel;
+        $externalLabel = this.$element.closest("label");
+        return $externalLabel.on("click", (function(_this) {
+          return function(event) {
+            event.preventDefault();
+            event.stopImmediatePropagation();
+            if (event.target === $externalLabel[0]) {
+              return _this.toggleState();
+            }
+          };
+        })(this));
+      };
+
+      BootstrapSwitch.prototype._formHandler = function() {
+        var $form;
+        $form = this.$element.closest("form");
+        if ($form.data("bootstrap-switch")) {
+          return;
+        }
+        return $form.on("reset.bootstrapSwitch", function() {
+          return window.setTimeout(function() {
+            return $form.find("input").filter(function() {
+              return $(this).data("bootstrap-switch");
+            }).each(function() {
+              return $(this).bootstrapSwitch("state", this.checked);
+            });
+          }, 1);
+        }).data("bootstrap-switch", true);
+      };
+
+      BootstrapSwitch.prototype._getClasses = function(classes) {
+        var c, cls, _i, _len;
+        if (!$.isArray(classes)) {
+          return ["" + this.options.baseClass + "-" + classes];
+        }
+        cls = [];
+        for (_i = 0, _len = classes.length; _i < _len; _i++) {
+          c = classes[_i];
+          cls.push("" + this.options.baseClass + "-" + c);
+        }
+        return cls;
+      };
+
+      return BootstrapSwitch;
+
+    })();
+    $.fn.bootstrapSwitch = function() {
+      var args, option, ret;
+      option = arguments[0], args = 2 <= arguments.length ? __slice.call(arguments, 1) : [];
+      ret = this;
+      this.each(function() {
+        var $this, data;
+        $this = $(this);
+        data = $this.data("bootstrap-switch");
+        if (!data) {
+          $this.data("bootstrap-switch", data = new BootstrapSwitch(this, option));
+        }
+        if (typeof option === "string") {
+          return ret = data[option].apply(data, args);
+        }
+      });
+      return ret;
+    };
+    $.fn.bootstrapSwitch.Constructor = BootstrapSwitch;
+    return $.fn.bootstrapSwitch.defaults = {
+      state: true,
+      size: null,
+      animate: true,
+      disabled: false,
+      readonly: false,
+      indeterminate: false,
+      inverse: false,
+      radioAllOff: false,
+      onColor: "primary",
+      offColor: "default",
+      onText: "ON",
+      offText: "OFF",
+      labelText: "&nbsp;",
+      handleWidth: "auto",
+      labelWidth: "auto",
+      baseClass: "bootstrap-switch",
+      wrapperClass: "wrapper",
+      onInit: function() {},
+      onSwitchChange: function() {}
+    };
+  })(window.jQuery, window);
+
+}).call(this);
 /*global log:true, kind:true, define:true */
 
 // Tell IE9 to use its built-in console
@@ -40500,9 +42585,9 @@ if (Function.prototype.bind && /^object$|^function$/.test(typeof console) && typ
 
 
 
-cityflixApp = angular.module('cityflixApp', []);
+cityflixApp = angular.module('cityflixApp', ['frapontillo.bootstrap-switch', 'rzModule']);
 (function() {
-  cityflixApp.controller('MovieListCtrl', function($filter, $http, $scope) {
+  cityflixApp.controller('MovieListCtrl', function($filter, $http, $log, $scope) {
     var columnize;
     columnize = function(input, cols) {
       var arr, colIdx, i;
@@ -40517,23 +42602,31 @@ cityflixApp = angular.module('cityflixApp', []);
       return arr;
     };
     $http.get('data/movies.json').success(function(data) {
-      var movies;
-      movies = data.map(function(movie, i) {
-        return movie;
-      });
-      $scope.movies = movies;
-      $scope.columns = columnize($scope.movies || [], 3);
+      $scope.movies = data;
     });
-    return $scope.filter = function(query) {
-      var filteredMovies;
-      filteredMovies = $filter('filter')($scope.movies, {
-        title: query
-      });
-      $scope.columns = columnize(filteredMovies, 3);
+    $scope.posterFilter = function(movie) {
+      if ($scope.postersOnly === true) {
+        return movie.poster;
+      } else {
+        return true;
+      }
+    };
+    $scope.postersOnly = 'nope';
+    $scope.yearFilter = function(movie) {
+      return movie.release_year >= $scope.yearSlider.min && movie.release_year <= $scope.yearSlider.max;
+    };
+    return $scope.yearSlider = {
+      min: 1915,
+      max: 2015,
+      ceil: 2015,
+      floor: 1915
     };
   });
 
 }).call(this);
+
+
+
 
 
 

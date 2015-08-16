@@ -7245,11 +7245,344 @@ button.close {
   /* line 18, /usr/local/opt/rbenv/versions/2.2.0/lib/ruby/gems/2.2.0/gems/bootstrap-sass-3.3.5.1/assets/stylesheets/bootstrap/mixins/_responsive-visibility.scss */
   .hidden-print {
     display: none !important; } }
-/* line 7, /Users/tjmoretto/RubyMineProjects/cityflix/source/stylesheets/all.css.scss */
+/**
+ * Angular JS slider directive
+ *
+ * (c) Rafal Zajac <rzajac@gmail.com>
+ * http://github.com/rzajac/angularjs-slider
+ *
+ * Licensed under the MIT license
+ */
+/* Slider colors */
+/* Slider size parameters */
+/* line 15, /Users/tjmoretto/RubyMineProjects/cityflix/bower_components/angularjs-slider/dist/rzslider.css */
+rzslider {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  height: 4px;
+  margin: 30px 0 15px 0;
+  vertical-align: middle; }
+
+/* line 24, /Users/tjmoretto/RubyMineProjects/cityflix/bower_components/angularjs-slider/dist/rzslider.css */
+rzslider span {
+  position: absolute;
+  display: inline-block;
+  white-space: nowrap; }
+
+/* line 30, /Users/tjmoretto/RubyMineProjects/cityflix/bower_components/angularjs-slider/dist/rzslider.css */
+rzslider span.rz-base {
+  width: 100%;
+  height: 100%;
+  padding: 0; }
+
+/* line 36, /Users/tjmoretto/RubyMineProjects/cityflix/bower_components/angularjs-slider/dist/rzslider.css */
+rzslider span.rz-bar-wrapper {
+  left: 0;
+  width: 100%;
+  height: 32px;
+  padding-top: 16px;
+  margin-top: -16px;
+  box-sizing: border-box; }
+
+/* line 45, /Users/tjmoretto/RubyMineProjects/cityflix/bower_components/angularjs-slider/dist/rzslider.css */
+rzslider span.rz-bar {
+  left: 0;
+  z-index: 0;
+  width: 100%;
+  height: 4px;
+  background: #d8e0f3;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  border-radius: 2px; }
+
+/* line 56, /Users/tjmoretto/RubyMineProjects/cityflix/bower_components/angularjs-slider/dist/rzslider.css */
+rzslider span.rz-bar.rz-selection {
+  z-index: 1;
+  width: 0;
+  background: #0db9f0;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  border-radius: 2px; }
+
+/* line 65, /Users/tjmoretto/RubyMineProjects/cityflix/bower_components/angularjs-slider/dist/rzslider.css */
+rzslider span.rz-pointer {
+  top: -14px;
+  z-index: 2;
+  width: 32px;
+  height: 32px;
+  cursor: pointer;
+  background-color: #0db9f0;
+  -webkit-border-radius: 16px;
+  -moz-border-radius: 16px;
+  border-radius: 16px; }
+
+/* line 77, /Users/tjmoretto/RubyMineProjects/cityflix/bower_components/angularjs-slider/dist/rzslider.css */
+rzslider span.rz-pointer:after {
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  width: 8px;
+  height: 8px;
+  background: #ffffff;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+  content: ''; }
+
+/* line 90, /Users/tjmoretto/RubyMineProjects/cityflix/bower_components/angularjs-slider/dist/rzslider.css */
+rzslider span.rz-pointer:hover:after {
+  background-color: #ffffff; }
+
+/* line 94, /Users/tjmoretto/RubyMineProjects/cityflix/bower_components/angularjs-slider/dist/rzslider.css */
+rzslider span.rz-pointer.rz-active:after {
+  background-color: #451aff; }
+
+/* line 98, /Users/tjmoretto/RubyMineProjects/cityflix/bower_components/angularjs-slider/dist/rzslider.css */
+rzslider span.rz-bubble {
+  top: -32px;
+  padding: 1px 3px;
+  color: #55637d;
+  cursor: default; }
+
+/* line 105, /Users/tjmoretto/RubyMineProjects/cityflix/bower_components/angularjs-slider/dist/rzslider.css */
+rzslider span.rz-bubble.rz-selection {
+  top: 16px; }
+
+/* line 109, /Users/tjmoretto/RubyMineProjects/cityflix/bower_components/angularjs-slider/dist/rzslider.css */
+rzslider span.rz-bubble.rz-limit {
+  color: #55637d; }
+
+/* ========================================================================
+ * bootstrap-switch - v3.3.2
+ * http://www.bootstrap-switch.org
+ * ========================================================================
+ * Copyright 2012-2013 Mattia Larentis
+ *
+ * ========================================================================
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *     http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ * ========================================================================
+ */
+/* line 23, /Users/tjmoretto/RubyMineProjects/cityflix/bower_components/bootstrap-switch/dist/css/bootstrap3/bootstrap-switch.css */
+.bootstrap-switch {
+  display: inline-block;
+  direction: ltr;
+  cursor: pointer;
+  border-radius: 4px;
+  border: 1px solid;
+  border-color: #cccccc;
+  position: relative;
+  text-align: left;
+  overflow: hidden;
+  line-height: 8px;
+  z-index: 0;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  vertical-align: middle;
+  -webkit-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+  transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s; }
+
+/* line 43, /Users/tjmoretto/RubyMineProjects/cityflix/bower_components/bootstrap-switch/dist/css/bootstrap3/bootstrap-switch.css */
+.bootstrap-switch .bootstrap-switch-container {
+  display: inline-block;
+  top: 0;
+  border-radius: 4px;
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0); }
+
+/* line 50, /Users/tjmoretto/RubyMineProjects/cityflix/bower_components/bootstrap-switch/dist/css/bootstrap3/bootstrap-switch.css */
+.bootstrap-switch .bootstrap-switch-handle-on,
+.bootstrap-switch .bootstrap-switch-handle-off,
+.bootstrap-switch .bootstrap-switch-label {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  cursor: pointer;
+  display: inline-block !important;
+  height: 100%;
+  padding: 6px 12px;
+  font-size: 14px;
+  line-height: 20px; }
+
+/* line 63, /Users/tjmoretto/RubyMineProjects/cityflix/bower_components/bootstrap-switch/dist/css/bootstrap3/bootstrap-switch.css */
+.bootstrap-switch .bootstrap-switch-handle-on,
+.bootstrap-switch .bootstrap-switch-handle-off {
+  text-align: center;
+  z-index: 1; }
+
+/* line 68, /Users/tjmoretto/RubyMineProjects/cityflix/bower_components/bootstrap-switch/dist/css/bootstrap3/bootstrap-switch.css */
+.bootstrap-switch .bootstrap-switch-handle-on.bootstrap-switch-primary,
+.bootstrap-switch .bootstrap-switch-handle-off.bootstrap-switch-primary {
+  color: #fff;
+  background: #428bca; }
+
+/* line 73, /Users/tjmoretto/RubyMineProjects/cityflix/bower_components/bootstrap-switch/dist/css/bootstrap3/bootstrap-switch.css */
+.bootstrap-switch .bootstrap-switch-handle-on.bootstrap-switch-info,
+.bootstrap-switch .bootstrap-switch-handle-off.bootstrap-switch-info {
+  color: #fff;
+  background: #5bc0de; }
+
+/* line 78, /Users/tjmoretto/RubyMineProjects/cityflix/bower_components/bootstrap-switch/dist/css/bootstrap3/bootstrap-switch.css */
+.bootstrap-switch .bootstrap-switch-handle-on.bootstrap-switch-success,
+.bootstrap-switch .bootstrap-switch-handle-off.bootstrap-switch-success {
+  color: #fff;
+  background: #5cb85c; }
+
+/* line 83, /Users/tjmoretto/RubyMineProjects/cityflix/bower_components/bootstrap-switch/dist/css/bootstrap3/bootstrap-switch.css */
+.bootstrap-switch .bootstrap-switch-handle-on.bootstrap-switch-warning,
+.bootstrap-switch .bootstrap-switch-handle-off.bootstrap-switch-warning {
+  background: #f0ad4e;
+  color: #fff; }
+
+/* line 88, /Users/tjmoretto/RubyMineProjects/cityflix/bower_components/bootstrap-switch/dist/css/bootstrap3/bootstrap-switch.css */
+.bootstrap-switch .bootstrap-switch-handle-on.bootstrap-switch-danger,
+.bootstrap-switch .bootstrap-switch-handle-off.bootstrap-switch-danger {
+  color: #fff;
+  background: #d9534f; }
+
+/* line 93, /Users/tjmoretto/RubyMineProjects/cityflix/bower_components/bootstrap-switch/dist/css/bootstrap3/bootstrap-switch.css */
+.bootstrap-switch .bootstrap-switch-handle-on.bootstrap-switch-default,
+.bootstrap-switch .bootstrap-switch-handle-off.bootstrap-switch-default {
+  color: #000;
+  background: #eeeeee; }
+
+/* line 98, /Users/tjmoretto/RubyMineProjects/cityflix/bower_components/bootstrap-switch/dist/css/bootstrap3/bootstrap-switch.css */
+.bootstrap-switch .bootstrap-switch-label {
+  text-align: center;
+  margin-top: -1px;
+  margin-bottom: -1px;
+  z-index: 100;
+  color: #333333;
+  background: #ffffff; }
+
+/* line 106, /Users/tjmoretto/RubyMineProjects/cityflix/bower_components/bootstrap-switch/dist/css/bootstrap3/bootstrap-switch.css */
+.bootstrap-switch .bootstrap-switch-handle-on {
+  border-bottom-left-radius: 3px;
+  border-top-left-radius: 3px; }
+
+/* line 110, /Users/tjmoretto/RubyMineProjects/cityflix/bower_components/bootstrap-switch/dist/css/bootstrap3/bootstrap-switch.css */
+.bootstrap-switch .bootstrap-switch-handle-off {
+  border-bottom-right-radius: 3px;
+  border-top-right-radius: 3px; }
+
+/* line 114, /Users/tjmoretto/RubyMineProjects/cityflix/bower_components/bootstrap-switch/dist/css/bootstrap3/bootstrap-switch.css */
+.bootstrap-switch input[type='radio'],
+.bootstrap-switch input[type='checkbox'] {
+  position: absolute !important;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  filter: alpha(opacity=0);
+  z-index: -1; }
+
+/* line 123, /Users/tjmoretto/RubyMineProjects/cityflix/bower_components/bootstrap-switch/dist/css/bootstrap3/bootstrap-switch.css */
+.bootstrap-switch input[type='radio'].form-control,
+.bootstrap-switch input[type='checkbox'].form-control {
+  height: auto; }
+
+/* line 127, /Users/tjmoretto/RubyMineProjects/cityflix/bower_components/bootstrap-switch/dist/css/bootstrap3/bootstrap-switch.css */
+.bootstrap-switch.bootstrap-switch-mini .bootstrap-switch-handle-on,
+.bootstrap-switch.bootstrap-switch-mini .bootstrap-switch-handle-off,
+.bootstrap-switch.bootstrap-switch-mini .bootstrap-switch-label {
+  padding: 1px 5px;
+  font-size: 12px;
+  line-height: 1.5; }
+
+/* line 134, /Users/tjmoretto/RubyMineProjects/cityflix/bower_components/bootstrap-switch/dist/css/bootstrap3/bootstrap-switch.css */
+.bootstrap-switch.bootstrap-switch-small .bootstrap-switch-handle-on,
+.bootstrap-switch.bootstrap-switch-small .bootstrap-switch-handle-off,
+.bootstrap-switch.bootstrap-switch-small .bootstrap-switch-label {
+  padding: 5px 10px;
+  font-size: 12px;
+  line-height: 1.5; }
+
+/* line 141, /Users/tjmoretto/RubyMineProjects/cityflix/bower_components/bootstrap-switch/dist/css/bootstrap3/bootstrap-switch.css */
+.bootstrap-switch.bootstrap-switch-large .bootstrap-switch-handle-on,
+.bootstrap-switch.bootstrap-switch-large .bootstrap-switch-handle-off,
+.bootstrap-switch.bootstrap-switch-large .bootstrap-switch-label {
+  padding: 6px 16px;
+  font-size: 18px;
+  line-height: 1.33; }
+
+/* line 148, /Users/tjmoretto/RubyMineProjects/cityflix/bower_components/bootstrap-switch/dist/css/bootstrap3/bootstrap-switch.css */
+.bootstrap-switch.bootstrap-switch-disabled,
+.bootstrap-switch.bootstrap-switch-readonly,
+.bootstrap-switch.bootstrap-switch-indeterminate {
+  cursor: default !important; }
+
+/* line 153, /Users/tjmoretto/RubyMineProjects/cityflix/bower_components/bootstrap-switch/dist/css/bootstrap3/bootstrap-switch.css */
+.bootstrap-switch.bootstrap-switch-disabled .bootstrap-switch-handle-on,
+.bootstrap-switch.bootstrap-switch-readonly .bootstrap-switch-handle-on,
+.bootstrap-switch.bootstrap-switch-indeterminate .bootstrap-switch-handle-on,
+.bootstrap-switch.bootstrap-switch-disabled .bootstrap-switch-handle-off,
+.bootstrap-switch.bootstrap-switch-readonly .bootstrap-switch-handle-off,
+.bootstrap-switch.bootstrap-switch-indeterminate .bootstrap-switch-handle-off,
+.bootstrap-switch.bootstrap-switch-disabled .bootstrap-switch-label,
+.bootstrap-switch.bootstrap-switch-readonly .bootstrap-switch-label,
+.bootstrap-switch.bootstrap-switch-indeterminate .bootstrap-switch-label {
+  opacity: 0.5;
+  filter: alpha(opacity=50);
+  cursor: default !important; }
+
+/* line 166, /Users/tjmoretto/RubyMineProjects/cityflix/bower_components/bootstrap-switch/dist/css/bootstrap3/bootstrap-switch.css */
+.bootstrap-switch.bootstrap-switch-animate .bootstrap-switch-container {
+  -webkit-transition: margin-left 0.5s;
+  transition: margin-left 0.5s; }
+
+/* line 170, /Users/tjmoretto/RubyMineProjects/cityflix/bower_components/bootstrap-switch/dist/css/bootstrap3/bootstrap-switch.css */
+.bootstrap-switch.bootstrap-switch-inverse .bootstrap-switch-handle-on {
+  border-bottom-left-radius: 0;
+  border-top-left-radius: 0;
+  border-bottom-right-radius: 3px;
+  border-top-right-radius: 3px; }
+
+/* line 176, /Users/tjmoretto/RubyMineProjects/cityflix/bower_components/bootstrap-switch/dist/css/bootstrap3/bootstrap-switch.css */
+.bootstrap-switch.bootstrap-switch-inverse .bootstrap-switch-handle-off {
+  border-bottom-right-radius: 0;
+  border-top-right-radius: 0;
+  border-bottom-left-radius: 3px;
+  border-top-left-radius: 3px; }
+
+/* line 182, /Users/tjmoretto/RubyMineProjects/cityflix/bower_components/bootstrap-switch/dist/css/bootstrap3/bootstrap-switch.css */
+.bootstrap-switch.bootstrap-switch-focused {
+  border-color: #66afe9;
+  outline: 0;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(102, 175, 233, 0.6);
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(102, 175, 233, 0.6); }
+
+/* line 188, /Users/tjmoretto/RubyMineProjects/cityflix/bower_components/bootstrap-switch/dist/css/bootstrap3/bootstrap-switch.css */
+.bootstrap-switch.bootstrap-switch-on .bootstrap-switch-label,
+.bootstrap-switch.bootstrap-switch-inverse.bootstrap-switch-off .bootstrap-switch-label {
+  border-bottom-right-radius: 3px;
+  border-top-right-radius: 3px; }
+
+/* line 193, /Users/tjmoretto/RubyMineProjects/cityflix/bower_components/bootstrap-switch/dist/css/bootstrap3/bootstrap-switch.css */
+.bootstrap-switch.bootstrap-switch-off .bootstrap-switch-label,
+.bootstrap-switch.bootstrap-switch-inverse.bootstrap-switch-on .bootstrap-switch-label {
+  border-bottom-left-radius: 3px;
+  border-top-left-radius: 3px; }
+
+/* line 5, /Users/tjmoretto/RubyMineProjects/cityflix/source/stylesheets/_modifiers.scss */
+.mb1 {
+  margin-bottom: 1em   !important; }
+
+/* line 12, /Users/tjmoretto/RubyMineProjects/cityflix/source/stylesheets/all.css.scss */
 body {
   background: url("../images/background.png") top left repeat; }
 
-/* line 11, /Users/tjmoretto/RubyMineProjects/cityflix/source/stylesheets/all.css.scss */
+/* line 16, /Users/tjmoretto/RubyMineProjects/cityflix/source/stylesheets/all.css.scss */
 .card {
   display: block;
   position: relative;
@@ -7263,7 +7596,28 @@ body {
   -webkit-border-radius: 2px;
   -moz-border-radius: 2px;
   border-radius: 2px; }
+  /* line 30, /Users/tjmoretto/RubyMineProjects/cityflix/source/stylesheets/all.css.scss */
+  .card .release-year {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 16px;
+    padding: 7px 10px;
+    font-size: 11px;
+    line-height: 1;
+    color: #777;
+    text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
+    background: #eee;
+    border: 1px solid #ddd;
+    border-bottom-color: #ccc;
+    border-top: 0;
+    -webkit-border-bottom-left-radius: 4px;
+    -webkit-border-bottom-right-radius: 4px;
+    -moz-border-radius-bottomleft: 4px;
+    -moz-border-radius-bottomright: 4px;
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px; }
 
-/* line 26, /Users/tjmoretto/RubyMineProjects/cityflix/source/stylesheets/all.css.scss */
+/* line 53, /Users/tjmoretto/RubyMineProjects/cityflix/source/stylesheets/all.css.scss */
 header nav.navbar {
   border-radius: 0; }

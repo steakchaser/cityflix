@@ -26,23 +26,31 @@
             </p>
           </div>
         </div>
-        <div class="row">
-          <div class="col-sm-12">
-            Search: <input ng-model="query" ng-change="filter(query)">
+        <div class="row mb1">
+          <div class="col-sm-10">
+            <input class="form-control" ng-model="query" placeholder="Search by title, director, etc..." type="text" />
+          </div>
+          <div class="col-sm-2">
+            <div class="pull-right">
+              <input bs-switch="" ng-model="postersOnly" type="checkbox" />
+            </div>
           </div>
         </div>
         <div class="row">
-          <div>
-            <div class="col-sm-4" ng-repeat="column in columns">
-              <div class="card" ng-repeat="movie in column">
-                <h2>
-                  {{movie.title}}
-                </h2>
-                <p>
-                  {{movie.release_year}}
-                </p>
-                <img class="center-block" ng-src="{{ movie.poster ? movie.poster : 'http://placehold.it/300x391&text=N/A' }}" />
+          <div class="col-sm-12">
+            <rzslider rz-slider-ceil="yearSlider.ceil" rz-slider-floor="yearSlider.floor" rz-slider-high="yearSlider.max" rz-slider-model="yearSlider.min" rz-slider-on-change="onSliderChange()"></rzslider>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-4" ng-repeat="movie in movies | filter:query | filter:yearFilter | filter:posterFilter">
+            <div class="card">
+              <div class="release-year">
+                {{ movie.release_year }}, {{ movie.director }}
               </div>
+              <img class="center-block mb1" ng-if="movie.poster" ng-src="{{ movie.poster }}" />
+              <p>
+                {{movie.plot }}
+              </p>
             </div>
           </div>
         </div>
