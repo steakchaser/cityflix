@@ -1,6 +1,9 @@
 # cityflix
 Responsive website to discover movies shot in the city of San Francisco.
 
+## Demo
+View the static site on GitHub Pages: http://steakchaser.github.io/cityflix/
+
 ## Requirements
 1. Pull the list of movies shot in San Francisco from the [SF OpenData API](https://data.sfgov.org/Culture-and-Recreation/Film-Locations-in-San-Francisco/yitu-d5am)
 2. Find the poster image and details for each unique movie in that list using the [OMDB API](http://www.omdbapi.com/)
@@ -75,4 +78,3 @@ Push the build folder to the gh-pages branch
 ```
 $ bundle exec middleman deploy
 ```
-View the static site (hosted for free) on GitHub Pages: http://steakchaser.github.io/cityflix/
