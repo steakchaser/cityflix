@@ -25,8 +25,9 @@ cityflixApp.controller 'MovieListCtrl', ($filter, $http, $scope) ->
       #   movie.poster = data.Poster
       # return movie
     # )
-    $scope.movies = movies
+    # $scope.movies = movies
     # $scope.columns = columnize($scope.movies or [], 3)
+    $scope.movies = data
     return
 
   # $scope.filter = (query) ->
