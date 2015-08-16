@@ -12,14 +12,14 @@ title: Cityflix
 
   .row
     .col-sm-12
-      | Search: <input ng-model="query" ng-change="filter(query)">
-
+      | Search: <input ng-model="query">
+      rzslider(rz-slider-floor="yearSlider.floor" rz-slider-ceil="yearSlider.ceil" rz-slider-model="yearSlider.min"
+          rz-slider-high="yearSlider.max" rz-slider-on-change="onSliderChange()")
   .row
-    div
-      .col-sm-4 ng-repeat="column in columns"
-        .card ng-repeat="movie in column"
-          h2
-            | {{movie.title}}
-          p
-            | {{movie.release_year}}
-          img.center-block ng-src="{{ movie.poster ? movie.poster : 'http://placehold.it/300x391&text=N/A' }}"
+    .col-sm-4 ng-repeat="movie in movies | filter:query | filter:yearFilter"
+      .card
+        h2
+          | {{movie.title}}
+        p
+          | {{movie.release_year}}
+        img.center-block ng-src="{{ movie.poster ? movie.poster : 'http://placehold.it/300x391&text=N/A' }}"

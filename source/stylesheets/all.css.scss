@@ -4,6 +4,8 @@
 @import "_bootstrap-sprockets";
 @import "_bootstrap";
 
+@import "angularjs-slider/dist/rzslider";
+
 body {
   background: url("../images/background.png") top left repeat;
 }
