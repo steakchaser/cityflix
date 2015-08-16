@@ -1,1073 +1,2135 @@
-[ {
-  "title" : "180",
-  "release_year" : "2011"
-}
-, {
-  "title" : "24 Hours on Craigslist",
-  "release_year" : "2005"
-}
-, {
-  "title" : "48 Hours",
-  "release_year" : "1982"
-}
-, {
-  "title" : "50 First Dates",
-  "release_year" : "2004"
-}
-, {
-  "title" : "About a Boy",
-  "release_year" : "2014"
-}
-, {
-  "title" : "After the Thin Man",
-  "release_year" : "1936"
-}
-, {
-  "title" : "A Jitney Elopement",
-  "release_year" : "1915"
-}
-, {
-  "title" : "Alcatraz",
-  "release_year" : "2012"
-}
-, {
-  "title" : "Alexander's Ragtime Band",
-  "release_year" : "1938"
-}
-, {
-  "title" : "All About Eve",
-  "release_year" : "1950"
-}
-, {
-  "title" : "American Graffiti",
-  "release_year" : "1973"
-}
-, {
-  "title" : "American Yearbook",
-  "release_year" : "2004"
-}
-, {
-  "title" : "A Night Full of Rain",
-  "release_year" : "1978"
-}
-, {
-  "title" : "Another 48 Hours",
-  "release_year" : "1990"
-}
-, {
-  "title" : "Around the Fire",
-  "release_year" : "1998"
-}
-, {
-  "title" : "A Smile Like Yours",
-  "release_year" : "1997"
-}
-, {
-  "title" : "A Smile Like Yours ",
-  "release_year" : "1997"
-}
-, {
-  "title" : "Attack of the Killer Tomatoes",
-  "release_year" : "1978"
-}
-, {
-  "title" : "A View to a Kill",
-  "release_year" : "1985"
-}
-, {
-  "title" : "Babies",
-  "release_year" : "2010"
-}
-, {
-  "title" : "Barbary Coast",
-  "release_year" : "1935"
-}
-, {
-  "title" : "Basic Instinct",
-  "release_year" : "1992"
-}
-, {
-  "title" : "Beaches",
-  "release_year" : "1988"
-}
-, {
-  "title" : "Bedazzled",
-  "release_year" : "2000"
-}
-, {
-  "title" : "Bee Season",
-  "release_year" : "2005"
-}
-, {
-  "title" : "Bicentennial Man",
-  "release_year" : "1999"
-}
-, {
-  "title" : "Big Eyes",
-  "release_year" : "2014"
-}
-, {
-  "title" : "Big Sur",
-  "release_year" : "2012"
-}
-, {
-  "title" : "Big Touble in Little China",
-  "release_year" : "1986"
-}
-, {
-  "title" : "Birdman of Alcatraz",
-  "release_year" : "1962"
-}
-, {
-  "title" : "Blue Jasmine",
-  "release_year" : "2013"
-}
-, {
-  "title" : "Boys and Girls",
-  "release_year" : "2000"
-}
-, {
-  "title" : "Broken-A Modern Love Story ",
-  "release_year" : "2010"
-}
-, {
-  "title" : "Bullitt",
-  "release_year" : "1968"
-}
-, {
-  "title" : "Burglar",
-  "release_year" : "1987"
-}
-, {
-  "title" : "By Hook or By Crook",
-  "release_year" : "2001"
-}
-, {
-  "title" : "Can't Stop the Music",
-  "release_year" : "1980"
-}
-, {
-  "title" : "Casualties of War",
-  "release_year" : "1989"
-}
-, {
-  "title" : "Chan is Missing",
-  "release_year" : "1982"
-}
-, {
-  "title" : "Cherish",
-  "release_year" : "2002"
-}
-, {
-  "title" : "Chu Chu and the Philly Flash",
-  "release_year" : "1981"
-}
-, {
-  "title" : "City of Angels",
-  "release_year" : "1998"
-}
-, {
-  "title" : "Class Action",
-  "release_year" : "1991"
-}
-, {
-  "title" : "Common Threads: Stories From the Quilt",
-  "release_year" : "1989"
-}
-, {
-  "title" : "Confessions of a Burning Man",
-  "release_year" : "2003"
-}
-, {
-  "title" : "Copycat",
-  "release_year" : "1995"
-}
-, {
-  "title" : "Crackers",
-  "release_year" : "1984"
-}
-, {
-  "title" : "CSI: NY- episode 903",
-  "release_year" : "2012"
-}
-, {
-  "title" : "Dark Passage",
-  "release_year" : "1947"
-}
-, {
-  "title" : "Dawn of the Planet of the Apes",
-  "release_year" : "2014"
-}
-, {
-  "title" : "Days of Wine and Roses",
-  "release_year" : "1962"
-}
-, {
-  "title" : "Desperate Measures",
-  "release_year" : "1998"
-}
-, {
-  "title" : "Dim Sum: A Little Bit of Heart",
-  "release_year" : "1986"
-}
-, {
-  "title" : "Dirty Harry",
-  "release_year" : "1971"
-}
-, {
-  "title" : "D.O.A",
-  "release_year" : "1950"
-}
-, {
-  "title" : "Doctor Doolittle",
-  "release_year" : "1998"
-}
-, {
-  "title" : "Dopamine",
-  "release_year" : "2003"
-}
-, {
-  "title" : "Down Periscope",
-  "release_year" : "1996"
-}
-, {
-  "title" : "Dr. Doolittle 2",
-  "release_year" : "2001"
-}
-, {
-  "title" : "Dream for an Insomniac",
-  "release_year" : "1998"
-}
-, {
-  "title" : "Dream with the Fishes",
-  "release_year" : "1997"
-}
-, {
-  "title" : "Dying Young",
-  "release_year" : "1991"
-}
-, {
-  "title" : "Edtv",
-  "release_year" : "1999"
-}
-, {
-  "title" : "Escape From Alcatraz",
-  "release_year" : "1979"
-}
-, {
-  "title" : "Experiment in Terror",
-  "release_year" : "1962"
-}
-, {
-  "title" : "Faces of Death",
-  "release_year" : "1978"
-}
-, {
-  "title" : "Family Plot",
-  "release_year" : "1976"
-}
-, {
-  "title" : "Fandom",
-  "release_year" : "2004"
-}
-, {
-  "title" : "Fathers' Day",
-  "release_year" : "1997"
-}
-, {
-  "title" : "Fat Man and Little Boy",
-  "release_year" : "1989"
-}
-, {
-  "title" : "Fearless",
-  "release_year" : "1993"
-}
-, {
-  "title" : "Final Analysis",
-  "release_year" : "1992"
-}
-, {
-  "title" : "Flower Drum Song",
-  "release_year" : "1961"
-}
-, {
-  "title" : "Flubber",
-  "release_year" : "1997"
-}
-, {
-  "title" : "Forrest Gump",
-  "release_year" : "1994"
-}
-, {
-  "title" : "Forty Days and Forty Nights",
-  "release_year" : "2002"
-}
-, {
-  "title" : "Foul Play",
-  "release_year" : "1978"
-}
-, {
-  "title" : "Freebie and the Bean",
-  "release_year" : "1974"
-}
-, {
-  "title" : "Gentleman Jim",
-  "release_year" : "1942"
-}
-, {
-  "title" : "George of the Jungle",
-  "release_year" : "1997"
-}
-, {
-  "title" : "Getting Even with Dad",
-  "release_year" : "1994"
-}
-, {
-  "title" : "God is a Communist?* (show me heart universe)",
-  "release_year" : "2010"
-}
-, {
-  "title" : "Godzilla",
-  "release_year" : "2014"
-}
-, {
-  "title" : "Golden Gate",
-  "release_year" : "1994"
-}
-, {
-  "title" : "Greed",
-  "release_year" : "1924"
-}
-, {
-  "title" : "Groove",
-  "release_year" : "2000"
-}
-, {
-  "title" : "Guess Who's Coming to Dinner",
-  "release_year" : "1967"
-}
-, {
-  "title" : "Haiku Tunnel",
-  "release_year" : "2001"
-}
-, {
-  "title" : "Happy Gilmore",
-  "release_year" : "1996"
-}
-, {
-  "title" : "Hard to Hold",
-  "release_year" : "1984"
-}
-, {
-  "title" : "Harold and Maude",
-  "release_year" : "1971"
-}
-, {
-  "title" : "Heart and Souls",
-  "release_year" : "1994"
-}
-, {
-  "title" : "Heart Beat",
-  "release_year" : "1980"
-}
-, {
-  "title" : "Hello Frisco, Hello",
-  "release_year" : "1943"
-}
-, {
-  "title" : "Hemingway & Gelhorn",
-  "release_year" : "2011"
-}
-, {
-  "title" : "Herbie Rides Again",
-  "release_year" : "1974"
-}
-, {
-  "title" : "Hereafter",
-  "release_year" : "2009"
-}
-, {
-  "title" : "High Anxiety",
-  "release_year" : "1977"
-}
-, {
-  "title" : "High Crimes",
-  "release_year" : "2002"
-}
-, {
-  "title" : "High Crimes",
-  "release_year" : "1977"
-}
-, {
-  "title" : "Homeward Bound II: Lost in San Francisco",
-  "release_year" : "1996"
-}
-, {
-  "title" : "House of Sand and Fog",
-  "release_year" : "2003"
-}
-, {
-  "title" : "How Stella Got Her Groove Back",
-  "release_year" : "1998"
-}
-, {
-  "title" : "Hulk",
-  "release_year" : "2003"
-}
-, {
-  "title" : "Indiana Jones and the Last Crusade",
-  "release_year" : "1989"
-}
-, {
-  "title" : "Innerspace",
-  "release_year" : "1987"
-}
-, {
-  "title" : "Interview With The Vampire",
-  "release_year" : "1994"
-}
-, {
-  "title" : "Invasion of the Body Snatchers",
-  "release_year" : "1978"
-}
-, {
-  "title" : "I Remember Mama",
-  "release_year" : "1948"
-}
-, {
-  "title" : "I's",
-  "release_year" : "2011"
-}
-, {
-  "title" : "It Came From Beneath the Sea",
-  "release_year" : "1955"
-}
-, {
-  "title" : "Jack",
-  "release_year" : "1996"
-}
-, {
-  "title" : "Jade",
-  "release_year" : "1995"
-}
-, {
-  "title" : "Jagged Edge",
-  "release_year" : "1985"
-}
-, {
-  "title" : "James and the Giant Peach",
-  "release_year" : "1996"
-}
-, {
-  "title" : "Joy Luck Club",
-  "release_year" : "1993"
-}
-, {
-  "title" : "Julie and Jack",
-  "release_year" : "2003"
-}
-, {
-  "title" : "Junior",
-  "release_year" : "1994"
-}
-, {
-  "title" : "Just Like Heaven",
-  "release_year" : "2005"
-}
-, {
-  "title" : "Just One Night",
-  "release_year" : "2000"
-}
-, {
-  "title" : "Kamikaze Hearts",
-  "release_year" : "1986"
-}
-, {
-  "title" : "Knife Fight",
-  "release_year" : "2012"
-}
-, {
-  "title" : "Live Nude Girls Unite",
-  "release_year" : "2000"
-}
-, {
-  "title" : "Looking",
-  "release_year" : "2014"
-}
-, {
-  "title" : "Love & Taxes",
-  "release_year" : "2011"
-}
-, {
-  "title" : "Magnum Force",
-  "release_year" : "1973"
-}
-, {
-  "title" : "Marnie",
-  "release_year" : "1964"
-}
-, {
-  "title" : "Maxie",
-  "release_year" : "1985"
-}
-, {
-  "title" : "Memoirs of an Invisible Man",
-  "release_year" : "1992"
-}
-, {
-  "title" : "Metro",
-  "release_year" : "1997"
-}
-, {
-  "title" : "Midnight Lace",
-  "release_year" : "1960"
-}
-, {
-  "title" : "Milk",
-  "release_year" : "2008"
-}
-, {
-  "title" : "Mission (aka City of Bars)",
-  "release_year" : "2001"
-}
-, {
-  "title" : "Mona Lisa Smile",
-  "release_year" : "2003"
-}
-, {
-  "title" : "Mother",
-  "release_year" : "1996"
-}
-, {
-  "title" : "Mrs. Doubtfire",
-  "release_year" : "1993"
-}
-, {
-  "title" : "Murder in the First",
-  "release_year" : "1995"
-}
-, {
-  "title" : "Murder in the First",
-  "release_year" : "2014"
-}
-, {
-  "title" : "My Reality",
-  "release_year" : "2011"
-}
-, {
-  "title" : "Need For Speed",
-  "release_year" : "2014"
-}
-, {
-  "title" : "Never Die Twice",
-  "release_year" : "2001"
-}
-, {
-  "title" : "Night of Henna",
-  "release_year" : "2005"
-}
-, {
-  "title" : "Nina Takes a Lover",
-  "release_year" : "1994"
-}
-, {
-  "title" : "Nine Months",
-  "release_year" : "1995"
-}
-, {
-  "title" : "Nine to Five",
-  "release_year" : "1980"
-}
-, {
-  "title" : "Nora Prentiss",
-  "release_year" : "1947"
-}
-, {
-  "title" : "On the Beach",
-  "release_year" : "1959"
-}
-, {
-  "title" : "On the Road",
-  "release_year" : "2010"
-}
-, {
-  "title" : "Pacific Heights",
-  "release_year" : "1990"
-}
-, {
-  "title" : "Pal Joey",
-  "release_year" : "1957"
-}
-, {
-  "title" : "Panther",
-  "release_year" : "1995"
-}
-, {
-  "title" : "Parks and Recreation",
-  "release_year" : "2014"
-}
-, {
-  "title" : "Patch Adams",
-  "release_year" : "1998"
-}
-, {
-  "title" : "Patty Hearst",
-  "release_year" : "1988"
-}
-, {
-  "title" : "Petulia",
-  "release_year" : "1968"
-}
-, {
-  "title" : "Phenomenon",
-  "release_year" : "1996"
-}
-, {
-  "title" : "Playing Mona Lisa",
-  "release_year" : "2000"
-}
-, {
-  "title" : "Play it Again, Sam",
-  "release_year" : "1972"
-}
-, {
-  "title" : "Pleasure of His Company",
-  "release_year" : "1961"
-}
-, {
-  "title" : "Point Blank",
-  "release_year" : "1967"
-}
-, {
-  "title" : "Pretty Woman",
-  "release_year" : "1990"
-}
-, {
-  "title" : "Psych-Out",
-  "release_year" : "1968"
-}
-, {
-  "title" : "Quicksilver",
-  "release_year" : "1986"
-}
-, {
-  "title" : "Quitters",
-  "release_year" : "2014"
-}
-, {
-  "title" : "Raising Cain",
-  "release_year" : "1992"
-}
-, {
-  "title" : "Red Diaper Baby",
-  "release_year" : "2004"
-}
-, {
-  "title" : "Red Widow",
-  "release_year" : "2013"
-}
-, {
-  "title" : "Rent",
-  "release_year" : "2005"
-}
-, {
-  "title" : "Rollerball",
-  "release_year" : "2002"
-}
-, {
-  "title" : "Romeo Must Die",
-  "release_year" : "2000"
-}
-, {
-  "title" : "San Francisco",
-  "release_year" : "1936"
-}
-, {
-  "title" : "Sausalito",
-  "release_year" : "2000"
-}
-, {
-  "title" : "Serendipity",
-  "release_year" : "2001"
-}
-, {
-  "title" : "Serial",
-  "release_year" : "1980"
-}
-, {
-  "title" : "Seven Girlfriends",
-  "release_year" : "1999"
-}
-, {
-  "title" : "Shadow of the Thin Man",
-  "release_year" : "1941"
-}
-, {
-  "title" : "Shattered",
-  "release_year" : "1991"
-}
-, {
-  "title" : "Shoot the Moon",
-  "release_year" : "1982"
-}
-, {
-  "title" : "Sister Act",
-  "release_year" : "1992"
-}
-, {
-  "title" : "Sister Act 2: Back in the Habit",
-  "release_year" : "1993"
-}
-, {
-  "title" : "Sneakers",
-  "release_year" : "1992"
-}
-, {
-  "title" : "So I Married an Axe Murderer",
-  "release_year" : "1993"
-}
-, {
-  "title" : "Sphere",
-  "release_year" : "1998"
-}
-, {
-  "title" : "Star Trek II : The Wrath of Khan",
-  "release_year" : "1982"
-}
-, {
-  "title" : "Star Trek IV: The Voyage Home",
-  "release_year" : "1986"
-}
-, {
-  "title" : "Star Trek VI: The Undiscovered County",
-  "release_year" : "1991"
-}
-, {
-  "title" : "Stigmata",
-  "release_year" : "1999"
-}
-, {
-  "title" : "Street Music",
-  "release_year" : "1981"
-}
-, {
-  "title" : "Sudden Fear",
-  "release_year" : "1952"
-}
-, {
-  "title" : "Sudden Impact",
-  "release_year" : "1983"
-}
-, {
-  "title" : "Superman",
-  "release_year" : "1978"
-}
-, {
-  "title" : "Susan Slade",
-  "release_year" : "1961"
-}
-, {
-  "title" : "Sweet November",
-  "release_year" : "2001"
-}
-, {
-  "title" : "Swing",
-  "release_year" : "2003"
-}
-, {
-  "title" : "Swingin' Along",
-  "release_year" : "1961"
-}
-, {
-  "title" : "Take the Money and Run",
-  "release_year" : "1969"
-}
-, {
-  "title" : "The Assassination of Richard Nixon",
-  "release_year" : "2004"
-}
-, {
-  "title" : "The Bachelor",
-  "release_year" : "1999"
-}
-, {
-  "title" : "The Birds",
-  "release_year" : "1963"
-}
-, {
-  "title" : "The Bridge",
-  "release_year" : "2006"
-}
-, {
-  "title" : "The Caine Mutiny",
-  "release_year" : "1954"
-}
-, {
-  "title" : "The Californians",
-  "release_year" : "2005"
-}
-, {
-  "title" : "The Candidate",
-  "release_year" : "1972"
-}
-, {
-  "title" : "The Competiton",
-  "release_year" : "1980"
-}
-, {
-  "title" : "The Conversation",
-  "release_year" : "1974"
-}
-, {
-  "title" : "The Core",
-  "release_year" : "2003"
-}
-, {
-  "title" : "The Dead Pool",
-  "release_year" : "1988"
-}
-, {
-  "title" : "The Diary of a Teenage Girl",
-  "release_year" : "2015"
-}
-, {
-  "title" : "The Doctor",
-  "release_year" : "1991"
-}
-, {
-  "title" : "The Doors",
-  "release_year" : "1991"
-}
-, {
-  "title" : "The Enforcer",
-  "release_year" : "1976"
-}
-, {
-  "title" : "The Fan",
-  "release_year" : "1996"
-}
-, {
-  "title" : "The Fog of War",
-  "release_year" : "2003"
-}
-, {
-  "title" : "The Game",
-  "release_year" : "1997"
-}
-, {
-  "title" : "The Graduate",
-  "release_year" : "1967"
-}
-, {
-  "title" : "The House on Telegraph Hill",
-  "release_year" : "1951"
-}
-, {
-  "title" : "The Internship",
-  "release_year" : "2013"
-}
-, {
-  "title" : "The Jazz Singer",
-  "release_year" : "1927"
-}
-, {
-  "title" : "The Lady from Shanghai",
-  "release_year" : "1947"
-}
-, {
-  "title" : "The Last of the Gladiators",
-  "release_year" : "1988"
-}
-, {
-  "title" : "The Laughing Policeman",
-  "release_year" : "1973"
-}
-, {
-  "title" : "The Lineup",
-  "release_year" : "1958"
-}
-, {
-  "title" : "The Love Bug",
-  "release_year" : "1968"
-}
-, {
-  "title" : "The Maltese Falcon",
-  "release_year" : "1941"
-}
-, {
-  "title" : "The Master",
-  "release_year" : "2012"
-}
-, {
-  "title" : "The Matrix",
-  "release_year" : "1999"
-}
-, {
-  "title" : "The Net",
-  "release_year" : "1995"
-}
-, {
-  "title" : "The Nightmare Before Christmas",
-  "release_year" : "1993"
-}
-, {
-  "title" : "The Organization",
-  "release_year" : "1971"
-}
-, {
-  "title" : "The Other Sister",
-  "release_year" : "1999"
-}
-, {
-  "title" : "The Parent Trap",
-  "release_year" : "1998"
-}
-, {
-  "title" : "The Presidio",
-  "release_year" : "1988"
-}
-, {
-  "title" : "The Princess Diaries",
-  "release_year" : "2001"
-}
-, {
-  "title" : "The Pursuit of Happyness",
-  "release_year" : "2006"
-}
-, {
-  "title" : "The Right Stuff",
-  "release_year" : "1983"
-}
-, {
-  "title" : "The Rock",
-  "release_year" : "1996"
-}
-, {
-  "title" : "The Sweetest Thing",
-  "release_year" : "2002"
-}
-, {
-  "title" : "The Ten Commandments",
-  "release_year" : "1923"
-}
-, {
-  "title" : "The Times of Harvey Milk",
-  "release_year" : "1984"
-}
-, {
-  "title" : "The Towering Inferno",
-  "release_year" : "1974"
-}
-, {
-  "title" : "The Wedding Planner",
-  "release_year" : "2001"
-}
-, {
-  "title" : "The Woman In Red",
-  "release_year" : "1984"
-}
-, {
-  "title" : "They Call Me MISTER Tibbs",
-  "release_year" : "1970"
-}
-, {
-  "title" : "The Zodiac",
-  "release_year" : "2005"
-}
-, {
-  "title" : "Thief of Hearts",
-  "release_year" : "1984"
-}
-, {
-  "title" : "Time After Time",
-  "release_year" : "1979"
-}
-, {
-  "title" : "Tin Cup",
-  "release_year" : "1996"
-}
-, {
-  "title" : "To the Ends of the Earth",
-  "release_year" : "1948"
-}
-, {
-  "title" : "True Believer",
-  "release_year" : "1989"
-}
-, {
-  "title" : "Tucker: The Man and His Dreams",
-  "release_year" : "1988"
-}
-, {
-  "title" : "Tweek City",
-  "release_year" : "2005"
-}
-, {
-  "title" : "Twisted",
-  "release_year" : "2004"
-}
-, {
-  "title" : "Under the Tuscan Sun",
-  "release_year" : "2003"
-}
-, {
-  "title" : "Until the End of the World",
-  "release_year" : "1991"
-}
-, {
-  "title" : "Vegas in Space",
-  "release_year" : "1991"
-}
-, {
-  "title" : "Vertigo",
-  "release_year" : "1958"
-}
-, {
-  "title" : "What Dreams May Come",
-  "release_year" : "1998"
-}
-, {
-  "title" : "What's Up Doc?",
-  "release_year" : "1972"
-}
-, {
-  "title" : "What the Bleep Do We Know",
-  "release_year" : "2004"
-}
-, {
-  "title" : "When a Man Loves a Woman",
-  "release_year" : "1994"
-}
-, {
-  "title" : "Woman on the Run",
-  "release_year" : "1950"
-}
-, {
-  "title" : "Woman on Top",
-  "release_year" : "2000"
-}
-, {
-  "title" : "Yours, Mine and Ours",
-  "release_year" : "1968"
-}
-, {
-  "title" : "Zodiac",
-  "release_year" : "2007"
-}
-, {
-  "title" : "Sense8",
-  "release_year" : "2014"
-}
-, {
-  "title" : "Ant-Man",
-  "release_year" : "2014"
-}
-, {
-  "title" : "San Andreas",
-  "release_year" : "2014"
-}
-, {
-  "title" : "Terminator - Genisys",
-  "release_year" : "2014"
-}
- ]
+[
+  {
+    "title": "180",
+    "release_year": "2011",
+    "director": "Jayendra",
+    "imdb_id": "tt1855110",
+    "plot": "A young man Ajay (cancer victim) meets two lovely women Renu (wife) and Vidya (journalist) in his life.",
+    "poster": "images/posters/tt1855110.jpg"
+  },
+  {
+    "title": "24 Hours on Craigslist",
+    "release_year": "2005",
+    "director": "Michael Ferris Gibson",
+    "imdb_id": "tt0377029",
+    "plot": "N/A",
+    "poster": "images/posters/tt0377029.jpg"
+  },
+  {
+    "title": "48 Hours",
+    "release_year": "1982",
+    "director": "Walter Hill",
+    "imdb_id": "tt0271894",
+    "plot": "One of television's most popular true-crime series, investigating shocking cases and compelling real-life dramas with journalistic integrity and cutting-edge style.",
+    "poster": "images/posters/tt0271894.jpg"
+  },
+  {
+    "title": "50 First Dates",
+    "release_year": "2004",
+    "director": "Peter Segal",
+    "imdb_id": "tt0343660",
+    "plot": "Henry Roth is a man afraid of commitment up until he meets the beautiful Lucy. They hit it off and Henry think he's finally found the girl of his dreams, until he discovers she has short-term memory loss and forgets him the very next day.",
+    "poster": "images/posters/tt0343660.jpg"
+  },
+  {
+    "title": "About a Boy",
+    "release_year": "2014",
+    "director": "Mark J. Kunerth",
+    "imdb_id": "tt0276751",
+    "plot": "A cynical, immature young man is taught how to act like a grown-up by a little boy.",
+    "poster": "images/posters/tt0276751.jpg"
+  },
+  {
+    "title": "After the Thin Man",
+    "release_year": "1936",
+    "director": "W.S. Van Dyke",
+    "imdb_id": "tt0027260",
+    "plot": "Nick investigates the case of a missing man and later a murder that is connected to Nora's family.",
+    "poster": "images/posters/tt0027260.jpg"
+  },
+  {
+    "title": "A Jitney Elopement",
+    "release_year": "1915",
+    "director": "Charles Chaplin",
+    "imdb_id": "tt0005571",
+    "plot": "Edna's father wants her to marry wealthy Count He-Ha. Charlie, Edna's true love, impersonates the Count at dinner, but the real Count shows up and Charlie is thrown out. Later on Charlie ...",
+    "poster": "images/posters/tt0005571.jpg"
+  },
+  {
+    "title": "Alcatraz",
+    "release_year": "2012",
+    "director": "J.J. Abrams",
+    "imdb_id": "tt1728102",
+    "plot": "In 1963, all the prisoners and guards mysteriously disappear from Alcatraz. In the present day, they resurface and a secret agency are tasked with re-capturing them.",
+    "poster": "images/posters/tt1728102.jpg"
+  },
+  {
+    "title": "Alexander's Ragtime Band",
+    "release_year": "1938",
+    "director": "Henry King",
+    "imdb_id": "tt0029852",
+    "plot": "This send-up of ragtime song and dance begins in 1915 San Francisco when society boy Roger Grant decides to pursue popular rather than serious music.",
+    "poster": "images/posters/tt0029852.jpg"
+  },
+  {
+    "title": "All About Eve",
+    "release_year": "1950",
+    "director": "Joseph L. Mankiewicz",
+    "imdb_id": "tt0042192",
+    "plot": "An ingenue insinuates herself in to the company of an established but aging stage actress and her circle of theater friends.",
+    "poster": "images/posters/tt0042192.jpg"
+  },
+  {
+    "title": "American Graffiti",
+    "release_year": "1973",
+    "director": "George Lucas",
+    "imdb_id": "tt0069704",
+    "plot": "A couple of high school grads spend one final night cruising the strip with their buddies before they go off to college.",
+    "poster": "images/posters/tt0069704.jpg"
+  },
+  {
+    "title": "American Yearbook",
+    "release_year": "2004",
+    "director": "Brian Ging",
+    "imdb_id": "tt0386284",
+    "plot": "Will is the kid-next-door, but is relentlessly terrorized by school bullies. Then the mysterious Chance eventually convinces Will that they should get a gun and take the bullies out: pull a Columbine.",
+    "poster": "images/posters/tt0386284.jpg"
+  },
+  {
+    "title": "A Night Full of Rain",
+    "release_year": "1978",
+    "director": "Lina Wertmuller",
+    "imdb_id": "tt0077548",
+    "plot": "Candice Bergen and Giancarlo Giannini star as two people from very different worlds who fall in love in A Night Full of Rain. When romantic Italian journalist Paolo (Giannini) rescues ...",
+    "poster": "images/posters/tt0077548.jpg"
+  },
+  {
+    "title": "Another 48 Hours",
+    "release_year": "1990",
+    "director": "Walter Hill",
+    "imdb_id": null,
+    "plot": null
+  },
+  {
+    "title": "Around the Fire",
+    "release_year": "1998",
+    "director": "John Jacobsen",
+    "imdb_id": "tt0139030",
+    "plot": "Around the Fire is the deeply resonant story of a boy named Simon, who despite being raised in an upper-class Manhattan household with all its privileges--and restrictions--is haunted by ...",
+    "poster": "images/posters/tt0139030.jpg"
+  },
+  {
+    "title": "A Smile Like Yours",
+    "release_year": "1997",
+    "director": "Keith Samples",
+    "imdb_id": "tt0120151",
+    "plot": "Greg Kinnear plays a carriage-shy husband in a romantic comedy about a couple trying to conceive a child.",
+    "poster": "images/posters/tt0120151.jpg"
+  },
+  {
+    "title": "A Smile Like Yours ",
+    "release_year": "1997",
+    "director": "Keith Samples",
+    "imdb_id": "tt0120151",
+    "plot": "Greg Kinnear plays a carriage-shy husband in a romantic comedy about a couple trying to conceive a child.",
+    "poster": "images/posters/tt0120151.jpg"
+  },
+  {
+    "title": "Attack of the Killer Tomatoes",
+    "release_year": "1978",
+    "director": "John DeBello",
+    "imdb_id": "tt0124229",
+    "plot": "A group of people thwart a mad scientist trying to take over the world with evil mutated tomatoes that he can change into people."
+  },
+  {
+    "title": "A View to a Kill",
+    "release_year": "1985",
+    "director": "John Glen",
+    "imdb_id": "tt0090264",
+    "plot": "An investigation of a horse-racing scam leads 007 to a mad industrialist who plans to create a worldwide microchip monopoly by destroying California's Silicon Valley.",
+    "poster": "images/posters/tt0090264.jpg"
+  },
+  {
+    "title": "Babies",
+    "release_year": "2010",
+    "director": "Thomas Balmes",
+    "imdb_id": "tt1020938",
+    "plot": "A look at one year in the life of four babies from around the world, from Mongolia to Namibia to San Francisco to Tokyo.",
+    "poster": "images/posters/tt1020938.jpg"
+  },
+  {
+    "title": "Barbary Coast",
+    "release_year": "1935",
+    "director": "Howard Hawks",
+    "imdb_id": "tt0026097",
+    "plot": "Mary Rutledge arrives from the east, finds her fiance dead, and goes to work at the roulette wheel of Louis Charnalis' Bella Donna, a rowdy gambling house in San Francisco in the 1850s. She...",
+    "poster": "images/posters/tt0026097.jpg"
+  },
+  {
+    "title": "Basic Instinct",
+    "release_year": "1992",
+    "director": "Paul Verhoeven",
+    "imdb_id": "tt0103772",
+    "plot": "A police detective is in charge of the investigation of a brutal murder, in which a beautiful and seductive woman could be involved.",
+    "poster": "images/posters/tt0103772.jpg"
+  },
+  {
+    "title": "Beaches",
+    "release_year": "1988",
+    "director": "Garry Marshall",
+    "imdb_id": "tt0094715",
+    "plot": "A privileged rich debutante and a cynical struggling entertainer share a turbulent, but strong childhood friendship over the years.",
+    "poster": "images/posters/tt0094715.jpg"
+  },
+  {
+    "title": "Bedazzled",
+    "release_year": "2000",
+    "director": "Harold Ramis",
+    "imdb_id": "tt0230030",
+    "plot": "Hopeless dweeb Elliot Richards is granted 7 wishes by the devil to snare Allison, the girl of his dreams, in exchange for his soul.",
+    "poster": "images/posters/tt0230030.jpg"
+  },
+  {
+    "title": "Bee Season",
+    "release_year": "2005",
+    "director": "Scott McGehee",
+    "imdb_id": "tt0387059",
+    "plot": "A wife and mother begins a downward emotional spiral, as her husband avoids their collapsing marriage by immersing himself in his 11 year-old daughter's quest to become a spelling bee champion.",
+    "poster": "images/posters/tt0387059.jpg"
+  },
+  {
+    "title": "Bicentennial Man",
+    "release_year": "1999",
+    "director": "Chris Columbus",
+    "imdb_id": "tt0182789",
+    "plot": "An android endeavors to become human as he gradually acquires emotions.",
+    "poster": "images/posters/tt0182789.jpg"
+  },
+  {
+    "title": "Big Eyes",
+    "release_year": "2014",
+    "director": "Tim Burton",
+    "imdb_id": "tt1126590",
+    "plot": "A drama about the awakening of the painter Margaret Keane, her phenomenal success in the 1950s, and the subsequent legal difficulties she had with her husband, who claimed credit for her works in the 1960s.",
+    "poster": "images/posters/tt1126590.jpg"
+  },
+  {
+    "title": "Big Sur",
+    "release_year": "2012",
+    "director": "Micael Polish",
+    "imdb_id": "tt1462411",
+    "plot": "A recounting of Jack Kerouac's (here known by the name of his fictional alter-ego Jack Duluoz) three sojourns to the cabin in Big Sur, owned by poet Lawrence Ferlinghetti.",
+    "poster": "images/posters/tt1462411.jpg"
+  },
+  {
+    "title": "Big Touble in Little China",
+    "release_year": "1986",
+    "director": "John Carpenter",
+    "imdb_id": null,
+    "plot": null
+  },
+  {
+    "title": "Birdman of Alcatraz",
+    "release_year": "1962",
+    "director": "John Frankenheimer",
+    "imdb_id": "tt0055798",
+    "plot": "A surly convicted murderer held in permanent isolation redeems himself when he becomes a renowned bird expert.",
+    "poster": "images/posters/tt0055798.jpg"
+  },
+  {
+    "title": "Blue Jasmine",
+    "release_year": "2013",
+    "director": "Woody Allen",
+    "imdb_id": "tt2334873",
+    "plot": "A New York socialite, deeply troubled and in denial, arrives in San Francisco to impose upon her sister. She looks a million, but isn't bringing money, peace, or love...",
+    "poster": "images/posters/tt2334873.jpg"
+  },
+  {
+    "title": "Boys and Girls",
+    "release_year": "2000",
+    "director": "Robert Iscove",
+    "imdb_id": "tt0204175",
+    "plot": "A friendship is put to the ultimate test when two best friends wind up in bed together.",
+    "poster": "images/posters/tt0204175.jpg"
+  },
+  {
+    "title": "Broken-A Modern Love Story ",
+    "release_year": "2010",
+    "director": "Ryan K. Whiting",
+    "imdb_id": null,
+    "plot": null
+  },
+  {
+    "title": "Bullitt",
+    "release_year": "1968",
+    "director": "Peter Yates",
+    "imdb_id": "tt0062765",
+    "plot": "An all guts, no glory San Francisco cop becomes determined to find the underworld kingpin that killed the witness in his protection.",
+    "poster": "images/posters/tt0062765.jpg"
+  },
+  {
+    "title": "Burglar",
+    "release_year": "1987",
+    "director": "Hugh Wilson",
+    "imdb_id": "tt0092710",
+    "plot": "Bernice \"Bernie\" Rhodenbarr is a burglar by trade, and she runs a bookstore as well. Her friend Carl Hefler is a dog groomer. After a successful burglary, it's discovered that a dead body ...",
+    "poster": "images/posters/tt0092710.jpg"
+  },
+  {
+    "title": "By Hook or By Crook",
+    "release_year": "2001",
+    "director": "Harriet Dodge & Silas Howard",
+    "imdb_id": "tt0290498",
+    "plot": "Shy, a small-town butch with a nagging messiah complex, heads to the big city to immerse herself in a life of crime. On her journey, she meets her match in Valentine, a wise-acre adoptee ...",
+    "poster": "images/posters/tt0290498.jpg"
+  },
+  {
+    "title": "Can't Stop the Music",
+    "release_year": "1980",
+    "director": "Nancy Walker",
+    "imdb_id": "tt0080492",
+    "plot": "This is a Pseudo autobiography of disco's The Village People",
+    "poster": "images/posters/tt0080492.jpg"
+  },
+  {
+    "title": "Casualties of War",
+    "release_year": "1989",
+    "director": "Brian DePalma",
+    "imdb_id": "tt0097027",
+    "plot": "During the Vietnam War, a soldier finds himself the outsider of his own squad when they unnecessarily kidnap a female villager.",
+    "poster": "images/posters/tt0097027.jpg"
+  },
+  {
+    "title": "Chan is Missing",
+    "release_year": "1982",
+    "director": "Wayne Wang",
+    "imdb_id": "tt0083728",
+    "plot": "Two cabbies search San Francisco's Chinatown for a mysterious character who has disappeared with their $4000. Their quest leads them on a humorous, if mundane, journey which illuminates the...",
+    "poster": "images/posters/tt0083728.jpg"
+  },
+  {
+    "title": "Cherish",
+    "release_year": "2002",
+    "director": "Finn Taylor",
+    "imdb_id": "tt0298798",
+    "plot": "After a martini-induced rampage, a fantasy-prone young woman is placed under house arrest.",
+    "poster": "images/posters/tt0298798.jpg"
+  },
+  {
+    "title": "Chu Chu and the Philly Flash",
+    "release_year": "1981",
+    "director": "David Lowell Rich",
+    "imdb_id": "tt0082177",
+    "plot": "Flash used to be a talented baseball player but he took to drinking and now he sells stolen watches in the streets. One day he meets Chu Chu who, before falling into alcoholism like him, ...",
+    "poster": "images/posters/tt0082177.jpg"
+  },
+  {
+    "title": "City of Angels",
+    "release_year": "1998",
+    "director": "Brad Silberling",
+    "imdb_id": "tt0120632",
+    "plot": "Inspired by the modern classic, Wings of Desire, City involves an angel (Cage) who is spotted by a doctor in an operating room. Franz plays Cage's buddy who somehow knows a lot about angels.",
+    "poster": "images/posters/tt0120632.jpg"
+  },
+  {
+    "title": "Class Action",
+    "release_year": "1991",
+    "director": "Michael Apted",
+    "imdb_id": "tt0101590",
+    "plot": "Jeb Ward is an attorney who specializes in whistle blower, David vs. Goliath, type cases. He finds a client who is suing an auto company over a safety problem that has had a severe effect ...",
+    "poster": "images/posters/tt0101590.jpg"
+  },
+  {
+    "title": "Common Threads: Stories From the Quilt",
+    "release_year": "1989",
+    "director": "Rob Epstein",
+    "imdb_id": "tt0097099",
+    "plot": "A collection of profiles of people dead from AIDS who are remembered in the AIDS Memorial Quilt.",
+    "poster": "images/posters/tt0097099.jpg"
+  },
+  {
+    "title": "Confessions of a Burning Man",
+    "release_year": "2003",
+    "director": "Paul Barnett",
+    "imdb_id": "tt0357567",
+    "plot": "N/A",
+    "poster": "images/posters/tt0357567.jpg"
+  },
+  {
+    "title": "Copycat",
+    "release_year": "1995",
+    "director": "Jon Amiel",
+    "imdb_id": "tt0112722",
+    "plot": "An agoraphobic psychologist and a female detective must work together to take down a serial killer who copies serial killers from the past.",
+    "poster": "images/posters/tt0112722.jpg"
+  },
+  {
+    "title": "Crackers",
+    "release_year": "1984",
+    "director": "Louis Malle",
+    "imdb_id": "tt0087096",
+    "plot": "Garvey is a San Francisco pawnshop operator. His unemployed and criminal friends Dillard, Turtle, and Weslake, team up with Boardwalk, a local pimp, to burgle Garvey's shop while the owner ...",
+    "poster": "images/posters/tt0087096.jpg"
+  },
+  {
+    "title": "CSI: NY- episode 903",
+    "release_year": "2012",
+    "director": "Vikki Williams",
+    "imdb_id": null,
+    "plot": null
+  },
+  {
+    "title": "Dark Passage",
+    "release_year": "1947",
+    "director": "Delmer Daves",
+    "imdb_id": "tt0039302",
+    "plot": "A man convicted of murdering his wife escapes from prison and works with a woman to try and prove his innocence.",
+    "poster": "images/posters/tt0039302.jpg"
+  },
+  {
+    "title": "Dawn of the Planet of the Apes",
+    "release_year": "2014",
+    "director": "Matt Reeves",
+    "imdb_id": "tt2103281",
+    "plot": "A growing nation of genetically evolved apes led by Caesar is threatened by a band of human survivors of the devastating virus unleashed a decade earlier.",
+    "poster": "images/posters/tt2103281.jpg"
+  },
+  {
+    "title": "Days of Wine and Roses",
+    "release_year": "1962",
+    "director": "Blake Edwards",
+    "imdb_id": "tt0055895",
+    "plot": "An alcoholic falls in love with and gets married to a young woman, whom he systematically addicts to booze so they can share his \"passion\" together.",
+    "poster": "images/posters/tt0055895.jpg"
+  },
+  {
+    "title": "Desperate Measures",
+    "release_year": "1998",
+    "director": "Barbet Schroeder",
+    "imdb_id": "tt0118966",
+    "plot": "San Francisco police officer Frank Connor is in a frantic search for a compatible bone marrow donor for his gravely ill son. There's only one catch: the potential donor is convicted ...",
+    "poster": "images/posters/tt0118966.jpg"
+  },
+  {
+    "title": "Dim Sum: A Little Bit of Heart",
+    "release_year": "1986",
+    "director": "Wayne Wang",
+    "imdb_id": "tt0087150",
+    "plot": "In San Francisco, an immigrant Chinese widow welcomes the new year with some unhappiness: she's 62 now, she wants to make a trip to China to pay last respects to her ancestors, a fortune ...",
+    "poster": "images/posters/tt0087150.jpg"
+  },
+  {
+    "title": "Dirty Harry",
+    "release_year": "1971",
+    "director": "Don Siegel",
+    "imdb_id": "tt0066999",
+    "plot": "When a mad man calling himself 'the Scorpio Killer' menaces the city, tough as nails San Francisco Police Inspector Harry Callahan is assigned to track down and ferret out the crazed psychopath.",
+    "poster": "images/posters/tt0066999.jpg"
+  },
+  {
+    "title": "D.O.A",
+    "release_year": "1950",
+    "director": "Rudolph Mate",
+    "imdb_id": "tt1758081",
+    "plot": "Tom,a junior doctor under suspension for fatally removing the wrong lung from a patient and nick-named Dr. Death,is working in Leeds as a paramedic with the knowing Julie,who sells sex aids..."
+  },
+  {
+    "title": "Doctor Doolittle",
+    "release_year": "1998",
+    "director": "Betty Thomas",
+    "imdb_id": null,
+    "plot": null
+  },
+  {
+    "title": "Dopamine",
+    "release_year": "2003",
+    "director": "Mark Decena",
+    "imdb_id": "tt0342300",
+    "plot": "A San Franciscan computer programmer falls in love with one his creations in the days after the dot.com boom.",
+    "poster": "images/posters/tt0342300.jpg"
+  },
+  {
+    "title": "Down Periscope",
+    "release_year": "1996",
+    "director": "David S. Ward",
+    "imdb_id": "tt0116130",
+    "plot": "Lt. Cmdr. Tom Dodge is assigned as Captain to the USS Stingray, an old diesel driven submarine that has seen better days. With a crew that consists only of weird guys (and a gal), he's ...",
+    "poster": "images/posters/tt0116130.jpg"
+  },
+  {
+    "title": "Dr. Doolittle 2",
+    "release_year": "2001",
+    "director": "Steve Carr",
+    "imdb_id": null,
+    "plot": null
+  },
+  {
+    "title": "Dream for an Insomniac",
+    "release_year": "1998",
+    "director": "Tiffanie DeBartolo",
+    "imdb_id": "tt0116141",
+    "plot": "Girl leads a lonely life until she meets the boy of her dreams. The boy, however, has a live-in girlfriend.",
+    "poster": "images/posters/tt0116141.jpg"
+  },
+  {
+    "title": "Dream with the Fishes",
+    "release_year": "1997",
+    "director": "Finn Taylor",
+    "imdb_id": "tt0119019",
+    "plot": "Terry is a suicidal voyeur who treats a dying addict to a final binge, but Terry will only do this if he promises to kill him.",
+    "poster": "images/posters/tt0119019.jpg"
+  },
+  {
+    "title": "Dying Young",
+    "release_year": "1991",
+    "director": "Joel Schumacher",
+    "imdb_id": "tt0101787",
+    "plot": "After she discovers that her boyfriend has betrayed her, Hilary O'Neil is looking for a new start and a new job. She begins to work as a private nurse for a young man suffering from blood ...",
+    "poster": "images/posters/tt0101787.jpg"
+  },
+  {
+    "title": "Edtv",
+    "release_year": "1999",
+    "director": "Ron Howard",
+    "imdb_id": "tt0131369",
+    "plot": "A video store clerk agrees to have his life filmed by a camera crew for a television show.",
+    "poster": "images/posters/tt0131369.jpg"
+  },
+  {
+    "title": "Escape From Alcatraz",
+    "release_year": "1979",
+    "director": "Donald Siegel",
+    "imdb_id": "tt0079116",
+    "plot": "A dramatization of the one possibly successful escape from the infamous prison island in 1962.",
+    "poster": "images/posters/tt0079116.jpg"
+  },
+  {
+    "title": "Experiment in Terror",
+    "release_year": "1962",
+    "director": "Blake Edwards",
+    "imdb_id": "tt0055972",
+    "plot": "Kelly Sherwood is terrorized by a man with an asthmatic voice who plans to use her to steal $100,000 from the bank where she works. He threatens to kill her teenage sister Toby, if she ...",
+    "poster": "images/posters/tt0055972.jpg"
+  },
+  {
+    "title": "Faces of Death",
+    "release_year": "1978",
+    "director": "Conan Le Cilaire",
+    "imdb_id": "tt0077533",
+    "plot": "A collection of death scenes, ranging from TV-material to home-made super-8 movies The common factor is death by some means.",
+    "poster": "images/posters/tt0077533.jpg"
+  },
+  {
+    "title": "Family Plot",
+    "release_year": "1976",
+    "director": "Alfred Hitchcock",
+    "imdb_id": "tt0074512",
+    "plot": "Lighthearted suspense film about a phony psychic/con artist and her taxi driver/private investigator boyfriend who encounter a pair of serial kidnappers while trailing a missing heir in California.",
+    "poster": "images/posters/tt0074512.jpg"
+  },
+  {
+    "title": "Fandom",
+    "release_year": "2004",
+    "director": "Nicholas Tucker",
+    "imdb_id": "tt0417667",
+    "plot": "\"Fandom\" takes an inside look at true fandom, as the filmmakers follow the journey a devout fan (Gordon Coleman) to meet the famed celebrity that he admires.",
+    "poster": "images/posters/tt0417667.jpg"
+  },
+  {
+    "title": "Fathers' Day",
+    "release_year": "1997",
+    "director": "Ivan Reitman",
+    "imdb_id": "tt0119109",
+    "plot": "A woman cons two old boyfriends into searching for her runaway son by convincing both that they are the boy's father.",
+    "poster": "images/posters/tt0119109.jpg"
+  },
+  {
+    "title": "Fat Man and Little Boy",
+    "release_year": "1989",
+    "director": "Roland Joffe",
+    "imdb_id": "tt0097336",
+    "plot": "This film reenacts the Manhattan Project, the secret wartime project in New Mexico where the first atomic bombs were designed and built.",
+    "poster": "images/posters/tt0097336.jpg"
+  },
+  {
+    "title": "Fearless",
+    "release_year": "1993",
+    "director": "Peter Weir",
+    "imdb_id": "tt0446059",
+    "plot": "A biography of Chinese Martial Arts Master Huo Yuanjia, who is the founder and spiritual guru of the Jin Wu Sports Federation.",
+    "poster": "images/posters/tt0446059.jpg"
+  },
+  {
+    "title": "Final Analysis",
+    "release_year": "1992",
+    "director": "Phil Joanou",
+    "imdb_id": "tt0104265",
+    "plot": "A psychiatrist (Gere) has an affair with his patient's sister (Basinger) who is married to a Greek mobster (Roberts). The mobster is a tyrant over his wife. The psychiatrist wants her to ...",
+    "poster": "images/posters/tt0104265.jpg"
+  },
+  {
+    "title": "Flower Drum Song",
+    "release_year": "1961",
+    "director": "Henry Koster",
+    "imdb_id": "tt0054885",
+    "plot": "Chinese stowaway Mei Li (Miyoshi Umeki) arrives in San Francisco with her father to meet her fiancé, wealthy nightclub owner Sammy Fong (Jack Soo), in an arranged marriage, but the groom ...",
+    "poster": "images/posters/tt0054885.jpg"
+  },
+  {
+    "title": "Flubber",
+    "release_year": "1997",
+    "director": "Les Mayfield",
+    "imdb_id": "tt0119137",
+    "plot": "An absent-minded professor discovers \"flubber,\" a rubber-like super-bouncy substance.",
+    "poster": "images/posters/tt0119137.jpg"
+  },
+  {
+    "title": "Forrest Gump",
+    "release_year": "1994",
+    "director": "Robert Zemeckis",
+    "imdb_id": "tt0109830",
+    "plot": "Forrest Gump, while not intelligent, has accidentally been present at many historic moments, but his true love, Jenny Curran, eludes him.",
+    "poster": "images/posters/tt0109830.jpg"
+  },
+  {
+    "title": "Forty Days and Forty Nights",
+    "release_year": "2002",
+    "director": "Michael Lehmann",
+    "imdb_id": "tt0322974",
+    "plot": "N/A"
+  },
+  {
+    "title": "Foul Play",
+    "release_year": "1978",
+    "director": "Colin Higgins",
+    "imdb_id": "tt0077578",
+    "plot": "A shy San Francisco librarian and a bumbling cop fall in love as they solve a crime involving albinos, dwarves, and the Catholic Church.",
+    "poster": "images/posters/tt0077578.jpg"
+  },
+  {
+    "title": "Freebie and the Bean",
+    "release_year": "1974",
+    "director": "Richard Rush",
+    "imdb_id": "tt0071521",
+    "plot": "San Francisco police detectives Freebie and Bean are determined to bust local crime boss Red Meyers at any cost, even if this means destroying the whole city in the process.",
+    "poster": "images/posters/tt0071521.jpg"
+  },
+  {
+    "title": "Gentleman Jim",
+    "release_year": "1942",
+    "director": "Raoul Walsh",
+    "imdb_id": "tt0034778",
+    "plot": "As bareknuckled boxing enters the modern era, brash extrovert Jim Corbett uses new rules and dazzlingly innovative footwork to rise to the top of the top of the boxing world.",
+    "poster": "images/posters/tt0034778.jpg"
+  },
+  {
+    "title": "George of the Jungle",
+    "release_year": "1997",
+    "director": "Sam Weisman",
+    "imdb_id": "tt0119190",
+    "plot": "George grows up in the jungle raised by apes. Based on the Cartoon series.",
+    "poster": "images/posters/tt0119190.jpg"
+  },
+  {
+    "title": "Getting Even with Dad",
+    "release_year": "1994",
+    "director": "Howard Deutch",
+    "imdb_id": "tt0109891",
+    "plot": "A thief's son cons his father into spending more time with him.",
+    "poster": "images/posters/tt0109891.jpg"
+  },
+  {
+    "title": "God is a Communist?* (show me heart universe)",
+    "release_year": "2010",
+    "director": "Jon Poznanter",
+    "imdb_id": "tt2698124",
+    "plot": "A new religion is born. The CIA investigates."
+  },
+  {
+    "title": "Godzilla",
+    "release_year": "2014",
+    "director": "Gareth Edwards",
+    "imdb_id": "tt0831387",
+    "plot": "The world's most famous monster is pitted against malevolent creatures who, bolstered by humanity's scientific arrogance, threaten our very existence.",
+    "poster": "images/posters/tt0831387.jpg"
+  },
+  {
+    "title": "Golden Gate",
+    "release_year": "1994",
+    "director": "Howard Deutch",
+    "imdb_id": "tt0109917",
+    "plot": "A brash 22-year-old FBI agent trumps up charges of Communist spying against a Chinese laundryman. Ten years later, he wants to make amends to the man and his teenage daughter.",
+    "poster": "images/posters/tt0109917.jpg"
+  },
+  {
+    "title": "Golden Gate",
+    "release_year": "1994",
+    "director": "John Madden",
+    "imdb_id": "tt0109917",
+    "plot": "A brash 22-year-old FBI agent trumps up charges of Communist spying against a Chinese laundryman. Ten years later, he wants to make amends to the man and his teenage daughter.",
+    "poster": "images/posters/tt0109917.jpg"
+  },
+  {
+    "title": "Greed",
+    "release_year": "1924",
+    "director": "Eric von Stroheim ",
+    "imdb_id": "tt0015881",
+    "plot": "The sudden fortune won from a lottery fans such destructive greed that it ruins the lives of the three people involved.",
+    "poster": "images/posters/tt0015881.jpg"
+  },
+  {
+    "title": "Groove",
+    "release_year": "2000",
+    "director": "Greg Harrison",
+    "imdb_id": "tt0212974",
+    "plot": "An inside look into one night in the San Francisco underground rave scene.",
+    "poster": "images/posters/tt0212974.jpg"
+  },
+  {
+    "title": "Guess Who's Coming to Dinner",
+    "release_year": "1967",
+    "director": "Stanley Kramer",
+    "imdb_id": "tt0061735",
+    "plot": "A couple's attitudes are challenged when their daughter introduces them to her African-American fiancé.",
+    "poster": "images/posters/tt0061735.jpg"
+  },
+  {
+    "title": "Haiku Tunnel",
+    "release_year": "2001",
+    "director": "Jakob Kornbluth & Josh Kornbluth",
+    "imdb_id": "tt0273253",
+    "plot": "Josh has an offer to \"go perm\" at his employer and the first task is to mail 17 high priority letters....something that seems a little difficult to do.",
+    "poster": "images/posters/tt0273253.jpg"
+  },
+  {
+    "title": "Happy Gilmore",
+    "release_year": "1996",
+    "director": "Dennis Dugan",
+    "imdb_id": "tt0116483",
+    "plot": "A rejected hockey player puts his skills to the golf course to save his grandmother's house.",
+    "poster": "images/posters/tt0116483.jpg"
+  },
+  {
+    "title": "Hard to Hold",
+    "release_year": "1984",
+    "director": "Larry Peerce",
+    "imdb_id": "tt0087384",
+    "plot": "Details the efforts of a pop-rock star (James Roberts / Rick Springfield) to win the love of a woman he meets in a car accident. None of the usual gambits work on this woman, who has never ...",
+    "poster": "images/posters/tt0087384.jpg"
+  },
+  {
+    "title": "Harold and Maude",
+    "release_year": "1971",
+    "director": "Hal Ashby",
+    "imdb_id": "tt0067185",
+    "plot": "Young, rich, and obsessed with death, Harold finds himself changed forever when he meets lively septuagenarian Maude at a funeral.",
+    "poster": "images/posters/tt0067185.jpg"
+  },
+  {
+    "title": "Heart and Souls",
+    "release_year": "1994",
+    "director": "Tomas Gislason",
+    "imdb_id": "tt0107091",
+    "plot": "A businessman is reunited with the four lost souls who were his guardian angels during childhood, all with a particular purpose to joining the afterlife.",
+    "poster": "images/posters/tt0107091.jpg"
+  },
+  {
+    "title": "Heart Beat",
+    "release_year": "1980",
+    "director": "John Byrum",
+    "imdb_id": "tt0080854",
+    "plot": "The life and friendship between the icons of the Beat Generation - Neal Cassady, Carloyn Cassady and Jack Kerouac.",
+    "poster": "images/posters/tt0080854.jpg"
+  },
+  {
+    "title": "Hello Frisco, Hello",
+    "release_year": "1943",
+    "director": "Bruce Humberstone",
+    "imdb_id": "tt0035982",
+    "plot": "In turn-of-the-century San Francisco, an ambitious vaudevillian takes his quartet from a honky tonk to the big time, while spurning the love of his troupe's star singer for a selfish heiress.",
+    "poster": "images/posters/tt0035982.jpg"
+  },
+  {
+    "title": "Hemingway & Gelhorn",
+    "release_year": "2011",
+    "director": "Philip Kaufman",
+    "imdb_id": "tt0094476",
+    "plot": "Of all the memorable characters created by Pulitzer and Nobel Prize winning author Ernest Hemingway, none was more complicated, more fascinating, or more charismatic than Hemingway himself....",
+    "poster": "images/posters/tt0094476.jpg"
+  },
+  {
+    "title": "Herbie Rides Again",
+    "release_year": "1974",
+    "director": "Robert Stevenson",
+    "imdb_id": "tt0071607",
+    "plot": "The living Volkswagen Beetle helps an old lady protect her home from a corrupt developer.",
+    "poster": "images/posters/tt0071607.jpg"
+  },
+  {
+    "title": "Hereafter",
+    "release_year": "2009",
+    "director": "Clint Eastwood",
+    "imdb_id": "tt1212419",
+    "plot": "A drama centered on three people -- a blue-collar American, a French journalist and a London school boy -- who are touched by death in different ways.",
+    "poster": "images/posters/tt1212419.jpg"
+  },
+  {
+    "title": "High Anxiety",
+    "release_year": "1977",
+    "director": "Mel Brooks",
+    "imdb_id": "tt0076141",
+    "plot": "Mel Brooks' parody of Alfred Hitchcock films.",
+    "poster": "images/posters/tt0076141.jpg"
+  },
+  {
+    "title": "High Crimes",
+    "release_year": "2002",
+    "director": "Carl Franklin",
+    "imdb_id": "tt0257756",
+    "plot": "High powered lawyer Claire Kubik finds her world turned upside down when her husband, who she thought was Tom Kubik, is arrested and is revealed to be Ron Chapman. Chapman is on trial for a...",
+    "poster": "images/posters/tt0257756.jpg"
+  },
+  {
+    "title": "High Crimes",
+    "release_year": "1977",
+    "director": "Mel Brooks",
+    "imdb_id": "tt0257756",
+    "plot": "High powered lawyer Claire Kubik finds her world turned upside down when her husband, who she thought was Tom Kubik, is arrested and is revealed to be Ron Chapman. Chapman is on trial for a...",
+    "poster": "images/posters/tt0257756.jpg"
+  },
+  {
+    "title": "Homeward Bound II: Lost in San Francisco",
+    "release_year": "1996",
+    "director": "David R. Ellis",
+    "imdb_id": "tt0116552",
+    "plot": "Shadow, Sassy, and Chance have to find their way home after they become stranded at the San Francisco International Airport as their owners fly to Canada on vacation.",
+    "poster": "images/posters/tt0116552.jpg"
+  },
+  {
+    "title": "House of Sand and Fog",
+    "release_year": "2003",
+    "director": "Vadim Perelman",
+    "imdb_id": "tt0315983",
+    "plot": "An abandoned wife is evicted from her house and starts a tragic conflict with her home's new owners.",
+    "poster": "images/posters/tt0315983.jpg"
+  },
+  {
+    "title": "How Stella Got Her Groove Back",
+    "release_year": "1998",
+    "director": "Kevin Rodney Sullivan",
+    "imdb_id": "tt0120703",
+    "plot": "Stella is a highly successful, forty-something San Francisco stock broker who is persuaded by her colorful New York girlfriend Delilah to take a well deserved, first-class vacation to ...",
+    "poster": "images/posters/tt0120703.jpg"
+  },
+  {
+    "title": "Hulk",
+    "release_year": "2003",
+    "director": "Ang Lee",
+    "imdb_id": "tt0286716",
+    "plot": "Bruce Banner, a genetics researcher with a tragic past, suffers an accident that causes him to transform into a raging green monster when he gets angry.",
+    "poster": "images/posters/tt0286716.jpg"
+  },
+  {
+    "title": "Indiana Jones and the Last Crusade",
+    "release_year": "1989",
+    "director": "Steven Spielberg",
+    "imdb_id": "tt0097576",
+    "plot": "When Dr. Henry Jones Sr. suddenly goes missing while pursuing the Holy Grail, eminent archaeologist Indiana Jones must follow in his father's footsteps and stop the Nazis.",
+    "poster": "images/posters/tt0097576.jpg"
+  },
+  {
+    "title": "Innerspace",
+    "release_year": "1987",
+    "director": "Joe Dante",
+    "imdb_id": "tt0093260",
+    "plot": "A hapless store clerk must foil criminals to save the life of the man who, miniaturized in a secret experiment, was accidentally injected into him.",
+    "poster": "images/posters/tt0093260.jpg"
+  },
+  {
+    "title": "Interview With The Vampire",
+    "release_year": "1994",
+    "director": "Neil Jordan",
+    "imdb_id": "tt0110148",
+    "plot": "A vampire tells his epic life story: love, betrayal, loneliness, and hunger.",
+    "poster": "images/posters/tt0110148.jpg"
+  },
+  {
+    "title": "Invasion of the Body Snatchers",
+    "release_year": "1978",
+    "director": "Philip Kaufman",
+    "imdb_id": "tt0077745",
+    "plot": "In San Francisco, a group of people discover the human race is being replaced one by one, with clones devoid of emotion.",
+    "poster": "images/posters/tt0077745.jpg"
+  },
+  {
+    "title": "I Remember Mama",
+    "release_year": "1948",
+    "director": "George Stevens",
+    "imdb_id": "tt0040458",
+    "plot": "The ups and downs of a Norwegian immigrant family, circa 1910.",
+    "poster": "images/posters/tt0040458.jpg"
+  },
+  {
+    "title": "I's",
+    "release_year": "2011",
+    "director": "Chris Edgette",
+    "imdb_id": "tt0480249",
+    "plot": "Years after a plague kills most of humanity and transforms the rest into monsters, the sole survivor in New York City struggles valiantly to find a cure.",
+    "poster": "images/posters/tt0480249.jpg"
+  },
+  {
+    "title": "It Came From Beneath the Sea",
+    "release_year": "1955",
+    "director": "Robert Gordon",
+    "imdb_id": "tt0048215",
+    "plot": "A Giant Octopus, whose feeding habits have been affected by radiation from H-Bomb tests, rises from the Mindanao Deep to terrorize the California Coast.",
+    "poster": "images/posters/tt0048215.jpg"
+  },
+  {
+    "title": "Jack",
+    "release_year": "1996",
+    "director": "Francis Ford Coppola",
+    "imdb_id": "tt0116669",
+    "plot": "Because of an unusual aging disorder that has aged him four times faster than a normal human being, a boy enters the fifth grade for the first time with the appearance of a 40 year old man.",
+    "poster": "images/posters/tt0116669.jpg"
+  },
+  {
+    "title": "Jade",
+    "release_year": "1995",
+    "director": "William Friedkin",
+    "imdb_id": "tt0113451",
+    "plot": "A bright assistant D.A. investigates a gruesome hatchet murder and hides a clue he found at the crime scene. Under professional threats and an attempt on his life, he goes on heartbroken because evidence point to the woman he still loves.",
+    "poster": "images/posters/tt0113451.jpg"
+  },
+  {
+    "title": "Jagged Edge",
+    "release_year": "1985",
+    "director": "Richard Marquand",
+    "imdb_id": "tt0089360",
+    "plot": "San Francisco heiress Page Forrester is brutally murdered in her remote beach house. Her husband Jack is devastated by the crime but soon finds himself accused of her murder. He hires ...",
+    "poster": "images/posters/tt0089360.jpg"
+  },
+  {
+    "title": "James and the Giant Peach",
+    "release_year": "1996",
+    "director": "Henry Selick",
+    "imdb_id": "tt0116683",
+    "plot": "An orphan with terrible aunts for guardians, befriends human like bugs who live inside a giant peach, who take the boy on a journey to New York City.",
+    "poster": "images/posters/tt0116683.jpg"
+  },
+  {
+    "title": "Joy Luck Club",
+    "release_year": "1993",
+    "director": "Wayne Wang",
+    "imdb_id": "tt0107282",
+    "plot": "The life histories of four Asian women and their daughters reflect and guide each other.",
+    "poster": "images/posters/tt0107282.jpg"
+  },
+  {
+    "title": "Julie and Jack",
+    "release_year": "2003",
+    "director": "James Nguyen",
+    "imdb_id": "tt0358551",
+    "plot": "A computer chip salesman dates a software designer in a virtual reality program.",
+    "poster": "images/posters/tt0358551.jpg"
+  },
+  {
+    "title": "Junior",
+    "release_year": "1994",
+    "director": "Ivan Reitman",
+    "imdb_id": "tt0110216",
+    "plot": "As part of a fertility research project, a male scientist agrees to carry a pregnancy in his own body.",
+    "poster": "images/posters/tt0110216.jpg"
+  },
+  {
+    "title": "Just Like Heaven",
+    "release_year": "2005",
+    "director": "Mark Waters",
+    "imdb_id": "tt0425123",
+    "plot": "A lonely landscape architect falls for the spirit of the beautiful woman who used to live in his new apartment.",
+    "poster": "images/posters/tt0425123.jpg"
+  },
+  {
+    "title": "Just One Night",
+    "release_year": "2000",
+    "director": "Alan Jacobs",
+    "imdb_id": "tt0201901",
+    "plot": "Professor Isaac Balter, en route to his wedding, stops over in San Francisco for one night and falls in love with another beautiful woman, Aurora. In his twenty-four hour wild ride, he ...",
+    "poster": "images/posters/tt0201901.jpg"
+  },
+  {
+    "title": "Kamikaze Hearts",
+    "release_year": "1986",
+    "director": "Juliet Bashore",
+    "imdb_id": "tt0091323",
+    "plot": "Tough and cynical veteran Mitch and her more naive, yet eager partner Tigr are a couple of porn actresses involved in an intense lesbian relationship. Their already strained relationship ..."
+  },
+  {
+    "title": "Knife Fight",
+    "release_year": "2012",
+    "director": "Bill Guttentag",
+    "imdb_id": "tt1931466",
+    "plot": "A political strategist juggling three clients questions whether or not to take the high road as the ugly side of his work begins to haunt him.",
+    "poster": "images/posters/tt1931466.jpg"
+  },
+  {
+    "title": "Live Nude Girls Unite",
+    "release_year": "2000",
+    "director": "Vicky Funari",
+    "imdb_id": "tt0264802",
+    "plot": "Documentary look at the 1996-97 effort of the dancers and support staff at a San Francisco peep show, The Lusty Lady, to unionize. Angered by arbitrary and race-based wage policies, ...",
+    "poster": "images/posters/tt0264802.jpg"
+  },
+  {
+    "title": "Looking",
+    "release_year": "2014",
+    "director": "Andrew Haigh",
+    "imdb_id": "tt2581458",
+    "plot": "The experiences of three close friends living and loving in modern-day San Francisco.",
+    "poster": "images/posters/tt2581458.jpg"
+  },
+  {
+    "title": "Love & Taxes",
+    "release_year": "2011",
+    "director": "Jacob Kornbluth",
+    "imdb_id": "tt0057012",
+    "plot": "An insane general triggers a path to nuclear holocaust that a war room full of politicians and generals frantically try to stop.",
+    "poster": "images/posters/tt0057012.jpg"
+  },
+  {
+    "title": "Magnum Force",
+    "release_year": "1973",
+    "director": "Ted Post",
+    "imdb_id": "tt0070355",
+    "plot": "Dirty Harry is on the trail of vigilante cops who are not above going beyond the law to kill the city's undesirables.",
+    "poster": "images/posters/tt0070355.jpg"
+  },
+  {
+    "title": "Marnie",
+    "release_year": "1964",
+    "director": "Alfred Hitchcock",
+    "imdb_id": "tt0058329",
+    "plot": "Mark marries Marnie although she is a habitual thief and has serious psychological problems, and tries to help her confront and resolve them.",
+    "poster": "images/posters/tt0058329.jpg"
+  },
+  {
+    "title": "Maxie",
+    "release_year": "1985",
+    "director": "Paul Aaron",
+    "imdb_id": "tt0089569",
+    "plot": "A 1920s flapper who haunts her old house possesses a dull housewife who just moved in. Hilarity ensues.",
+    "poster": "images/posters/tt0089569.jpg"
+  },
+  {
+    "title": "Memoirs of an Invisible Man",
+    "release_year": "1992",
+    "director": "John Carpenter",
+    "imdb_id": "tt0104850",
+    "plot": "After a freak accident, an invisible yuppie runs for his life from a treacherous CIA official while trying to cope with his new life.",
+    "poster": "images/posters/tt0104850.jpg"
+  },
+  {
+    "title": "Metro",
+    "release_year": "1997",
+    "director": "Thomas Carter",
+    "imdb_id": "tt0119664",
+    "plot": "Roper, a hostage negotiator catches a murderous bank robber after a blown heist. The bank robber escapes and immediately goes after the man who put him behind bars. The ending is played out...",
+    "poster": "images/posters/tt0119664.jpg"
+  },
+  {
+    "title": "Midnight Lace",
+    "release_year": "1960",
+    "director": "David Miller",
+    "imdb_id": "tt0054084",
+    "plot": "In London, a newly-wed American woman's sanity comes into question, when she claims to be the victim of a stalker.",
+    "poster": "images/posters/tt0054084.jpg"
+  },
+  {
+    "title": "Milk",
+    "release_year": "2008",
+    "director": "Gus Van Sant",
+    "imdb_id": "tt1013753",
+    "plot": "The story of Harvey Milk, and his struggles as an American gay activist who fought for gay rights and became California's first openly gay elected official.",
+    "poster": "images/posters/tt1013753.jpg"
+  },
+  {
+    "title": "Mission (aka City of Bars)",
+    "release_year": "2001",
+    "director": "Loren Marsh",
+    "imdb_id": null,
+    "plot": null
+  },
+  {
+    "title": "Mona Lisa Smile",
+    "release_year": "2003",
+    "director": "Mike Newell",
+    "imdb_id": "tt0304415",
+    "plot": "A free-thinking art professor teaches conservative 1950s Wellesley girls to question their traditional social roles.",
+    "poster": "images/posters/tt0304415.jpg"
+  },
+  {
+    "title": "Mother",
+    "release_year": "1996",
+    "director": "Albert Brooks",
+    "imdb_id": "tt1216496",
+    "plot": "A mother desperately searches for the killer who framed her son for a girl's horrific murder.",
+    "poster": "images/posters/tt1216496.jpg"
+  },
+  {
+    "title": "Mrs. Doubtfire",
+    "release_year": "1993",
+    "director": "Chris Columbus",
+    "imdb_id": "tt0107614",
+    "plot": "After a bitter divorce, an actor disguises himself as a female housekeeper to spend time with his children held in custody by his former wife.",
+    "poster": "images/posters/tt0107614.jpg"
+  },
+  {
+    "title": "Murder in the First",
+    "release_year": "1995",
+    "director": "Marc Rocco",
+    "imdb_id": "tt0113870",
+    "plot": "An eager and idealistic young attorney defends an Alcatraz prisoner accused of murdering a fellow inmate. The extenuating circumstances: his client had just spent over three years in solitary confinement.",
+    "poster": "images/posters/tt0113870.jpg"
+  },
+  {
+    "title": "Murder in the First",
+    "release_year": "2014",
+    "director": "Steven Bochco",
+    "imdb_id": "tt0113870",
+    "plot": "An eager and idealistic young attorney defends an Alcatraz prisoner accused of murdering a fellow inmate. The extenuating circumstances: his client had just spent over three years in solitary confinement.",
+    "poster": "images/posters/tt0113870.jpg"
+  },
+  {
+    "title": "My Reality",
+    "release_year": "2011",
+    "director": "Marcia Kimpton",
+    "imdb_id": "tt3435356",
+    "plot": "My Reality is a documentary as well as a personal narrative about what motivates a filmmaker. Filmmakers tell stories, they have the passion to share their experiences and unique ...<a href=\"//m.imdb.com/title/tt3435356/plotsummary?ref_=m_tt_ov_pl\">"
+  },
+  {
+    "title": "Need For Speed",
+    "release_year": "2014",
+    "director": "Scott Waugh",
+    "imdb_id": "tt2369135",
+    "plot": "Fresh from prison, a street racer who was framed by a wealthy business associate joins a cross country race with revenge in mind. His ex-partner, learning of the plan, places a massive bounty on his head as the race begins..",
+    "poster": "images/posters/tt2369135.jpg"
+  },
+  {
+    "title": "Never Die Twice",
+    "release_year": "2001",
+    "director": "Sean A.F. Scott",
+    "imdb_id": "tt0250612",
+    "plot": "Two Female San Francisco police detectives find their own bodies dead on the ground. They have four days to investigate their own deaths before it happens again."
+  },
+  {
+    "title": "Night of Henna",
+    "release_year": "2005",
+    "director": "Hassan Zee",
+    "imdb_id": "tt0379402",
+    "plot": "A beautiful Pakistani woman has to make choice between her true love or an arranged marriage by her family.",
+    "poster": "images/posters/tt0379402.jpg"
+  },
+  {
+    "title": "Nina Takes a Lover",
+    "release_year": "1994",
+    "director": "Alan Jacobs",
+    "imdb_id": "tt0110671",
+    "plot": "When Ninas husband goes off for a few weeks to work, she meets and starts seeing a photographer. This story is told as an interview by a journalist writing about adultery who is talking ...",
+    "poster": "images/posters/tt0110671.jpg"
+  },
+  {
+    "title": "Nine Months",
+    "release_year": "1995",
+    "director": "Chris Columbus",
+    "imdb_id": "tt0113986",
+    "plot": "When he finds out his longtime girlfriend is pregnant, a commitment-phobe realizes he might have to change his lifestyle for better or much, much worse.",
+    "poster": "images/posters/tt0113986.jpg"
+  },
+  {
+    "title": "Nine to Five",
+    "release_year": "1980",
+    "director": "Colin Higgins",
+    "imdb_id": "tt0080319",
+    "plot": "Three female employees of a sexist, egotistical, lying, hypocritical bigot find a way to turn the tables on him.",
+    "poster": "images/posters/tt0080319.jpg"
+  },
+  {
+    "title": "Nora Prentiss",
+    "release_year": "1947",
+    "director": "Vincent Sherman",
+    "imdb_id": "tt0039666",
+    "plot": "Quiet, organised Dr Talbot meets nightclub singer Nora Prentiss when she is slightly hurt in a street accident. Despite her misgivings they become heavily involved and Talbot finds he is ...",
+    "poster": "images/posters/tt0039666.jpg"
+  },
+  {
+    "title": "On the Beach",
+    "release_year": "1959",
+    "director": "Stanley Kramer",
+    "imdb_id": "tt0053137",
+    "plot": "After a global nuclear war, the residents of Australia must come to terms with the fact that all life will be destroyed in a matter of months.",
+    "poster": "images/posters/tt0053137.jpg"
+  },
+  {
+    "title": "On the Road",
+    "release_year": "2010",
+    "director": "Walter Salles",
+    "imdb_id": "tt0337692",
+    "plot": "Young writer Sal Paradise has his life shaken by the arrival of free-spirited Dean Moriarty and his girl, Marylou. As they travel across the country, they encounter a mix of people who each impact their journey indelibly.",
+    "poster": "images/posters/tt0337692.jpg"
+  },
+  {
+    "title": "Pacific Heights",
+    "release_year": "1990",
+    "director": "John Schlesinger",
+    "imdb_id": "tt0100318",
+    "plot": "A couple works hard to renovate their dream house and become landlords to pay for it. Unfortunately one of their tenants has plans of his own.",
+    "poster": "images/posters/tt0100318.jpg"
+  },
+  {
+    "title": "Pal Joey",
+    "release_year": "1957",
+    "director": "George Sidney",
+    "imdb_id": "tt0050815",
+    "plot": "Joey Evans is charming, handsome, funny, talented, and a first class, A-number-one heel. When Joey meets the former chorus girl (\"She used to be 'Vera...with the Vanishing Veils'\") and now ...",
+    "poster": "images/posters/tt0050815.jpg"
+  },
+  {
+    "title": "Panther",
+    "release_year": "1995",
+    "director": "Mario Van Peebles",
+    "imdb_id": "tt0114084",
+    "plot": "A dramatized account of the story of The Black Panther Party of Self-Defense.",
+    "poster": "images/posters/tt0114084.jpg"
+  },
+  {
+    "title": "Parks and Recreation",
+    "release_year": "2014",
+    "director": "Dean Holland",
+    "imdb_id": "tt1266020",
+    "plot": "The absurd antics of an Indiana town's public officials as they pursue sundry projects to make their city a better place.",
+    "poster": "images/posters/tt1266020.jpg"
+  },
+  {
+    "title": "Patch Adams",
+    "release_year": "1998",
+    "director": "Tom Shadyac",
+    "imdb_id": "tt0129290",
+    "plot": "In the 1970s, a medical student treats patients, illegally, using humor.",
+    "poster": "images/posters/tt0129290.jpg"
+  },
+  {
+    "title": "Patty Hearst",
+    "release_year": "1988",
+    "director": "Paul Schrader",
+    "imdb_id": "tt0095836",
+    "plot": "The true story of a rich girl who was abducted by American revolutionaries in the 1970's. Her time spent with her captors made her question herself and her way of life and she joined forces...",
+    "poster": "images/posters/tt0095836.jpg"
+  },
+  {
+    "title": "Petulia",
+    "release_year": "1968",
+    "director": "Richard Lester",
+    "imdb_id": "tt0063426",
+    "plot": "An unhappily married socialite finds solace in the company of a recently divorced doctor.",
+    "poster": "images/posters/tt0063426.jpg"
+  },
+  {
+    "title": "Phenomenon",
+    "release_year": "1996",
+    "director": "Jon Turteltaub",
+    "imdb_id": "tt0117333",
+    "plot": "An ordinary man sees a bright light descend from the sky, and discovers he now has super-intelligence and telekinesis.",
+    "poster": "images/posters/tt0117333.jpg"
+  },
+  {
+    "title": "Playing Mona Lisa",
+    "release_year": "2000",
+    "director": "Matthew Huffman",
+    "imdb_id": "tt0187559",
+    "plot": "A young pianist is looking for love in all the wrong places once her fiancee drops her. Maybe her flame will be rekindled both for the piano and a new love?",
+    "poster": "images/posters/tt0187559.jpg"
+  },
+  {
+    "title": "Play it Again, Sam",
+    "release_year": "1972",
+    "director": "Herbert Ross",
+    "imdb_id": "tt0069097",
+    "plot": "A neurotic film critic tries to get over his wife leaving him by dating again, much by the help of a married couple and his alter ego, Humphrey Bogart.",
+    "poster": "images/posters/tt0069097.jpg"
+  },
+  {
+    "title": "Pleasure of His Company",
+    "release_year": "1961",
+    "director": "George Seaton",
+    "imdb_id": "tt0055307",
+    "plot": "San Francisco debutante, Jessica Poole, is marrying Napa Valley cattle rancher, Roger Henderson, and hopes her peripatetic father, \"Pogo\" Poole, whom she hasn't seen for years, comes to the...",
+    "poster": "images/posters/tt0055307.jpg"
+  },
+  {
+    "title": "Point Blank",
+    "release_year": "1967",
+    "director": "John Boorman",
+    "imdb_id": "tt0062138",
+    "plot": "After being double-crossed and left for dead, a mysterious man named Walker single-mindedly tries to retrieve the rather inconsequential sum of money that was stolen from him.",
+    "poster": "images/posters/tt0062138.jpg"
+  },
+  {
+    "title": "Pretty Woman",
+    "release_year": "1990",
+    "director": "Garry Marshall",
+    "imdb_id": "tt0100405",
+    "plot": "A man in a legal but hurtful business needs an escort for some social events, and hires a beautiful prostitute he meets... only to fall in love.",
+    "poster": "images/posters/tt0100405.jpg"
+  },
+  {
+    "title": "Psych-Out",
+    "release_year": "1968",
+    "director": "Richard Rush",
+    "imdb_id": "tt0063469",
+    "plot": "A deaf runaway arrives in San Francisco's Haight-Ashbury hippie district looking for her missing brother.",
+    "poster": "images/posters/tt0063469.jpg"
+  },
+  {
+    "title": "Quicksilver",
+    "release_year": "1986",
+    "director": "Thomas Michael Donnelly",
+    "imdb_id": "tt0091814",
+    "plot": "Jack Casey used to be a hot-shot stock market whiz kid. After a disastrous professional decision, his life in the fast lane is over. He loses his nerve and joins a speed delivery firm which...",
+    "poster": "images/posters/tt0091814.jpg"
+  },
+  {
+    "title": "Quitters",
+    "release_year": "2014",
+    "director": "Noah Pritzker",
+    "imdb_id": "tt3018528",
+    "plot": "A teenager's family falls apart, so he finds a better one.",
+    "poster": "images/posters/tt3018528.jpg"
+  },
+  {
+    "title": "Raising Cain",
+    "release_year": "1992",
+    "director": "Brian DePalma",
+    "imdb_id": "tt0105217",
+    "plot": "Jenny Nix, wife of eminent child psychologist Carter Nix, becomes increasingly concerned about her husband's seemingly obsessive concern over the upbringing of their daughter. Her own ...",
+    "poster": "images/posters/tt0105217.jpg"
+  },
+  {
+    "title": "Red Diaper Baby",
+    "release_year": "2004",
+    "director": "Doug Pray",
+    "imdb_id": "tt0350041",
+    "plot": "Monolinguist Josh Kornbluth's meditation on growing up as the child of Communist parents.",
+    "poster": "images/posters/tt0350041.jpg"
+  },
+  {
+    "title": "Red Widow",
+    "release_year": "2013",
+    "director": "Alon Aranya",
+    "imdb_id": "tt2215399",
+    "plot": "A widow learns that her husband was a mobster, and soon finds herself in the world of organized crime as she takes her revenge on those who murdered him.",
+    "poster": "images/posters/tt2215399.jpg"
+  },
+  {
+    "title": "Rent",
+    "release_year": "2005",
+    "director": "Chris Columbus",
+    "imdb_id": "tt0294870",
+    "plot": "This is the film version of the Pulitzer and Tony Award winning musical about Bohemians in the East Village of New York City struggling with life, love and AIDS, and the impacts they have on America.",
+    "poster": "images/posters/tt0294870.jpg"
+  },
+  {
+    "title": "Rollerball",
+    "release_year": "2002",
+    "director": "John McTiernan",
+    "imdb_id": "tt0246894",
+    "plot": "The big thing in 2005 is a violent sport which can have some pretty serious consequences... like dying.",
+    "poster": "images/posters/tt0246894.jpg"
+  },
+  {
+    "title": "Romeo Must Die",
+    "release_year": "2000",
+    "director": "Andrzej Bartkowiak",
+    "imdb_id": "tt0165929",
+    "plot": "An avenging cop seeks out his brother's killer and falls for the daughter of a businessman who is involved in a money-deal with his father.",
+    "poster": "images/posters/tt0165929.jpg"
+  },
+  {
+    "title": "San Francisco",
+    "release_year": "1936",
+    "director": "W.S. Van Dyke",
+    "imdb_id": "tt0028216",
+    "plot": "A Barbary Coast saloonkeeper and a Nob Hill impresario are rivals for the affections of a beautiful singer, both personally and professionally in 1906 San Francisco.",
+    "poster": "images/posters/tt0028216.jpg"
+  },
+  {
+    "title": "Sausalito",
+    "release_year": "2000",
+    "director": "Andrew Lau",
+    "imdb_id": "tt0240880",
+    "plot": "Ella is a divorced Chinese American taxi driver who spends her days ferrying people around the roads of Sausalito, San Francisco. After work, she spends time with her 8-year old son, Scott....",
+    "poster": "images/posters/tt0240880.jpg"
+  },
+  {
+    "title": "Serendipity",
+    "release_year": "2001",
+    "director": "Peter Chelsom",
+    "imdb_id": "tt0240890",
+    "plot": "A couple reunite years after the night they first met, fell in love, and separated, convinced that one day they'd end up together.",
+    "poster": "images/posters/tt0240890.jpg"
+  },
+  {
+    "title": "Serial",
+    "release_year": "1980",
+    "director": "Bill Persky",
+    "imdb_id": "tt0081485",
+    "plot": "It's the end of the 70s. Hippies are assimilating, women are raising their consciousness, and men are becoming confused and ineffectual. Don't expect to be able to keep track of all the ...",
+    "poster": "images/posters/tt0081485.jpg"
+  },
+  {
+    "title": "Seven Girlfriends",
+    "release_year": "1999",
+    "director": "Paul Lazarus",
+    "imdb_id": "tt0177215",
+    "plot": "Jesse is charming, romantic, and he knows how to pop the question; he just can't face marriage. So, when he and Hannah split up during the same week that a former fiancée dies, he decides ...",
+    "poster": "images/posters/tt0177215.jpg"
+  },
+  {
+    "title": "Shadow of the Thin Man",
+    "release_year": "1941",
+    "director": "W.S. Van Dyke",
+    "imdb_id": "tt0034172",
+    "plot": "Nick and Nora are at their wise-cracking best as they investigate murder and racketeering at a local race-track.",
+    "poster": "images/posters/tt0034172.jpg"
+  },
+  {
+    "title": "Shattered",
+    "release_year": "1991",
+    "director": "Wolfgang Petersen",
+    "imdb_id": "tt0489664",
+    "plot": "A perfect family's dynamic is ruined by a kidnapper's brutally efficient plot.",
+    "poster": "images/posters/tt0489664.jpg"
+  },
+  {
+    "title": "Shoot the Moon",
+    "release_year": "1982",
+    "director": "Alan Parker",
+    "imdb_id": "tt0084675",
+    "plot": "A fifteen year marriage dissolves, leaving both the husband and wife, and their four children, devastated. He's preoccupied with a career and a mistress, she with a career and caring for ...",
+    "poster": "images/posters/tt0084675.jpg"
+  },
+  {
+    "title": "Sister Act",
+    "release_year": "1992",
+    "director": "Emile Ardolino",
+    "imdb_id": "tt0105417",
+    "plot": "When a worldly singer witnesses a mob crime, the police hide her as a nun in a traditional convent where she has trouble fitting in.",
+    "poster": "images/posters/tt0105417.jpg"
+  },
+  {
+    "title": "Sister Act 2: Back in the Habit",
+    "release_year": "1993",
+    "director": "Bill Duke",
+    "imdb_id": "tt0108147",
+    "plot": "The sisters come back to Delores's show to get her back as Sister Mary Clarence to teach music to a group of students in their parochial school which is doomed for closure. One of the girls...",
+    "poster": "images/posters/tt0108147.jpg"
+  },
+  {
+    "title": "Sneakers",
+    "release_year": "1992",
+    "director": "Phil Alden Robinson",
+    "imdb_id": "tt0105435",
+    "plot": "Complex but lighthearted thriller about computers and cryptography, government and espionage, secrets and deception and betrayal.",
+    "poster": "images/posters/tt0105435.jpg"
+  },
+  {
+    "title": "So I Married an Axe Murderer",
+    "release_year": "1993",
+    "director": "Thomas Schlamme",
+    "imdb_id": "tt0108174",
+    "plot": "A San Francisco poet who fears commitment has a girlfriend who he suspects may not be who she appears.",
+    "poster": "images/posters/tt0108174.jpg"
+  },
+  {
+    "title": "Sphere",
+    "release_year": "1998",
+    "director": "Barry Levinson",
+    "imdb_id": "tt0120184",
+    "plot": "A spaceship is discovered under three hundred years' worth of coral growth at the bottom of the ocean.",
+    "poster": "images/posters/tt0120184.jpg"
+  },
+  {
+    "title": "Star Trek II : The Wrath of Khan",
+    "release_year": "1982",
+    "director": "Nicholas Meyer",
+    "imdb_id": "tt0084726",
+    "plot": "With the assistance of the Enterprise crew, Admiral Kirk must stop an old nemesis, Khan Noonien Singh, from using his son's life-generating device, the Genesis Device, as the ultimate weapon.",
+    "poster": "images/posters/tt0084726.jpg"
+  },
+  {
+    "title": "Star Trek IV: The Voyage Home",
+    "release_year": "1986",
+    "director": "Leonard Nimoy",
+    "imdb_id": "tt0092007",
+    "plot": "To save Earth from an alien probe, Admiral Kirk and his fugitive crew go back in time to 20th century Earth to retrieve the only beings who can communicate with it, humpback whales.",
+    "poster": "images/posters/tt0092007.jpg"
+  },
+  {
+    "title": "Star Trek VI: The Undiscovered County",
+    "release_year": "1991",
+    "director": "Nicholas Meyer",
+    "imdb_id": null,
+    "plot": null
+  },
+  {
+    "title": "Stigmata",
+    "release_year": "1999",
+    "director": "Rupert Wainwright",
+    "imdb_id": "tt0145531",
+    "plot": "A priest from the Vatican is sent to Sao Paulo, Brazil to investigate the appearance of the face of the Virgin Mary on the side of a building. While there he hears of a statue of the Virgin...",
+    "poster": "images/posters/tt0145531.jpg"
+  },
+  {
+    "title": "Street Music",
+    "release_year": "1981",
+    "director": "Jenny Bowen",
+    "imdb_id": "tt0083129",
+    "plot": "N/A",
+    "poster": "images/posters/tt0083129.jpg"
+  },
+  {
+    "title": "Sudden Fear",
+    "release_year": "1952",
+    "director": "David Miller",
+    "imdb_id": "tt0045205",
+    "plot": "After an ambitious actor insinuates himself into the life of a wealthy middle-aged playwright and marries her, he plots with his mistress to murder her.",
+    "poster": "images/posters/tt0045205.jpg"
+  },
+  {
+    "title": "Sudden Impact",
+    "release_year": "1983",
+    "director": "Clint Eastwood",
+    "imdb_id": "tt0086383",
+    "plot": "A rape victim is exacting revenge on her agressors in a small town outside San Francisco. Dirty Harry, on suspension for angering his superiors (again), is assigned to the case.",
+    "poster": "images/posters/tt0086383.jpg"
+  },
+  {
+    "title": "Superman",
+    "release_year": "1978",
+    "director": "Richard Donner",
+    "imdb_id": "tt0078346",
+    "plot": "An alien orphan is sent from his dying planet to Earth, where he grows up to become his adoptive home's first and greatest superhero.",
+    "poster": "images/posters/tt0078346.jpg"
+  },
+  {
+    "title": "Susan Slade",
+    "release_year": "1961",
+    "director": "Delmer Daves",
+    "imdb_id": "tt0055490",
+    "plot": "Premarital sex, secrets, and society. At 17, shy Susan Slade is on her way to California after a ten-year stay at a remote Chilean mine where her father was chief engineer. Onboard ship, ...",
+    "poster": "images/posters/tt0055490.jpg"
+  },
+  {
+    "title": "Sweet November",
+    "release_year": "2001",
+    "director": "Pat O'Connor",
+    "imdb_id": "tt0230838",
+    "plot": "Nelson is a man devoted to his advertising career in San Francisco. One day, while taking a driving test at the DMV, he meets Sara. She is very different from the other women in his life. ...",
+    "poster": "images/posters/tt0230838.jpg"
+  },
+  {
+    "title": "Swing",
+    "release_year": "2003",
+    "director": "Martin Guigui",
+    "imdb_id": "tt0307538",
+    "plot": "Max is on holiday at his grandmother's place in the Elzas in France. He's fascinated by the guitar playing of gypsy Miraldo. In exchange for writing letters to the social security ...",
+    "poster": "images/posters/tt0307538.jpg"
+  },
+  {
+    "title": "Swingin' Along",
+    "release_year": "1961",
+    "director": "Charles Barton",
+    "imdb_id": "tt0056543",
+    "plot": "N/A",
+    "poster": "images/posters/tt0056543.jpg"
+  },
+  {
+    "title": "Take the Money and Run",
+    "release_year": "1969",
+    "director": "Woody Allen",
+    "imdb_id": "tt0065063",
+    "plot": "The life and times of Virgil Starkwell, inept bank robber.",
+    "poster": "images/posters/tt0065063.jpg"
+  },
+  {
+    "title": "The Assassination of Richard Nixon",
+    "release_year": "2004",
+    "director": "Niels Mueller",
+    "imdb_id": "tt0364961",
+    "plot": "Based on real life events, Assassination is set in 1974 and centers on a businessman who decides to take extreme measures to achieve his American dream.",
+    "poster": "images/posters/tt0364961.jpg"
+  },
+  {
+    "title": "The Bachelor",
+    "release_year": "1999",
+    "director": "Gary Sinyor",
+    "imdb_id": "tt0120596",
+    "plot": "A committment-phobic man goes in search of a bride including his fed up girlfriend, to inherit his grandfather's $100 million inheritance.",
+    "poster": "images/posters/tt0120596.jpg"
+  },
+  {
+    "title": "The Birds",
+    "release_year": "1963",
+    "director": "Alfred Hitchcock",
+    "imdb_id": "tt0056869",
+    "plot": "A wealthy San Francisco socialite pursues a potential boyfriend to a small Northern California town that slowly takes a turn for the bizarre when birds of all kinds suddenly begin to attack people there in increasing numbers and with increasing viciousness.",
+    "poster": "images/posters/tt0056869.jpg"
+  },
+  {
+    "title": "The Bridge",
+    "release_year": "2006",
+    "director": "Eric Steel",
+    "imdb_id": "tt1733785",
+    "plot": "When a body is found on the bridge between Denmark and Sweden, right on the border, Danish inspector Martin Rohde and Swedish Saga Norén have to share jurisdiction and work together to find the killer.",
+    "poster": "images/posters/tt1733785.jpg"
+  },
+  {
+    "title": "The Caine Mutiny",
+    "release_year": "1954",
+    "director": "Edward Dmytryk",
+    "imdb_id": "tt0046816",
+    "plot": "When a US Naval captain shows signs of mental instability that jeopardizes the ship, the first officer relieves him of command and faces court martial for mutiny.",
+    "poster": "images/posters/tt0046816.jpg"
+  },
+  {
+    "title": "The Californians",
+    "release_year": "2005",
+    "director": "Jonathan Parker",
+    "imdb_id": "tt0377043",
+    "plot": "Slick, smug developer Gavin Ransom has a dream: make millions by blanketing the coastal hills of northern California with flamboyant, mini mansions. His sister Olive a raving ...",
+    "poster": "images/posters/tt0377043.jpg"
+  },
+  {
+    "title": "The Candidate",
+    "release_year": "1972",
+    "director": "Michael Ritchie",
+    "imdb_id": "tt0068334",
+    "plot": "Bill McKay is a candidate for the U.S. Senate from California. He has no hope of winning, so he is willing to tweak the establishment.",
+    "poster": "images/posters/tt0068334.jpg"
+  },
+  {
+    "title": "The Competiton",
+    "release_year": "1980",
+    "director": "Joel Oliansky",
+    "imdb_id": null,
+    "plot": null
+  },
+  {
+    "title": "The Conversation",
+    "release_year": "1974",
+    "director": "Francis Ford Coppola",
+    "imdb_id": "tt0071360",
+    "plot": "A paranoid, secretive surveillance expert has a crisis of conscience when he suspects that a couple he is spying on will be murdered.",
+    "poster": "images/posters/tt0071360.jpg"
+  },
+  {
+    "title": "The Core",
+    "release_year": "2003",
+    "director": "John Amiel",
+    "imdb_id": "tt0298814",
+    "plot": "The only way to save Earth from catastrophe is to drill down to the core and set it spinning again.",
+    "poster": "images/posters/tt0298814.jpg"
+  },
+  {
+    "title": "The Dead Pool",
+    "release_year": "1988",
+    "director": "Buddy Van Horn",
+    "imdb_id": "tt0094963",
+    "plot": "Dirty Harry Callahan must stop a sick secret contest to murder local celebrities, which includes himself as a target.",
+    "poster": "images/posters/tt0094963.jpg"
+  },
+  {
+    "title": "The Diary of a Teenage Girl",
+    "release_year": "2015",
+    "director": "Marielle Heller",
+    "imdb_id": "tt3172532",
+    "plot": "A teen artist living in 1970s San Francisco enters into an affair with her mother's boyfriend.",
+    "poster": "images/posters/tt3172532.jpg"
+  },
+  {
+    "title": "The Doctor",
+    "release_year": "1991",
+    "director": "Randa Haines",
+    "imdb_id": "tt0101746",
+    "plot": "Jack McKee is a doctor with it all: he's successful, he's rich, and he has no problems.... until he is diagnosed with throat cancer. Now that he has seen medicine, hospitals, and doctors ...",
+    "poster": "images/posters/tt0101746.jpg"
+  },
+  {
+    "title": "The Doors",
+    "release_year": "1991",
+    "director": "Oliver Stone",
+    "imdb_id": "tt0101761",
+    "plot": "The story of the famous and influential 1960s rock band and its lead singer and composer, Jim Morrison, from his days as a UCLA film student in Los Angeles, to his untimely death in Paris, France at age 27 in 1971.",
+    "poster": "images/posters/tt0101761.jpg"
+  },
+  {
+    "title": "The Enforcer",
+    "release_year": "1976",
+    "director": "James Fargo",
+    "imdb_id": "tt0074483",
+    "plot": "Dirty Harry must foil a terrorist organization made up of disgruntled Vietnam veterans. But this time, he's teamed with a rookie female partner that he's not too excited to be working with.",
+    "poster": "images/posters/tt0074483.jpg"
+  },
+  {
+    "title": "The Fan",
+    "release_year": "1996",
+    "director": "Tony Scott",
+    "imdb_id": "tt0116277",
+    "plot": "An all star baseball player becomes the unhealthy focus of a down on his luck salesman.",
+    "poster": "images/posters/tt0116277.jpg"
+  },
+  {
+    "title": "The Fog of War",
+    "release_year": "2003",
+    "director": "Errol Morris",
+    "imdb_id": "tt2365007",
+    "plot": "John Millhouse has just returned home after four years of service in The United States Army. He wants nothing more than to return to a 'normal' life, but the horrors of war and his never ..."
+  },
+  {
+    "title": "The Game",
+    "release_year": "1997",
+    "director": "David Fincher",
+    "imdb_id": "tt0119174",
+    "plot": "Wealthy San Francisco financier Nicholas Van Orton gets a strange birthday present from wayward brother Conrad: a live-action game that consumes his life.",
+    "poster": "images/posters/tt0119174.jpg"
+  },
+  {
+    "title": "The Graduate",
+    "release_year": "1967",
+    "director": "Mike Nichols",
+    "imdb_id": "tt0061722",
+    "plot": "A disillusioned college graduate finds himself torn between his older lover and her daughter.",
+    "poster": "images/posters/tt0061722.jpg"
+  },
+  {
+    "title": "The House on Telegraph Hill",
+    "release_year": "1951",
+    "director": "Robert Wise",
+    "imdb_id": "tt0043660",
+    "plot": "Concentration camp survivor Victoria Kowelska finds herself involved in mystery, greed, and murder when she assumes the identity of a dead friend in order to gain passage to America.",
+    "poster": "images/posters/tt0043660.jpg"
+  },
+  {
+    "title": "The Internship",
+    "release_year": "2013",
+    "director": "Shawn Levy",
+    "imdb_id": "tt2234155",
+    "plot": "Two salesmen whose careers have been torpedoed by the digital age find their way into a coveted internship at Google, where they must compete with a group of young, tech-savvy geniuses for a shot at employment.",
+    "poster": "images/posters/tt2234155.jpg"
+  },
+  {
+    "title": "The Jazz Singer",
+    "release_year": "1927",
+    "director": "Alan Crosland",
+    "imdb_id": "tt0018037",
+    "plot": "The son of a Jewish Cantor must defy the traditions of his religious father in order to pursue his dream of becoming a jazz singer.",
+    "poster": "images/posters/tt0018037.jpg"
+  },
+  {
+    "title": "The Lady from Shanghai",
+    "release_year": "1947",
+    "director": "Orson Welles",
+    "imdb_id": "tt0040525",
+    "plot": "Fascinated by gorgeous Mrs. Bannister, seaman Michael O'Hara joins a bizarre yachting cruise, and ends up mired in a complex murder plot.",
+    "poster": "images/posters/tt0040525.jpg"
+  },
+  {
+    "title": "The Last of the Gladiators",
+    "release_year": "1988",
+    "director": "Martin Jay Sadoff",
+    "imdb_id": "tt0237397",
+    "plot": "World renowned daredevil, Evel Knievel, tells the story of his exploits and philosphy, intercut with his stunts and the comments of various observers and friends.",
+    "poster": "images/posters/tt0237397.jpg"
+  },
+  {
+    "title": "The Laughing Policeman",
+    "release_year": "1973",
+    "director": "Stuart Rosenberg",
+    "imdb_id": "tt0070292",
+    "plot": "In San Francisco, one victim in a mass murder is a police detective. His partner and a new partner investigate in the city's seamy side.",
+    "poster": "images/posters/tt0070292.jpg"
+  },
+  {
+    "title": "The Lineup",
+    "release_year": "1958",
+    "director": "Don Siegel",
+    "imdb_id": "tt0051866",
+    "plot": "In San Francisco, a psychopathic gangster and his mentor retrieve heroin packages carried by unsuspecting travelers.",
+    "poster": "images/posters/tt0051866.jpg"
+  },
+  {
+    "title": "The Love Bug",
+    "release_year": "1968",
+    "director": "Robert Stevenson",
+    "imdb_id": "tt0064603",
+    "plot": "A race car driver becomes a champion with a Volkswagen Beetle with a mind of its own.",
+    "poster": "images/posters/tt0064603.jpg"
+  },
+  {
+    "title": "The Maltese Falcon",
+    "release_year": "1941",
+    "director": "John Huston",
+    "imdb_id": "tt0033870",
+    "plot": "A private detective takes on a case that involves him with three eccentric criminals, a gorgeous liar, and their quest for a priceless statuette.",
+    "poster": "images/posters/tt0033870.jpg"
+  },
+  {
+    "title": "The Master",
+    "release_year": "2012",
+    "director": "Paul Thomas Anderson",
+    "imdb_id": "tt1560747",
+    "plot": "A Naval veteran arrives home from war unsettled and uncertain of his future - until he is tantalized by The Cause and its charismatic leader.",
+    "poster": "images/posters/tt1560747.jpg"
+  },
+  {
+    "title": "The Matrix",
+    "release_year": "1999",
+    "director": "The Wachowski Brothers",
+    "imdb_id": "tt0133093",
+    "plot": "A computer hacker learns from mysterious rebels about the true nature of his reality and his role in the war against its controllers.",
+    "poster": "images/posters/tt0133093.jpg"
+  },
+  {
+    "title": "The Net",
+    "release_year": "1995",
+    "director": "Irwin Winkler",
+    "imdb_id": "tt0113957",
+    "plot": "A computer programmer stumbles upon a conspiracy, putting her life and the lives of those around her in great danger.",
+    "poster": "images/posters/tt0113957.jpg"
+  },
+  {
+    "title": "The Nightmare Before Christmas",
+    "release_year": "1993",
+    "director": "Henry Selick",
+    "imdb_id": "tt0107688",
+    "plot": "Jack Skellington, king of Halloween Town, discovers Christmas Town, but doesn't quite understand the concept.",
+    "poster": "images/posters/tt0107688.jpg"
+  },
+  {
+    "title": "The Organization",
+    "release_year": "1971",
+    "director": "Don Medford",
+    "imdb_id": "tt0067535",
+    "plot": "After a group of young revolutionaries break into a corporation's headquarters and steal $5,000,000 worth of heroin to keep it off the street, they call on San Francisco Police Lieutenant ...",
+    "poster": "images/posters/tt0067535.jpg"
+  },
+  {
+    "title": "The Other Sister",
+    "release_year": "1999",
+    "director": "Garry Marshall",
+    "imdb_id": "tt0123209",
+    "plot": "A mentally challenged girl proves herself to be every bit as capable as her \"perfect\" sister when she moves into an apartment and begins going to college.",
+    "poster": "images/posters/tt0123209.jpg"
+  },
+  {
+    "title": "The Parent Trap",
+    "release_year": "1998",
+    "director": "Nancy Meyers",
+    "imdb_id": "tt0120783",
+    "plot": "Identical twins, separated at birth and each raised by one of their biological parents, discover each other for the first time at summer camp and make a plan to bring their wayward parents back together.",
+    "poster": "images/posters/tt0120783.jpg"
+  },
+  {
+    "title": "The Presidio",
+    "release_year": "1988",
+    "director": "Peter Hyams",
+    "imdb_id": "tt0095897",
+    "plot": "Jay Austin is now a civilian police detective. Colonel Caldwell was his commanding officer years before when he left the military police over a disagreement over the handling of a drunk ...",
+    "poster": "images/posters/tt0095897.jpg"
+  },
+  {
+    "title": "The Princess Diaries",
+    "release_year": "2001",
+    "director": "Garry Marshall",
+    "imdb_id": "tt0247638",
+    "plot": "Mia Thermopolis has just found out that she is the heir apparent to the throne of Genovia. With her friends Lilly and Michael Moscovitz in tow, she tries to navigate through the rest of her 16th year.",
+    "poster": "images/posters/tt0247638.jpg"
+  },
+  {
+    "title": "The Pursuit of Happyness",
+    "release_year": "2006",
+    "director": "Steven Conrad",
+    "imdb_id": "tt0454921",
+    "plot": "A struggling salesman takes custody of his son as he's poised to begin a life-changing professional endeavor.",
+    "poster": "images/posters/tt0454921.jpg"
+  },
+  {
+    "title": "The Right Stuff",
+    "release_year": "1983",
+    "director": "Philip Kaufman",
+    "imdb_id": "tt0086197",
+    "plot": "The story of the original Mercury 7 astronauts and their macho, seat-of-the-pants approach to the space program.",
+    "poster": "images/posters/tt0086197.jpg"
+  },
+  {
+    "title": "The Rock",
+    "release_year": "1996",
+    "director": "Michael Bay",
+    "imdb_id": "tt0117500",
+    "plot": "A mild-mannered chemist and an ex-con must lead the counterstrike when a rogue group of military men, led by a renegade general, threaten a nerve gas attack from Alcatraz against San Francisco.",
+    "poster": "images/posters/tt0117500.jpg"
+  },
+  {
+    "title": "The Sweetest Thing",
+    "release_year": "2002",
+    "director": "Roger Kumble",
+    "imdb_id": "tt0253867",
+    "plot": "A girl finds she is forced to educate herself on the etiquette of wooing the opposite sex when she finally meets Mr. Right.",
+    "poster": "images/posters/tt0253867.jpg"
+  },
+  {
+    "title": "The Ten Commandments",
+    "release_year": "1923",
+    "director": "Cecil B. DeMille",
+    "imdb_id": "tt0049833",
+    "plot": "The Egyptian Prince, Moses, learns of his true heritage as a Hebrew and his divine mission as the deliverer of his people.",
+    "poster": "images/posters/tt0049833.jpg"
+  },
+  {
+    "title": "The Times of Harvey Milk",
+    "release_year": "1984",
+    "director": "Rob Epstein",
+    "imdb_id": "tt0088275",
+    "plot": "A documentary of the successful career and assassination of San Francisco's first elected gay councilor.",
+    "poster": "images/posters/tt0088275.jpg"
+  },
+  {
+    "title": "The Towering Inferno",
+    "release_year": "1974",
+    "director": "John Guillermin",
+    "imdb_id": "tt0072308",
+    "plot": "At the opening party of a colossal, but poorly constructed, office building, a massive fire breaks out that threatens to destroy the tower and everyone in it.",
+    "poster": "images/posters/tt0072308.jpg"
+  },
+  {
+    "title": "The Wedding Planner",
+    "release_year": "2001",
+    "director": "Adam Shankman",
+    "imdb_id": "tt0209475",
+    "plot": "Mary Fiore is San Francisco's most successful supplier of romance and glamor. She knows all the tricks. She knows all the rules. But then she breaks the most important rule of all: she falls in love with the groom.",
+    "poster": "images/posters/tt0209475.jpg"
+  },
+  {
+    "title": "The Woman In Red",
+    "release_year": "1984",
+    "director": "Gene Wilder",
+    "imdb_id": "tt0088414",
+    "plot": "On his way to work, Teddy spots Charlotte - an incredibly beautiful Woman in Red. He really wants to meet her - but what would his wife say?",
+    "poster": "images/posters/tt0088414.jpg"
+  },
+  {
+    "title": "They Call Me MISTER Tibbs",
+    "release_year": "1970",
+    "director": "Gordon Douglas",
+    "imdb_id": "tt0066450",
+    "plot": "San Francisco Police Lieutenant Virgil Tibbs is called in to investigate when a liberal street preacher and political candidate is accused of murdering a prostitute. Tibbs is also battling ...",
+    "poster": "images/posters/tt0066450.jpg"
+  },
+  {
+    "title": "The Zodiac",
+    "release_year": "2005",
+    "director": "Alexander Bulkley",
+    "imdb_id": "tt0371739",
+    "plot": "An elusive serial killer known as the Zodiac terrorizes the San Francisco Bay in the late 1960s, while detectives aim to stop him before he claims more victims. Based on a true story.",
+    "poster": "images/posters/tt0371739.jpg"
+  },
+  {
+    "title": "Thief of Hearts",
+    "release_year": "1984",
+    "director": "Douglas Day Stewart",
+    "imdb_id": "tt0088256",
+    "plot": "A woman trapped in a boring marriage begins an affair with a handsome man who seems able to read her mind. She doesn't know that he has broken into her house and read her diaries, where she...",
+    "poster": "images/posters/tt0088256.jpg"
+  },
+  {
+    "title": "Time After Time",
+    "release_year": "1979",
+    "director": "Nicholas Meyer",
+    "imdb_id": "tt0080025",
+    "plot": "H.G. Wells pursues Jack the Ripper to the 20th Century when the serial murderer uses the future writer's time machine to escape his time period.",
+    "poster": "images/posters/tt0080025.jpg"
+  },
+  {
+    "title": "Tin Cup",
+    "release_year": "1996",
+    "director": "Ron Shelton",
+    "imdb_id": "tt0117918",
+    "plot": "A washed up golf pro working at a driving range tries to qualify for the US Open in order to win the heart of his succesful rival's girlfriend.",
+    "poster": "images/posters/tt0117918.jpg"
+  },
+  {
+    "title": "To the Ends of the Earth",
+    "release_year": "1948",
+    "director": "Robert Stevenson",
+    "imdb_id": "tt0435995",
+    "plot": "In 1812, young British aristocrat Edmund Talbot travels by ship to Australia, and learns more about himself and about life than he had ever bargained for.",
+    "poster": "images/posters/tt0435995.jpg"
+  },
+  {
+    "title": "True Believer",
+    "release_year": "1989",
+    "director": "Joseph Ruben",
+    "imdb_id": "tt0098524",
+    "plot": "A cynical former civil liberties attorney now reduced to \"specializing\" in defending drug dealers becomes transformed by an eight-year-old murder case.",
+    "poster": "images/posters/tt0098524.jpg"
+  },
+  {
+    "title": "Tucker: The Man and His Dreams",
+    "release_year": "1988",
+    "director": "Francis Ford Coppola",
+    "imdb_id": null,
+    "plot": null
+  },
+  {
+    "title": "Tweek City",
+    "release_year": "2005",
+    "director": "Eric G. Johnson",
+    "imdb_id": "tt0351885",
+    "plot": "Tweek City is a week in the life of Bill, a potentially closeted, half-Latino, small-time speed dealer in San Francisco's Mission District. Bill is stuck on an endless walk from one empty ...",
+    "poster": "images/posters/tt0351885.jpg"
+  },
+  {
+    "title": "Twisted",
+    "release_year": "2004",
+    "director": "Philip Kaufman",
+    "imdb_id": "tt0315297",
+    "plot": "Jessica, whose father was a serial killer, is a police officer. While investigating a murder, she finds herself in the centre of her own investigation, when her former lovers start dying around her at a furious pace.",
+    "poster": "images/posters/tt0315297.jpg"
+  },
+  {
+    "title": "Under the Tuscan Sun",
+    "release_year": "2003",
+    "director": "Audrey Wells",
+    "imdb_id": "tt0328589",
+    "plot": "A writer impulsively buys a villa in Tuscany in order to change her life.",
+    "poster": "images/posters/tt0328589.jpg"
+  },
+  {
+    "title": "Until the End of the World",
+    "release_year": "1991",
+    "director": "Wim Wenders",
+    "imdb_id": "tt0101458",
+    "plot": "Set in 1999, a woman (Dommartin) has a car accident with some bank robbers, who enlist her help to take the bank money to a drop in Paris. On the way she runs into another fugitive from the...",
+    "poster": "images/posters/tt0101458.jpg"
+  },
+  {
+    "title": "Vegas in Space",
+    "release_year": "1991",
+    "director": "Phillip R. Ford",
+    "imdb_id": "tt0103192",
+    "plot": "Three soldiers are ordered to change their gender (via a pill) and are sent on a secret mission (undercover as show girls) to the women only planet of Clitoris' capital city \"Vegas in Space...",
+    "poster": "images/posters/tt0103192.jpg"
+  },
+  {
+    "title": "Vertigo",
+    "release_year": "1958",
+    "director": "Alfred Hitchcock",
+    "imdb_id": "tt0052357",
+    "plot": "A retired San Francisco detective suffering from acrophobia investigates the strange activities of an old friend's wife, all the while becoming dangerously obsessed with her.",
+    "poster": "images/posters/tt0052357.jpg"
+  },
+  {
+    "title": "What Dreams May Come",
+    "release_year": "1998",
+    "director": "Vincent Ward",
+    "imdb_id": "tt0120889",
+    "plot": "After dying in a car crash a man searches the afterlife for his wife.",
+    "poster": "images/posters/tt0120889.jpg"
+  },
+  {
+    "title": "What's Up Doc?",
+    "release_year": "1972",
+    "director": "Peter Bogdanovich",
+    "imdb_id": "tt0043128",
+    "plot": "Bugs' showbiz career is recounted from babyhood to stardom. Bugs and Elmer Fudd perform the title song.",
+    "poster": "images/posters/tt0043128.jpg"
+  },
+  {
+    "title": "What the Bleep Do We Know",
+    "release_year": "2004",
+    "director": "William Arntz",
+    "imdb_id": null,
+    "plot": null
+  },
+  {
+    "title": "When a Man Loves a Woman",
+    "release_year": "1994",
+    "director": "Luis Mandoki",
+    "imdb_id": "tt0111693",
+    "plot": "An airline pilot and his wife are forced to face the consequences of her alcoholism when her addictions threaten her life and their daughter's safety. While the woman enters detox, her husband must face the truth of his enabling behavior.",
+    "poster": "images/posters/tt0111693.jpg"
+  },
+  {
+    "title": "Woman on the Run",
+    "release_year": "1950",
+    "director": "Norman Foster",
+    "imdb_id": "tt0043142",
+    "plot": "Frank Johnson flees police after becoming an eyewitness to murder. He is pursued around scenic San Francisco by his wife, a reporter, the police, and... the real murderer.",
+    "poster": "images/posters/tt0043142.jpg"
+  },
+  {
+    "title": "Woman on Top",
+    "release_year": "2000",
+    "director": "Fina Torres",
+    "imdb_id": "tt0206420",
+    "plot": "Brazilian chef Isabella Oliveira moves to San Francisco when her husband, frustrated by her motion sickness, cheats on her.",
+    "poster": "images/posters/tt0206420.jpg"
+  },
+  {
+    "title": "Yours, Mine and Ours",
+    "release_year": "1968",
+    "director": "Melville Shavelson",
+    "imdb_id": "tt0063829",
+    "plot": "When a widower with 10 children marries a widow with 8, can the 20 of them ever come together as one big happy family? From finding a house big enough for all of them and learning to make ...",
+    "poster": "images/posters/tt0063829.jpg"
+  },
+  {
+    "title": "Zodiac",
+    "release_year": "2007",
+    "director": "David Fincher",
+    "imdb_id": "tt0443706",
+    "plot": "A San Francisco cartoonist becomes an amateur detective obsessed with tracking down the Zodiac killer.",
+    "poster": "images/posters/tt0443706.jpg"
+  },
+  {
+    "title": "Sense8",
+    "release_year": "2014",
+    "director": "The Wachowskis",
+    "imdb_id": "tt2431438",
+    "plot": "A group of people around the world are suddenly linked mentally, and must find a way to survive being hunted by those who see them as a threat to the world's order.",
+    "poster": "images/posters/tt2431438.jpg"
+  },
+  {
+    "title": "Ant-Man",
+    "release_year": "2014",
+    "director": "Peyton Reed",
+    "imdb_id": "tt0478970",
+    "plot": "Armed with a super-suit with the astonishing ability to shrink in scale but increase in strength, cat burglar Scott Lang must embrace his inner hero and help his mentor, Dr. Hank Pym, plan and pull off a heist that will save the world.",
+    "poster": "images/posters/tt0478970.jpg"
+  },
+  {
+    "title": "San Andreas",
+    "release_year": "2014",
+    "director": "Brad Peyton",
+    "imdb_id": "tt2126355",
+    "plot": "In the aftermath of a massive earthquake in California, a rescue-chopper pilot makes a dangerous journey with is ex-wife across the state in order to rescue his daughter.",
+    "poster": "images/posters/tt2126355.jpg"
+  },
+  {
+    "title": "Terminator - Genisys",
+    "release_year": "2014",
+    "director": "Alan Taylor",
+    "imdb_id": "tt1340138",
+    "plot": "John Connor sends Kyle Reese back in time to protect Sarah Connor, but when he arrives in 1984, nothing is as he expected it to be.",
+    "poster": "images/posters/tt1340138.jpg"
+  }
+]

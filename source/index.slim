@@ -10,16 +10,25 @@ title: Cityflix
       p.text-center
         | Total number of movies: {{movies.length}}
 
+  .row.mb1
+    .col-sm-10
+      input.form-control< ng-model="query" placeholder="Search by title, director, etc..." type="text"
+    .col-sm-2
+      .pull-right
+        input(
+            bs-switch
+            ng-model="postersOnly"
+            type="checkbox"
+        )
   .row
     .col-sm-12
-      | Search: <input ng-model="query">
       rzslider(rz-slider-floor="yearSlider.floor" rz-slider-ceil="yearSlider.ceil" rz-slider-model="yearSlider.min"
           rz-slider-high="yearSlider.max" rz-slider-on-change="onSliderChange()")
   .row
-    .col-sm-4 ng-repeat="movie in movies | filter:query | filter:yearFilter"
+    .col-sm-4 ng-repeat="movie in movies | filter:query | filter:yearFilter | filter:posterFilter"
       .card
-        h2
-          | {{movie.title}}
+        .release-year
+          | {{ movie.release_year }}, {{ movie.director }}
+        img.center-block.mb1 ng-if="movie.poster" ng-src="{{ movie.poster }}"
         p
-          | {{movie.release_year}}
-        img.center-block ng-src="{{ movie.poster ? movie.poster : 'http://placehold.it/300x391&text=N/A' }}"
+          | {{movie.plot }}

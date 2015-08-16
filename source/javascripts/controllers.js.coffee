@@ -1,4 +1,4 @@
-cityflixApp.controller 'MovieListCtrl', ($filter, $http, $scope) ->
+cityflixApp.controller 'MovieListCtrl', ($filter, $http, $log, $scope) ->
 
   # Split data equally into x arrays so that we can display in columns
   # See: http://stackoverflow.com/questions/21644493/how-to-split-the-ng-repeat-data-with-three-columns-using-bootstrap
@@ -40,11 +40,16 @@ cityflixApp.controller 'MovieListCtrl', ($filter, $http, $scope) ->
   #   log 'changed', $scope.yearSlider
   #   return
 
+  $scope.posterFilter = (movie) ->
+    if $scope.postersOnly is true then movie.poster else true
+
+  $scope.postersOnly = 'nope'
+
   $scope.yearFilter = (movie) ->
     movie.release_year >= $scope.yearSlider.min and movie.release_year <= $scope.yearSlider.max
 
   $scope.yearSlider = {
-    min: 2010,
+    min: 1915,
     max: 2015,
     ceil: 2015,
     floor: 1915
