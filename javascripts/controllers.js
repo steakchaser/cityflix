@@ -23,7 +23,7 @@
         return true;
       }
     };
-    $scope.postersOnly = 'nope';
+    $scope.postersOnly = false;
     $scope.yearFilter = function(movie) {
       return movie.release_year >= $scope.yearSlider.min && movie.release_year <= $scope.yearSlider.max;
     };

@@ -1,7 +1,7 @@
 
 
 
-cityflixApp = angular.module('cityflixApp', ['frapontillo.bootstrap-switch', 'rzModule']);
+cityflixApp = angular.module('cityflixApp', ['frapontillo.bootstrap-switch', 'rzModule', 'ui.bootstrap']);
 (function() {
   cityflixApp.controller('MovieListCtrl', function($filter, $http, $log, $scope) {
     var columnize;
@@ -27,7 +27,7 @@ cityflixApp = angular.module('cityflixApp', ['frapontillo.bootstrap-switch', 'rz
         return true;
       }
     };
-    $scope.postersOnly = 'nope';
+    $scope.postersOnly = false;
     $scope.yearFilter = function(movie) {
       return movie.release_year >= $scope.yearSlider.min && movie.release_year <= $scope.yearSlider.max;
     };

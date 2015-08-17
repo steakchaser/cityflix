@@ -19,39 +19,55 @@
         <div class="row">
           <div class="col-sm-8 col-sm-offset-2">
             <h1 class="text-center">
-              Movies filmed in The City
+              Movies filmed in SF
             </h1>
             <p class="text-center">
-              Total number of movies: {{movies.length}}
+              Total: {{ movies.length }} / Showing: {{ (movies | filter:query | filter:yearFilter | filter:posterFilter).length }}
             </p>
           </div>
         </div>
-        <div class="row mb1">
-          <div class="col-sm-10">
-            <input class="form-control" ng-model="query" placeholder="Search by title, director, etc..." type="text" />
+        <div class="row section">
+          <div class="col-sm-9">
+            <div class="form-group">
+              <label>Search</label> <input class="form-control" ng-model="query" placeholder="Search by title, director, etc..." type="text" />
+            </div>
           </div>
-          <div class="col-sm-2">
-            <div class="pull-right">
-              <input bs-switch="" ng-model="postersOnly" type="checkbox" />
+          <div class="col-sm-3">
+            <div class="form-group">
+              <label>Display</label>
+              <div aria-label="Show or hide movies without posters" class="btn-group btn-group-justified" role="group">
+                <label btn-radio="false" class="btn btn-default primary-active-state-btn" ng-model="postersOnly">All</label><label btn-radio="true" class="btn btn-default primary-active-state-btn" ng-model="postersOnly">Posters</label>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-12">
+            <div class="form-group">
+              <label>Release Year</label><rzslider rz-slider-ceil="yearSlider.ceil" rz-slider-floor="yearSlider.floor" rz-slider-high="yearSlider.max" rz-slider-model="yearSlider.min" rz-slider-on-change="onSliderChange()"></rzslider>
             </div>
           </div>
         </div>
-        <div class="row">
-          <div class="col-sm-12">
-            <rzslider rz-slider-ceil="yearSlider.ceil" rz-slider-floor="yearSlider.floor" rz-slider-high="yearSlider.max" rz-slider-model="yearSlider.min" rz-slider-on-change="onSliderChange()"></rzslider>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-sm-4" ng-repeat="movie in movies | filter:query | filter:yearFilter | filter:posterFilter">
-            <div class="card">
-              <div class="release-year">
-                {{ movie.release_year }}, {{ movie.director }}
-              </div>
-              <img class="center-block mb1" ng-if="movie.poster" ng-src="{{ movie.poster }}" />
-              <p>
-                {{movie.plot }}
+        <div class="row masonry-row">
+          <div class="item" ng-repeat="movie in movies | filter:query | filter:yearFilter | filter:posterFilter">
+            <div class="well">
+              <img class="center-block img-responsive mb1" ng-if="movie.poster" ng-src="{{ movie.poster }}" />
+              <h4>
+                {{ movie.title }} <small>{{ movie.release_year }}</small>
+              </h4>
+              <p class="mb0">
+                Director: <strong>{{ movie.director }}</strong>
+              </p>
+              <hr class="dark-hr" />
+              <p class="mb0">
+                {{ movie.plot }}
               </p>
             </div>
+          </div>
+        </div>
+        <div class="row" ng-show="!(movies | filter:query | filter:yearFilter | filter:posterFilter).length">
+          <div class="col-xs-12">
+            <p class="text-center">
+              No movies <span ng-show="query">for <strong>{{ query }}</strong> </span>between <strong>{{ yearSlider.min }}</strong> and <strong>{{ yearSlider.max }}</strong> <span ng-show="postersOnly === true">with <strong>posters</strong></span>
+            </p>
           </div>
         </div>
       </div></main><footer></footer>
