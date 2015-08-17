@@ -58,7 +58,9 @@ View the static site on GitHub Pages: http://steakchaser.github.io/cityflix/
 2. Not currently displaying a fallback image per requirements.  Just displaying the title, release year, director, and 
   plot, which looks fine. 
 3. The SF Open Data API is returning some duplicate titles (see A Smile Like Yours)
-4. OMDB API poster images are from IMDB.  IMDB does not allow linked images from other websites; they will return a 404
+4. OMDB API poster images are from IMDB.  IMDB does not allow linked images from other websites; they will return a 404.
+  As a result, this site is using poster images and API data that has been pre-downloaded from both APIs.  See 
+  /source/data/movies.json and the Rakefile
 
 ## Developer Setup
 ### Install
@@ -89,4 +91,10 @@ $ bundle exec middleman build
 Push the build folder to the gh-pages branch
 ```
 $ bundle exec middleman deploy
+```
+
+### API Data
+To pull down the movie metadata and poster images, run the following rake task:
+```
+$ bundle exec rake data:build
 ```
