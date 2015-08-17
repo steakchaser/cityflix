@@ -6,7 +6,7 @@ View the static site on GitHub Pages: http://steakchaser.github.io/cityflix/
 
 ## Requirements
 1. Pull the list of movies shot in San Francisco from the 
-[SF OpenData API](https://data.sfgov.org/Culture-and-Recreation/Film-Locations-in-San-Francisco/yitu-d5am)
+  [SF OpenData API](https://data.sfgov.org/Culture-and-Recreation/Film-Locations-in-San-Francisco/yitu-d5am)
 2. Find the poster image and details for each unique movie in that list using the [OMDB API](http://www.omdbapi.com/)
 3. Display all the entries in a responsive, Pinterest-style grid, including:
   1. Poster (and fallback image)
@@ -28,9 +28,9 @@ View the static site on GitHub Pages: http://steakchaser.github.io/cityflix/
 ## Stack Details
 1. [AngularJS](https://angularjs.org/) - HTML enhanced for web apps!
 2. ~~[AngularJS Bootstrap Switch](https://github.com/frapontillo/angular-bootstrap-switch) - AngularJS directive for the 
-bootstrap-switch jQuery plugin~~
+  bootstrap-switch jQuery plugin~~
 3. [AngularJS Slider](https://github.com/rzajac/angularjs-slider) - AngularJS slider directive with no external 
-dependencies
+  dependencies
 4. [Bootstrap](http://getbootstrap.com/) - Responsive CSS framework + pre-built UI components
 5. [Bower](http://bower.io/) - Package manager for front-end assets.
 6. [CoffeeScript](http://coffeescript.org/) - CoffeeScript is a little language that compiles into JavaScript
@@ -52,11 +52,13 @@ dependencies
 - [x] No results message on empty search / filter
 
 ## Known Issues
-1. The SF Open Data API is returning some duplicate titles (see A Smile Like Yours)
-2. OMDB API poster images are from IMDB.  IMDB does not allow linked images from other websites; they will return a 404
-3. CSS-based masonry causes flicker as items are loaded in by Angular.  Need to explore JS / native Angular options to 
+1. CSS-based masonry causes flicker as items are loaded in by Angular.  Need to explore JS / native Angular options to 
   fix this.  [Angular Deckgrid](https://github.com/akoenig/angular-deckgrid) looks promising, but it does not support
   filtering ([#39](https://github.com/akoenig/angular-deckgrid/issues/39))
+2. Not currently displaying a fallback image per requirements.  Just displaying the title, release year, director, and 
+  plot, which looks fine. 
+3. The SF Open Data API is returning some duplicate titles (see A Smile Like Yours)
+4. OMDB API poster images are from IMDB.  IMDB does not allow linked images from other websites; they will return a 404
 
 ## Developer Setup
 ### Install
