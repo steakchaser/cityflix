@@ -1,0 +1,15 @@
+//
+// Layout
+// --------------------------------------------------
+
+body {
+  background: url("../images/background.png") top left repeat;
+}
+
+.row.section {
+  margin-bottom: 30px;
+  &.bordered {
+    border-bottom: 1px solid $hr-border;
+    padding-bottom: 29px;
+  }
+}

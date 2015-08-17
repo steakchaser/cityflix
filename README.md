@@ -26,7 +26,7 @@ View the static site on GitHub Pages: http://steakchaser.github.io/cityflix/
 
 ## Stack Details
 1. [AngularJS](https://angularjs.org/) - HTML enhanced for web apps!
-2. [AngularJS Bootstrap Switch](https://github.com/frapontillo/angular-bootstrap-switch) - AngularJS directive for the bootstrap-switch jQuery plugin
+2. ~~[AngularJS Bootstrap Switch](https://github.com/frapontillo/angular-bootstrap-switch) - AngularJS directive for the bootstrap-switch jQuery plugin~~
 3. [AngularJS Slider](https://github.com/rzajac/angularjs-slider) - AngularJS slider directive with no external dependencies
 4. [Bootstrap](http://getbootstrap.com/) - Responsive CSS framework + pre-built UI components
 5. [Bower](http://bower.io/) - Package manager for front-end assets.
@@ -36,22 +36,22 @@ View the static site on GitHub Pages: http://steakchaser.github.io/cityflix/
 9. [Middleman](https://middlemanapp.com/) - Static website generator that lets you use modern-day development tools
 10. [Sass](http://sass-lang.com/) - CSS with superpowers
 11. [Slim](http://slim-lang.com/) - Lightweight templating language used instead of typing raw HTML
-12. *More coming soon...*
+12. [UI Bootstrap](https://github.com/angular-ui/bootstrap) - AngularJS directives specific to Bootstrap
 
 ## TODO
 - [x] Pull in real data from SF OpenData API
 - [x] Pull in box art from OMDB
 - [x] Other filter controls
 - [x] Properly organize Angular files
-- [ ] Style filter controls
-- [ ] Style thumbs
-- [ ] Style page header
-- [ ] No results message on empty search / filter
-- [ ] Reset button
+- [x] Style thumbs
+- [x] Style filter controls
+- [x] Style page header
+- [x] No results message on empty search / filter
 
 ## Known Issues
 1. The SF Open Data API is returning some duplicate titles (see A Smile Like Yours)
 2. OMDB API poster images are from IMDB.  IMDB does not allow linked images from other websites; they will return a 404
+3. CSS-based masonry causes flicker as items are loaded in by Angular.  
 
 ## Developer Setup
 ### Install

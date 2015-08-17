@@ -43,7 +43,8 @@ cityflixApp.controller 'MovieListCtrl', ($filter, $http, $log, $scope) ->
   $scope.posterFilter = (movie) ->
     if $scope.postersOnly is true then movie.poster else true
 
-  $scope.postersOnly = 'nope'
+#  $scope.postersOnly = 'nope'
+  $scope.postersOnly = false
 
   $scope.yearFilter = (movie) ->
     movie.release_year >= $scope.yearSlider.min and movie.release_year <= $scope.yearSlider.max

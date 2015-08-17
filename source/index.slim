@@ -6,29 +6,53 @@ title: Cityflix
   .row
     .col-sm-8.col-sm-offset-2
       h1.text-center
-        | Movies filmed in The City
+        | Movies filmed in SF
       p.text-center
-        | Total number of movies: {{movies.length}}
+        | Total: {{ movies.length }} / Showing: {{ (movies | filter:query | filter:yearFilter | filter:posterFilter).length }}
 
-  .row.mb1
-    .col-sm-10
-      input.form-control< ng-model="query" placeholder="Search by title, director, etc..." type="text"
-    .col-sm-2
-      .pull-right
-        input(
-            bs-switch
-            ng-model="postersOnly"
-            type="checkbox"
-        )
-  .row
+  .row.section
+    .col-sm-9
+      .form-group
+        label Search
+        input.form-control< ng-model="query" placeholder="Search by title, director, etc..." type="text"
+    .col-sm-3
+      .form-group
+        label Display
+        .btn-group.btn-group-justified role="group" aria-label="Show or hide movies without posters"
+          label.btn.btn-default.primary-active-state-btn(ng-model="postersOnly" btn-radio="false") All
+          label.btn.btn-default.primary-active-state-btn(ng-model="postersOnly" btn-radio="true") Posters
+
     .col-sm-12
-      rzslider(rz-slider-floor="yearSlider.floor" rz-slider-ceil="yearSlider.ceil" rz-slider-model="yearSlider.min"
-          rz-slider-high="yearSlider.max" rz-slider-on-change="onSliderChange()")
-  .row
-    .col-sm-4 ng-repeat="movie in movies | filter:query | filter:yearFilter | filter:posterFilter"
-      .card
-        .release-year
-          | {{ movie.release_year }}, {{ movie.director }}
+      .form-group
+        label Release Year
+        rzslider(rz-slider-floor="yearSlider.floor" rz-slider-ceil="yearSlider.ceil" rz-slider-model="yearSlider.min"
+            rz-slider-high="yearSlider.max" rz-slider-on-change="onSliderChange()")
+
+  / Quick and easy masonry using css only: http://www.bootply.com/118335
+  .row.masonry-row
+    .item ng-repeat="movie in movies | filter:query | filter:yearFilter | filter:posterFilter"
+      .well
         img.center-block.img-responsive.mb1 ng-if="movie.poster" ng-src="{{ movie.poster }}"
-        p
-          | {{movie.plot }}
+        h4
+          | {{ movie.title }}
+          small<
+            |{{ movie.release_year }}
+        p.mb0
+          | Director:
+          strong<
+            | {{ movie.director }}
+        hr.dark-hr
+        p.mb0
+          | {{ movie.plot }}
+
+  .row ng-show="!(movies | filter:query | filter:yearFilter | filter:posterFilter).length"
+    .col-xs-12
+      p.text-center
+        | No movies
+        span< ng-show="query"
+          | for
+          strong<>
+            | {{ query }}
+        | between <strong>{{ yearSlider.min }}</strong> and <strong>{{ yearSlider.max }}</strong>
+        span< ng-show="postersOnly === true"
+          | with <strong>posters</strong>

@@ -1,5 +1,6 @@
 //= require jquery/dist/jquery
 //= require angular/angular
+//= require angular-bootstrap/ui-bootstrap
 //= require angular-bootstrap-switch/dist/angular-bootstrap-switch
 //= require angularjs-slider/rzslider
 //= require bootstrap
