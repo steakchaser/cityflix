@@ -66,7 +66,7 @@ View the static site on GitHub Pages: http://steakchaser.github.io/cityflix/
 ### Install
 Clone the repo and install gems required for Middleman
 ```
-$ git@github.com:steakchaser/cityflix.git && cd cityflix
+$ git clone git@github.com:steakchaser/cityflix.git && cd cityflix
 $ bundle install
 ```
 
